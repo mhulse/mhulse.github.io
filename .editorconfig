@@ -1,0 +1,23 @@
+# This file is for unifying the coding style for different editors and IDEs.
+# EditorConfig is AweSome: http://editorconfig.org/
+
+root = true
+
+[*]
+charset = UTF-8
+end_of_line = LF
+insert_final_newline = true
+trim_trailing_whitespace = false
+indent_size = 4
+indent_style = tab
+
+[*.{py,rst,ini,yml}]
+indent_size = 4
+indent_style = space
+
+[*.bat]
+end_of_line = crlf
+
+[*.json]
+indent_size = 2
+indent_style = space
