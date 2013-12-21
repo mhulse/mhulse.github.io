@@ -1,10 +1,10 @@
-# mky.io
+# [mky.io](http://mky.io)
 
 :)
 
 ---
 
-More information coming soon.
+A site for me, by me.
 
 ---
 
