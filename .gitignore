@@ -58,8 +58,5 @@ sitemap.xml.gz*~
 # PROJECT-SPECIFIC #
 ####################
 
-node_modules
-npm-debug.log
-temp/
-bower_components/
-.sass-cache
+_drafts/
+_site/

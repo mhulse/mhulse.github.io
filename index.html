@@ -1,26 +1,44 @@
-<!doctype html>
-<html>
+---
+layout: default
+title: MKY.io
+blogfeed:  true
+---
+<section>
+	
+	<h1>Posts</h1>
+	
+	<ul>
+		{% for post in site.posts %}
+			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+	
+</section>
 
-<head>
+<hr>
+
+<section>
 	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<h1>Categories</h1>
 	
-	<title>mky.io</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<ul>
+		{% for category in site.categories %}
+			<li><a href="/{{ category | first | slugize }}/">{{ category | first }}</a></li>
+		{% endfor %}
+	</ul>
 	
-	<meta name="google-site-verification" content="hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE">
-	<meta name="msvalidate.01" content="B46559147E88568614EBEBCB2BEF258C">
+</section>
+
+<hr>
+
+<section>
 	
-	<style></style>
+	<h1>Tags</h1>
 	
-</head>
-<body>
+	<ul>
+		{% for tag in site.tags %}
+			<li><a href="/{{ tag | first | slugize }}/">{{ tag | first }}</a></li>
+		{% endfor %}
+	</ul>
 	
-	<p>Hello world!</p>
-	
-	<script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-46485001-1');ga('send','pageview');</script>
-	
-</body>
-</html>
+</section>

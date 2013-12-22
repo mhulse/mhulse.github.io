@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>mky.io</title>
+    <link>http://mky.io</link>
+    <language>en</language>
+    <webMaster>mickyhulse@gmail.com (Micky Hulse)</webMaster>
+    <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+    <copyright>Copyright 2013-2014</copyright>
+    <ttl>60</ttl>
+    <description>A site by me, for me.</description>
+    {% for post in site.posts limit:10 %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://www.paperplanes.de/{{ post.url }}</link>
+      <pubDate>{{ post.date }}</pubDate>
+      <guid>http://www.paperplanes.de/{{ post.url }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+      {% for topic in post.topics %}
+      <category domain="http://mky.io/tags/{{ topic }}">{{ topic }}</category>
+      {% endfor %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

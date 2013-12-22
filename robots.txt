@@ -1,0 +1,4 @@
+Host: mky.io
+Sitemap: http://mky.io/sitemap.xml
+User-agent: *
+Allow: /
