@@ -8,8 +8,8 @@ include             : ['_pages']
 markdown            : 'redcarpet'
 name                : 'Micky Hulse'
 paginate            : 10
-paginate_path       : '/:categories/page:num/'
-permalink           : '/:categories/:title/'
+paginate_path       : '/page:num/'
+permalink           : '/:title/'
 pygments            : true
 relative_permalinks : false
 title               : 'MKY.io'
