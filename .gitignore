@@ -48,8 +48,6 @@ Thumbs.db
 # MISCULANEOUS #
 ################
 
-sitemap.xml
-sitemap.xml.gz*~
 .svn
 .cvs
 *.bak
