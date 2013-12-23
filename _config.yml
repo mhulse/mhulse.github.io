@@ -1,7 +1,7 @@
 bwt                 : 'B46559147E88568614EBEBCB2BEF258C'
 description         : 'A site by me, for me.'
 disqus              : 'mhulse'
-exclude             : ['CNAME', 'README.md', 'Gemfile', 'Gemfile.lock']
+exclude             : ['README.md', 'Gemfile', 'Gemfile.lock']
 ga                  : 'UA-46485001-1'
 gwt                 : 'hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE'
 include             : ['_pages']
