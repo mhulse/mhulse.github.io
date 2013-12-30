@@ -8,16 +8,20 @@ charset = UTF-8
 end_of_line = LF
 insert_final_newline = true
 trim_trailing_whitespace = false
-indent_size = 4
 indent_style = tab
-
-[*.{py,rst,ini,yml,json,rb}]
 indent_size = 4
-indent_style = space
 
-[*.bat]
-end_of_line = crlf
+[*.{py,rst,ini}]
+indent_style = space
+indent_size = 4
+
+[*.{yml,json,rb}]
+indent_style = space
+indent_size = 2
 
 [{Rakefile,Gemfile*}]
 indent_style = space
 indent_size = 2
+
+[*.bat]
+end_of_line = crlf
