@@ -6,8 +6,6 @@ categories: [code]
 tags: [jekyll, github]
 ---
 
-# Installing Jekyll
-
 First, get Ruby and `rvm` installed/updated:
 
 * [Ruby tips](https://github.com/registerguard/registerguard.github.com/wiki/Ruby-tips)

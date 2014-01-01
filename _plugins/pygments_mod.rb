@@ -25,7 +25,7 @@ module Jekyll
         module WithPygments
           def block_code(code, lang)
             require 'pygments'
-            require 'securerandom'
+            # require 'securerandom'
             lang_parts = lang && lang.split('{')
             lang = lang_parts && !lang_parts[0].empty? && lang_parts[0] || 'text'
             hl_lines = ''
@@ -43,7 +43,7 @@ module Jekyll
                 :options => {
                   :encoding => 'utf-8',
                   :hl_lines => hl_lines,
-                  :cssclass => 'foo',
+                  :cssclass => 'pyg',
                   :linenos => 'table',
                   # :lineanchors => 'X' + SecureRandom.hex(1).to_s.upcase,
                   # :anchorlinenos => true,

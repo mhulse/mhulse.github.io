@@ -3,42 +3,36 @@ layout: default
 title: MKY.io
 blogfeed: true
 ---
-<section>
-	
-	<h1>Posts</h1>
-	
-	<ul>
-		{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
-	
-</section>
-
-<hr>
 
 <section>
 	
-	<h1>Categories</h1>
+	<h1 class="off">Posts</h1>
 	
-	<ul>
-		{% for category in site.categories %}
-			<li><a href="/{{ category | first | slugize }}/">{{ category | first }}</a></li>
-		{% endfor %}
-	</ul>
-	
-</section>
-
-<hr>
-
-<section>
-	
-	<h1>Tags</h1>
-	
-	<ul>
-		{% for tag in site.tags %}
-			<li><a href="#">{{ tag | first }}</a></li>
-		{% endfor %}
-	</ul>
+	{% for post in site.posts %}
+		
+		<article>
+			
+			<header>
+				
+				<hgroup>
+					<h3 class="label"><span>Category Label</span></h3>
+					<h4 class="pub"><span><time pubdate datetime="2013-12-26T14:33:45-08:00">{{ post.date | date_to_string }}</time></span></h4>
+					<h1 class="h2"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+					<h2 class="sh4">The quick brown fox hxy jumps over the lazy dog hxy</h2>
+				</hgroup>
+				
+			</header>
+			
+			<p>
+				Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.
+				<br>
+				<span class="more"><a href="#">Continue reading</a></span>
+			</p>
+			
+		</article>
+		
+		{% if forloop.last %}{% else %}<hr>{% endif %}
+		
+	{% endfor %}
 	
 </section>

@@ -8,4 +8,4 @@ tags: [blog, blogging, awesomeness]
 
 You'll find this post [...]
 
-{% gist 6003668 %}
+<div class="x6">{% gist 6003668 %}</div>

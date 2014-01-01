@@ -11,13 +11,13 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="apple-mobile-web-app-title" content="MKY.io">
 	
-	<title>{{ page.title }}</title>
+	<title>{{ page.title }} | {{ site.name }}</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
 	<!--[if !IE]><!-->
 	
-	<link rel="stylesheet" href="//mky.io/picard/prod/0.1.0/20131230/1/css/picard.min.css">
+	<link rel="stylesheet" href="//mky.io/picard{{ site.build }}/css/picard.min.css">
 	<link rel="stylesheet" href="//fonts.mky.io/hulse/hulse.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	
@@ -43,15 +43,82 @@
 </head>
 <body>
 	
-	<h1>{{ site.name }}</h1>
-	
-	{{ content }}
+	<header role="banner">
+		
+		<h1 id="flag"><a href="http://mky.io">M<span>KY.io</span></a></h1>
+		
+	</header>
 	
 	<hr>
 	
-	Site last updated: {{ site.time | date_to_string }}
+	<nav role="navigation">
+		
+		<ul class="x3">{% for category in site.categories %}<li><a href="/{{ category | first | slugize }}/">{{ category | first }}</a></li>{% endfor %}</ul>
+		
+	</nav>
 	
-	<script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-46485001-1');ga('send','pageview');</script>
+	<aside role="complementary">
+		
+		<section>
+			
+			<h1></h1>
+			
+			<form class="form" method="get" action="" role="search">
+				
+				<label class="x4">
+					<span class="off">Search:</span>
+					<input type="search" name="s" placeholder="&hellip; search &hellip;">
+				</label>
+				
+			</form>
+			
+		</section>
+		
+	</aside>
+	
+	<hr>
+	
+	<main role="main">
+		
+		{{ content }}
+		
+	</main>
+	
+	<hr>
+	
+	<footer role="contentinfo">
+		
+		<ul>
+			<li><i class="fa fa-github-alt" aria-hidden="true"></i> <a href="http://github.com/mhulse" target="_blank" rel="nofollow">GitHub</a> (<a href="https://github.com/stars/mhulse" target="_blank" rel="nofollow">Stars</a>, <a href="https://gist.github.com/mhulse" target="_blank" rel="nofollow">Gists</a>)</li>
+			<li><i class="fa fa-stack-exchange" aria-hidden="true"></i> <a href="http://stackexchange.com/users/560173/mhulse" target="_blank" rel="nofollow">StackExchange</a></li>
+			<li><i class="fa fa-bookmark" aria-hidden="true"></i> <a href="https://pinboard.in/u:mhulse" target="_blank" rel="nofollow">Pinboard</a></li>
+		</ul>
+		
+		<p class="boring">
+			<small><span>Copyright &copy; <a href="http://mky.io">mky.io</a> 2013-14.</span> <span>All rights reserved.</span></small>
+			<small class="silly"><a href="http://en.wikipedia.org/wiki/Genetically_modified_organism" target="_blank" rel="nofollow">GMO</a>-, <a href="http://en.wikipedia.org/wiki/Gluten" target="_blank" rel="nofollow">gluten</a>- and <a href="http://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>-free.</small>
+		</p>
+		
+	</footer>
+	
+	<!--[if !IE]><!-->
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>if(!window.jQuery){document.write('<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-2.0.3.min.js"><\/script>');}</script>
+	<script src="//mky.io/picard{{ site.build }}/scripts/picard.min.js"></script>
+	
+	<!--<![endif]-->
+	
+	<script>
+		(function(p,i,c,a,r,d){p.GoogleAnalyticsObject=a;p[a]||(p[a]=
+		function(){(p[a].q=p[a].q||[]).push(arguments)});p[a].a=+new Date;
+		r=i.createElement(c);d=i.getElementsByTagName(c)[0];
+		r.src='//www.google-analytics.com/analytics.js';
+		d.parentNode.insertBefore(r,d)}(window,document,'script','ga'));
+		ga('create','UA-46485001-1');ga('send','pageview');
+	</script>
 	
 </body>
 </html>
+
+<!-- Site last updated: {% assign m = site.time | date: "%B" %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }}{% when 'September' %}Sept.{% else %}{{ site.time | date: "%b" }}.{% endcase %} {{ site.time | date: "%-d" }}, {{ site.time | date: "%Y" }}. -->
