@@ -9,17 +9,17 @@ layout: default
 	<header>
 		
 		<hgroup>
-			<h3 class="label"><span>Category Label</span></h3>
-			<h4 class="pub"><span><time pubdate datetime="2013-12-26T14:33:45-08:00">{{ page.date | date_to_string }}</time></span></h4>
-			<h1 class="h2">{{ page.title }}</h1>
-			<h2 class="sh4">The quick brown fox hxy jumps over the lazy dog hxy</h2>
+			<h3 class="label"><a href="#">Category Label</a></h3>
+			<h4 class="pub"><a href="#"><time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ page.date | date_to_string }}</time></a></h4>
+			{% if page.title %}<h1 class="h1" itemprop="headline">{{ page.title }}</h1>{% endif %}
+			{% if page.deck %}<h2 class="sh3">{{ page.deck }}</h2>{% endif %}
 		</hgroup>
 		
 	</header>
 	
 	<hr>
 	
-	<div class="body">
+	<div class="body" itemprop="articleBody">
 		
 		{{ content }}
 		

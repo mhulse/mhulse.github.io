@@ -1,7 +1,8 @@
-build               : '/prod/0.1.0/20131231/1'
+build               : '/prod/0.1.0/20140101/1'
 bwt                 : 'B46559147E88568614EBEBCB2BEF258C'
 description         : 'A site by me, for me.'
 disqus              : 'mhulse'
+excerpt_separator   : ''
 exclude             : ['README.md', 'Gemfile', 'Gemfile.lock']
 ga                  : 'UA-46485001-1'
 gwt                 : 'hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE'
@@ -16,3 +17,4 @@ relative_permalinks : false
 title               : 'MKY.io'
 url                 : 'http://mky.io'
 excerpt_separator   : '{{ more }}'
+uploads             : 'http://uploads.mky.io'

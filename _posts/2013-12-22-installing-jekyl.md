@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Installing Jekyll"
-date:   2013-12-22 00:02:22
+date: 2013-12-22 00:02:22
+title: "Installing Jekyll"
+excerpt: "Lorem ipsum dolor sit amet."
 categories: [code]
 tags: [jekyll, github]
+keywords: [jekyll, install, ruby]
 ---
 
 First, get Ruby and `rvm` installed/updated:

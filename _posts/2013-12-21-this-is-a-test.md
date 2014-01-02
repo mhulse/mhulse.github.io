@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "This is a test."
-date:   2013-12-21 20:34:38
+date: 2013-12-21 20:34:38
+title: "This is a test"
+excerpt: "Lorem ipsum dolor sit amet."
 categories: [design]
 tags: [blog, blogging, fun, code]
+keywords: [foo, baz, bar]
 ---
 
 You'll find this post #2 [...]
