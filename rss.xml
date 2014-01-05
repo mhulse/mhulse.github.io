@@ -1,28 +1,27 @@
 ---
+title: RSS Feed.
 layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>mky.io</title>
-    <link>http://mky.io</link>
-    <language>en</language>
-    <webMaster>mickyhulse@gmail.com (Micky Hulse)</webMaster>
-    <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
-    <copyright>Copyright 2013-2014</copyright>
-    <ttl>60</ttl>
-    <description>A site by me, for me.</description>
-    {% for post in site.posts limit:10 %}
-    <item>
-      <title>{{ post.title }}</title>
-      <link>http://www.paperplanes.de/{{ post.url }}</link>
-      <pubDate>{{ post.date }}</pubDate>
-      <guid>http://www.paperplanes.de/{{ post.url }}</guid>
-      <description>{{ post.content | xml_escape }}</description>
-      {% for topic in post.topics %}
-      <category domain="http://mky.io/tags/{{ topic }}">{{ topic }}</category>
-      {% endfor %}
-    </item>
-    {% endfor %}
-  </channel>
+<rss version="2.0">
+<channel>
+
+<title>{{ site.title | replace:"&nbsp;",' ' }}</title>
+<description>{{ site.description | replace:"&nbsp;",' ' }}</description>
+<link>http://{{ site.siteurl }}</link>
+<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+<language>en</language>
+
+{% for post in site.posts %}
+<item>
+	<title>{{ post.title }}</title>
+	<link>http://{{ site.siteurl }}{{ post.url }}</link>
+	<guid>{{ post.id }}</guid>
+	<pubDate>{{ post.date | date: date_to_rfc822 }}</pubDate>
+	<description>{{ post.excerpt | markdownify | strip_html }}</description>
+	<category>{{ post.category }}, {{ post.tag }}</category>
+</item>
+{% endfor %}
+
+</channel>
 </rss>

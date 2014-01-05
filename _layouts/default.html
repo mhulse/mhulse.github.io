@@ -1,51 +1,107 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
 	
 	<meta charset="utf-8">
 	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
 	<meta name="viewport" content="width=device-width">
+	
+	{% if page.title %}
+		<title>{{ page.title }} | {{ site.title }}</title>
+		<meta property="og:title" content="{{ page.title }}">
+	{% else %}
+		<title>{{ site.title }}</title>
+		<meta property="og:title" content="{{ site.title }}">
+	{% endif %}
+	
+	{% if page.deck %}
+		<meta name="description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
+		<meta property="og:description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
+	{% else %}
+		<meta name="description" content="{{ site.description }}">
+		<meta property="og:description" content="{{ site.description }}">
+	{% endif %}
+	
+	{% if page.tags %}
+		<meta name="keywords" content="{{ page.tags | join: ',' }}">
+	{% else %}
+		<meta name="keywords" content="{{ site.keywords | join: ',' }}">
+	{% endif %}
+	
+	{% if page.id %}
+		<meta property="og:type" content="article">
+	{% else %}
+		<meta property="og:type" content="website">
+	{% endif %}
+	
+	{% if page.image1 %}
+		<meta property="og:image" content="{{site.uploads}}/{{ page.image1.src }}">
+		<link rel="image_src" href="{{site.uploads}}/{{ page.image1.src }}">
+	{% else %}
+		<meta property="og:image" content="{{ site.url }}/apple-touch-icon-144x144-precomposed.png">
+		<link rel="image_src" href="{{ site.url }}/apple-touch-icon-144x144-precomposed.png">
+	{% endif %}
+	
+	<meta property="og:site_name" content="{{ site.title }}">
+	
+	{% if page.url %}
+		<meta property="og:url" content="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+		<link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+	{% endif %}
+	
+	{% if page.date %}
+		<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+		<meta http-equiv="date" content="{{ page.date | date: '%A, %d %Y %H:%M:%S GMT' }}">
+	{% else %}
+		<meta http-equiv="date" content="{{ site.time | date: '%A, %d %Y %H:%M:%S GMT' }}">
+	{% endif %}
+	
+	{% for category in page.categories %}
+		<meta property="article:section" content="{{ category }}">
+	{% endfor %}
+	
+	{% for tag in page.tags %}
+		<meta property="article:tag" content="{{ tag }}">
+	{% endfor %}
+	
+	<meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW">
+	
+	<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="HandheldFriendly" content="true">
-	<meta name="apple-mobile-web-app-title" content="MKY.io">
 	
-	<title>{{ page.title }} | {{ site.name }}</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/rss.xml" title="RSS Feed">
+	<link rel="sitemap" type="application/xml" href="{{ site.url }}/sitemap.xml" title="Sitemap">
 	
-	<!--[if !IE]><!-->
-	
-	<link rel="stylesheet" href="//mky.io/picard{{ site.build }}/css/picard.min.css">
-	<link rel="stylesheet" href="//fonts.mky.io/hulse/hulse.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-	
-	<!--<![endif]-->
-	
-	<script>/*! rgne.ws/WnP50T */;(function(a){a.className=a.className.replace(/\bno-js\b/,'js')}(document.documentElement));</script>
-	
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//mky.io/apple-touch-icon-144x144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//mky.io/apple-touch-icon-114x114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//mky.io/apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="//mky.io/apple-touch-icon-57x57-precomposed.png">
-	<link rel="shortcut icon" href="//mky.io/favicon.ico">
-	<meta name="msapplication-TileImage" content="//mky.io/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileImage" content="{{ site.url }}/apple-touch-icon-144x144-precomposed.png">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	
-	<link rel="image_src" href="//mky.io/apple-touch-icon-144x144-precomposed.png">
+	{% if site.gwt %}
+		<meta name="google-site-verification" content="{{ site.gwt }}">
+	{% endif %}
 	
-	<meta name="google-site-verification" content="hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE">
-	<meta name="msvalidate.01" content="B46559147E88568614EBEBCB2BEF258C">
+	{% if site.bwt %}
+		<meta name="msvalidate.01" content="{{ site.bwt }}">
+	{% endif %}
 	
-	<link rel="canonical" href="{{ page.url }}">
+	<!--[if !IE]><!-->
+	<link rel="stylesheet" href="{{ site.url }}/picard{{ site.build }}/css/picard.min.css">
+	<link rel="stylesheet" href="{{ site.fonts }}/hulse/hulse.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<!--<![endif]-->
+	
+	<script>(function(a){a.className=a.className.replace(/\bno-js\b/,'js')}(document.documentElement))</script>
 	
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
 	
 	<header role="banner">
 		
-		<h1 id="flag"><a href="http://mky.io">M<span>KY.io</span></a></h1>
+		<h1 id="flag"><a href="{{ site.url }}">M<span>KY.io</span></a></h1>
 		
 	</header>
 	
@@ -53,7 +109,7 @@
 	
 	<nav role="navigation">
 		
-		<ul class="x3">{% for category in site.categories %}<li><a href="/{{ category | first | slugize }}/">{{ category | first }}</a></li>{% endfor %}</ul>
+		<ul class="x3">{% for category in site.categories %}<li><a href="{{ site.url }}/{{ category | first | slugize }}/">{{ category | first }}</a></li>{% endfor %}</ul>
 		
 	</nav>
 	
@@ -95,7 +151,7 @@
 		</ul>
 		
 		<p class="boring">
-			<small><span>Copyright &copy; <a href="http://mky.io">mky.io</a> 2013-14.</span> <span>All rights reserved.</span></small>
+			<small><span>Copyright &copy; <a href="{{ site.url }}">mky.io</a> 2013-14.</span> <span>All rights reserved.</span></small>
 			<small class="silly"><a href="http://en.wikipedia.org/wiki/Genetically_modified_organism" target="_blank" rel="nofollow">GMO</a>-, <a href="http://en.wikipedia.org/wiki/Gluten" target="_blank" rel="nofollow">gluten</a>- and <a href="http://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>-free.</small>
 		</p>
 		
@@ -103,9 +159,9 @@
 	
 	<!--[if !IE]><!-->
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script>if(!window.jQuery){document.write('<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-2.0.3.min.js"><\/script>');}</script>
-	<script src="//mky.io/picard{{ site.build }}/scripts/picard.min.js"></script>
+	<script src="{{ site.url }}/picard{{ site.build }}/scripts/picard.min.js"></script>
 	
 	<!--<![endif]-->
 	

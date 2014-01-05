@@ -3,14 +3,40 @@ layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 	<url>
-		<loc>{{ site.url }}/</loc>
+		<loc>http://{{ site.host }}/</loc>
 		<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
 	</url>
-	{% for post in site.posts %}
+
+	{% for page in site.posts %}
 	<url>
-		<loc>{{ site.url }}{{ post.url }}</loc>
-		<lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+		<loc>http://{{ site.host }}{{ page.url }}</loc>
+		{% if page.last_updated %}
+		<lastmod>{{ page.last_updated | date: "%Y-%m-%d" }}</lastmod>
+		{% elsif page.date %}
+		<lastmod>{{ page.date | date: "%Y-%m-%d" }}</lastmod>
+		{% else %}
+		<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+		{% endif %}
 	</url>
 	{% endfor %}
+
+	{% for page in site.pages %}
+	<url>
+		<loc>http://{{ site.host }}{{ page.url }}</loc>
+		{% if page.lastmod %}
+		<lastmod>{{ page.lastmod | date: "%Y-%m-%d" }}</lastmod>
+		{% elsif page.date %}
+		<lastmod>{{ page.date | date: "%Y-%m-%d" }}</lastmod>
+		{% else %}
+		<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+		{% endif %}
+		{% if page.changefreq %}<changefreq>{{ page.changefreq }}</changefreq>{% endif %}
+		{% if page.priority %}<priority>{{ page.priority }}</priority>{% endif %}
+	</url>
+	{% endfor %}
+
 </urlset>

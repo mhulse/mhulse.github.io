@@ -2,7 +2,7 @@
 layout: post
 date: 2013-12-22 00:02:22
 title: "Installing Jekyll"
-excerpt: "Lorem ipsum dolor sit amet."
+schema: Article
 categories: [code]
 tags: [jekyll, github]
 keywords: [jekyll, install, ruby]

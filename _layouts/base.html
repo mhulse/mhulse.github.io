@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<section>
+	
+	<h1 class="off">Posts</h1>
+	
+	{% for post in site.posts %}
+		
+		<article{% if page.schema %} itemscope itemtype="http://schema.org/{{ page.schema }}"{% endif %}>
+			
+			<header>
+				
+				<hgroup>
+					<h3 class="label"><a href="{{ site.url }}/{{ post.categories | first | slugize }}/">{{ post.categories | first }}</a></h3>
+					<h4 class="pub"><a href="#"><time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ post.date | date_to_string }}</time></a></h4>
+					{% if post.title %}<h1 class="h2" itemprop="headline"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>{% endif %}
+					{% if post.deck %}<h2 class="sh4">{{ post.deck }}</h2>{% endif %}
+				</hgroup>
+				
+			</header>
+			
+			{% if post.image1 %}
+				
+				<figure>
+					
+					<a href="{{ site.url }}{{ post.url }}"><img src="{{site.uploads}}/{{ post.image1.src }}"></a>
+					
+				</figure>
+				
+			{% endif %}
+			
+			<p class="more">
+				<a class="social fa-stack fa-lg" href="{{ site.url }}{{ post.url }}">
+					<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
+					<span class="off">Read more</span>
+				</a>
+			</p>
+			
+		</article>
+		
+		{% if forloop.last %}{% else %}<hr>{% endif %}
+		
+	{% endfor %}
+	
+</section>

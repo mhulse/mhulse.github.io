@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article>
+<article{% if page.schema %} itemscope itemtype="http://schema.org/{{ page.schema }}"{% endif %}>
 	
 	<!-- {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read. -->
 	
