@@ -2,7 +2,6 @@
 layout: post
 date: 2013-12-22 00:02:22
 title: "Installing Jekyll"
-schema: Article
 categories: [code]
 tags: [jekyll, github]
 keywords: [jekyll, install, ruby]

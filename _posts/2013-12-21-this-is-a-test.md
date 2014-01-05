@@ -2,7 +2,6 @@
 layout: post
 date: 2013-12-21 20:34:38
 title: "This is a test"
-schema: Article
 categories: [design]
 tags: [blog, blogging, fun, code]
 keywords: [foo, baz, bar]

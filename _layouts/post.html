@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<article{% if page.schema %} itemscope itemtype="http://schema.org/{{ page.schema }}"{% endif %}>
+<article itemscope itemtype="http://schema.org/Article">
 	
 	<!-- {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180 }}{% endcapture %}{% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read. -->
 	
 	<header>
 		
 		<hgroup>
-			<h3 class="label"><a href="#">Category Label</a></h3>
+			<h3 class="label"><a href="{{ site.url }}/{{ page.categories | first | slugize }}/">{{ page.categories | first | capitalize }}</a></h3>
 			<h4 class="pub"><a href="#"><time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ page.date | date_to_string }}</time></a></h4>
 			{% if page.title %}<h1 class="h1" itemprop="headline">{{ page.title }}</h1>{% endif %}
 			{% if page.deck %}<h2 class="sh3">{{ page.deck }}</h2>{% endif %}
