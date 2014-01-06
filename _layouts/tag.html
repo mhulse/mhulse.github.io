@@ -2,16 +2,18 @@
 layout: default
 ---
 
-<h1></h1>
+<h1 class="marker"><a href="{{ site.url }}/tag/{{ paginator.tag | first | slugize }}">{{ paginator.tag | capitalize }}</a></h1>
 
-{% for post in site.posts %}
+<hr>
+
+{% for post in paginator.posts %}
 	
 	<article itemscope itemtype="http://schema.org/Article">
 		
 		<header>
 			
 			<hgroup>
-				<h3 class="label"><a href="{{ site.url }}/category/{{ post.categories | first | slugize }}/">{{ post.categories | first | capitalize }}</a></h3>
+				<h3 class="label"><a href="{{ site.url }}/{{ post.categories | first | slugize }}/">{{ post.categories | first | capitalize }}</a></h3>
 				<h4 class="pub"><a href="#"><time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ post.date | date_to_string }}</time></a></h4>
 				{% if post.title %}<h1 class="h2" itemprop="headline"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>{% endif %}
 				{% if post.deck %}<h2 class="sh4">{{ post.deck }}</h2>{% endif %}
@@ -23,7 +25,7 @@ layout: default
 			
 			<figure>
 				
-				<a href="{{ site.url }}{{ post.url }}"><img src="{{ site.uploads }}/{{ post.image1.src }}"></a>
+				<a href="{{ site.url }}{{ post.url }}"><img src="{{site.uploads}}/{{ post.image1.src }}"></a>
 				
 			</figure>
 			
@@ -41,3 +43,24 @@ layout: default
 	{% if forloop.last %}{% else %}<hr>{% endif %}
 	
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+	
+	<hr>
+	
+	<footer>
+		
+		<ul class="pager"
+			{% if paginator.previous_page %}
+				><li><a href="{{ site.url }}/tag/{{ paginator.tag | slugize }}{{ paginator.previous_page_path | replace: 'index.html' '' }}">Newer</a></li
+			{% endif %}
+			><li><span>{{ paginator.page }} / {{ paginator.total_pages }}</span></li
+			{% if paginator.next_page %}
+				><li><a href="{{ site.url }}/tag/{{ paginator.tag | slugize }}{{ paginator.next_page_path }}">Older</a></li
+			{% endif %}
+		></ul>
+		
+	</footer>
+	
+{% endif %}
+

@@ -38,8 +38,8 @@
 	{% endif %}
 	
 	{% if page.image1 %}
-		<meta property="og:image" content="{{site.uploads}}/{{ page.image1.src }}">
-		<link rel="image_src" href="{{site.uploads}}/{{ page.image1.src }}">
+		<meta property="og:image" content="{{ site.uploads }}/{{ page.image1.src }}">
+		<link rel="image_src" href="{{ site.uploads }}/{{ page.image1.src }}">
 	{% else %}
 		<meta property="og:image" content="{{ site.url }}/apple-touch-icon-144x144-precomposed.png">
 		<link rel="image_src" href="{{ site.url }}/apple-touch-icon-144x144-precomposed.png">
@@ -89,7 +89,7 @@
 	{% endif %}
 	
 	<!--[if !IE]><!-->
-	<link rel="stylesheet" href="{{ site.url }}/picard{{ site.build }}/css/picard.min.css">
+	<link rel="stylesheet" href="{{ site.theme }}{{ site.build }}/css/picard.min.css">
 	<link rel="stylesheet" href="{{ site.fonts }}/hulse/hulse.css">
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	<!--<![endif]-->
@@ -109,7 +109,7 @@
 	
 	<nav role="navigation">
 		
-		<ul class="x3">{% for category in site.categories %}<li><a href="{{ site.url }}/{{ category | first | slugize }}/">{{ category | first }}</a></li>{% endfor %}</ul>
+		<ul class="x3">{% for category in site.categories %}<li><a href="{{ site.url }}/category/{{ category | first | slugize }}/">{{ category | first }}</a></li>{% endfor %}</ul>
 		
 	</nav>
 	
@@ -136,7 +136,11 @@
 	
 	<main role="main">
 		
-		{{ content }}
+		<section>
+			
+			{{ content }}
+			
+		</section>
 		
 	</main>
 	
@@ -152,17 +156,15 @@
 		
 		<p class="boring">
 			<small><span>Copyright &copy; <a href="{{ site.url }}">mky.io</a> 2013-14.</span> <span>All rights reserved.</span></small>
-			<small class="silly"><a href="http://en.wikipedia.org/wiki/Genetically_modified_organism" target="_blank" rel="nofollow">GMO</a>-, <a href="http://en.wikipedia.org/wiki/Gluten" target="_blank" rel="nofollow">gluten</a>- and <a href="http://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>-free.</small>
+			<small class="silly"><a href="http://en.wikipedia.org/wiki/Genetically_modified_organism" target="_blank" rel="nofollow">GMO</a>-, <a href="http://en.wikipedia.org/wiki/Gluten" target="_blank" rel="nofollow">gluten</a>- and <a href="http://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>-free. :)</small>
 		</p>
 		
 	</footer>
 	
 	<!--[if !IE]><!-->
-	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script>if(!window.jQuery){document.write('<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-2.0.3.min.js"><\/script>');}</script>
-	<script src="{{ site.url }}/picard{{ site.build }}/scripts/picard.min.js"></script>
-	
+	<script src="{{ site.theme }}{{ site.build }}/scripts/picard.min.js"></script>
 	<!--<![endif]-->
 	
 	<script>

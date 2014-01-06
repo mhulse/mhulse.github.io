@@ -1,0 +1,5 @@
+---
+layout: default
+---
+
+<ul class="x3">{% for category in site.categories %}<li><a href="{{ site.url }}/category/{{ category | first | slugize }}/">{{ category | first }}</a></li>{% endfor %}</ul>

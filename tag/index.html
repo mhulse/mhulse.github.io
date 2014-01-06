@@ -1,0 +1,5 @@
+---
+layout: default
+---
+
+<ul class="x3">{% for tag in site.tags %}<li><a href="{{ site.url }}/tag/{{ tag | first | slugize }}/">{{ tag | first }}</a></li>{% endfor %}</ul>

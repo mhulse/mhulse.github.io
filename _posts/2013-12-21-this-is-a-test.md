@@ -2,9 +2,8 @@
 layout: post
 date: 2013-12-21 20:34:38
 title: "This is a test"
-categories: [design]
+categories: [test, design]
 tags: [blog, blogging, fun, code]
-keywords: [foo, baz, bar]
 ---
 
 You'll find this post #2 [...]

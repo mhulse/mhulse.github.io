@@ -2,14 +2,13 @@
 layout: post
 date: 2013-12-22 00:02:22
 title: "Installing Jekyll"
-categories: [code]
-tags: [jekyll, github]
-keywords: [jekyll, install, ruby]
+categories: [test, code]
+tags: [blog, jekyll, github]
 ---
 
 First, get Ruby and `rvm` installed/updated:
 
-* [Ruby tips](https://github.com/registerguard/registerguard.github.com/wiki/Ruby-tips)
+* [Ruby tips](https://github.com/registerguard/registerguard.github.com/wiki/Ruby-tips) :smile:
 
 Now, head on over to the installation instructions.
 
@@ -64,7 +63,7 @@ $ jekyll serve -w --drafts
 
 ---
 
-## Links:
+#### Links:
 
 * [Jekyll](http://jekyllrb.com/)
 * [Jekyll sites](https://github.com/jekyll/jekyll/wiki/Sites)

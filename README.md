@@ -1,10 +1,12 @@
 # [mky.io](http://mky.io)
 
-:)
+[GMO](http://en.wikipedia.org/wiki/Genetically_modified_organism)-, [gluten](http://en.wikipedia.org/wiki/Gluten)- and [Bootstrap](http://getbootstrap.com/)-free. :)
 
 ---
 
-A site for me, by me.
+```bash
+$ bundle exec jekyll serve --watch --trace --config _config.yml,_config_dev.yml
+```
 
 ---
 
