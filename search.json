@@ -1,0 +1,7 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {% include post.json %}{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+]

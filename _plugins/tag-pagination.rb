@@ -35,7 +35,7 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag.html')
-      self.data['tag'] = tag
+      self.data['name'] = tag
       #self.data['title'] = "Posts Tagged &ldquo;"+tag+"&rdquo;"
     end
   end
@@ -52,7 +52,7 @@ module Jekyll
 
     def to_liquid
       liquid = original_to_liquid
-      liquid['tag'] = @tag
+      liquid['name'] = @tag
       liquid
     end
   end

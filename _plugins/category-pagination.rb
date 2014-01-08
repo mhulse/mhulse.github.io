@@ -35,7 +35,7 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'category.html')
-      self.data['category'] = category
+      self.data['name'] = category
       #self.data['title'] = "Posts Categorized &ldquo;"+category+"&rdquo;"
     end
   end
@@ -52,7 +52,7 @@ module Jekyll
 
     def to_liquid
       liquid = original_to_liquid
-      liquid['category'] = @category
+      liquid['name'] = @category
       liquid
     end
   end

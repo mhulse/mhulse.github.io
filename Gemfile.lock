@@ -35,6 +35,7 @@ GEM
     jwt (0.1.8)
       multi_json (>= 1.5)
     liquid (2.5.4)
+    liquid-inheritance (0.1.1)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -74,4 +75,5 @@ PLATFORMS
 DEPENDENCIES
   bitly
   jekyll
+  liquid-inheritance
   rake
