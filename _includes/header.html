@@ -2,7 +2,7 @@
 	
 	<hgroup>
 		<h3 class="label"><a href="{{ site.url }}/{{ include.item.categories | first | slugize }}/">{{ include.item.categories | first | capitalize }}</a></h3>
-		<h4 class="pub"><a href="#"><time datetime="{{ include.item.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ include.item.date | date_to_string }}</time></a></h4>
+		<h4 class="pub"><a href="{{ site.url }}/archive/#{{ include.item.date | date: "%b-%Y" | downcase }}"><time datetime="{{ include.item.date | date: "%Y-%m-%dT%H:%M:%SZ" }}" pubdate itemprop="datePublished">{{ include.item.date | date_to_string }}</time></a></h4>
 		{% if include.item.title %}<h1 class="h2" itemprop="headline"><a href="{{ site.url }}{{ include.item.url }}">{{ include.item.title }}</a></h1>{% endif %}
 		{% if include.item.deck %}<h2 class="sh4">{{ include.item.deck }}</h2>{% endif %}
 	</hgroup>

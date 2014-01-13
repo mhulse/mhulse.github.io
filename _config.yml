@@ -1,4 +1,4 @@
-build               : '/prod/0.1.0/20140107/1'
+build               : '/prod/0.1.0/20140112/1'
 bwt                 : 'B46559147E88568614EBEBCB2BEF258C'
 description         : 'GMO-, gluten- and Bootstrap-free. :)'
 disqus              : 'mhulse'
@@ -20,7 +20,8 @@ relative_permalinks : false
 title               : 'MKY.io'
 uploads             : 'http://uploads.mky.io'
 url                 : 'http://mky.io'
-url_prod            : 'http://mky.io'
+production          :
+  url               : 'http://mky.io'
 bitly               :
-  username: 'mhulse'
-  api_key: 'R_f61328d808c6604a303f720ef39e2a52'
+  username          : 'mhulse'
+  api_key           : 'R_f61328d808c6604a303f720ef39e2a52'

@@ -119,11 +119,13 @@
 			
 			<h1></h1>
 			
-			<form class="form" method="get" action="" role="search">
+			<form id="search" class="form" method="get" action="" role="search">
+				
+				<input type="hidden" name="sitesearch" value="{{ site.production.url }}">
 				
 				<label class="x4">
 					<span class="off">Search:</span>
-					<input type="search" name="s" placeholder="&hellip; search &hellip;">
+					<input id="query" type="search" name="q" placeholder="&hellip; search &hellip;" autocomplete="off" data-jse-options='{ "feed" : "/search.json" }'>
 				</label>
 				
 			</form>

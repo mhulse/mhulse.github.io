@@ -29,6 +29,7 @@ layout: default
 	
 	<footer>
 		
+		<!--{{ site.production.url }}-->
 		{% assign short = 'https://github.com/philnash/bitly' | bitly %}
 		
 		<p class="x4 meta">This entry was posted in {% for category in page.categories %}<a href="{{ site.url }}/category/{{ category | slugize }}/">{{ category }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} and tagged {% for tag in page.tags %}<a href="{{ site.url }}/tag/{{ tag | slugize }}/">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} on <a href="#">November 6, 2013</a>. Bookmark the <a href="{{ site.url }}{{ page.url }}">permalink</a> or copy the short url: <a href="{{ short }}">{{ short }}</a></p>
