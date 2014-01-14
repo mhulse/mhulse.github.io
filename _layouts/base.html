@@ -4,7 +4,7 @@ layout: default
 
 <h1></h1>
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 	
 	<article itemscope itemtype="http://schema.org/Article">
 		
@@ -32,3 +32,23 @@ layout: default
 	{% if forloop.last %}{% else %}<hr>{% endif %}
 	
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+	
+	<hr>
+	
+	<footer>
+		
+		<ul class="pager x6"
+			{% if paginator.previous_page %}
+				><li><a href="{{ site.url }}{{ paginator.name | slugize }}{{ paginator.previous_page_path | replace: 'index.html' '' }}">Newer</a></li
+			{% endif %}
+			><li><span>{{ paginator.page }} / {{ paginator.total_pages }}</span></li
+			{% if paginator.next_page %}
+				><li><a href="{{ site.url }}{{ paginator.name | slugize }}{{ paginator.next_page_path }}">Older</a></li
+			{% endif %}
+		></ul>
+		
+	</footer>
+	
+{% endif %}
