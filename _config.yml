@@ -20,6 +20,7 @@ relative_permalinks : false
 title               : 'MKY.io'
 uploads             : 'http://uploads.mky.io'
 url                 : 'http://mky.io'
+email               : 'm@mky.io'
 production          :
   url               : 'http://mky.io'
 bitly               :

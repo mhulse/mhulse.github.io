@@ -1,0 +1,13 @@
+{% assign d = include.item.date | date: '%-d' %} 
+{% assign m = include.item.date | date: '%B' %} 
+
+{% case m %}
+	{% when 'April' or 'May' or 'June' or 'July' %}
+		{{ m }}
+	{% when 'September' %}
+		Sept.
+	{% else %}
+		{{ include.item.date | date: '%b' }}.
+{% endcase %}
+{{ d }},
+{{ include.item.date | date: '%Y' }}

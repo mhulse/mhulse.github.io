@@ -1,16 +1,20 @@
 {% if paginator.total_pages > 1 %}
 	
+	{% capture previous %}/{{ include.kind }}/{{ paginator.name }}/{{ paginator.previous_page_path }}{% endcapture %}
+	
+	{% capture next %}/{{ include.kind }}/{{ paginator.name }}/{{ paginator.next_page_path }}{% endcapture %}
+	
 	<hr>
 	
 	<footer>
 		
 		<ul class="pager x6"
 			{% if paginator.previous_page %}
-				><li><a href="{{ site.url }}/{{ include.kind }}/{{ paginator.name | slugize }}{{ paginator.previous_page_path | replace: 'index.html' '' }}">Newer</a></li
+				><li><a href="{{ site.url }}{{ previous | replace: 'index.html', '' | replace: '///', '/' | replace: '//', '/' }}">Newer</a></li
 			{% endif %}
 			><li><span>{{ paginator.page }} / {{ paginator.total_pages }}</span></li
 			{% if paginator.next_page %}
-				><li><a href="{{ site.url }}/{{ include.kind }}/{{ paginator.name | slugize }}{{ paginator.next_page_path }}">Older</a></li
+				><li><a href="{{ site.url }}{{ next | replace: 'index.html', '' | replace: '///', '/' | replace: '//', '/' }}">Older</a></li
 			{% endif %}
 		></ul>
 		

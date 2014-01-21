@@ -10,22 +10,7 @@ layout: default
 		
 		{% include header.html item=post %}
 		
-		{% if post.image1 %}
-			
-			<figure>
-				
-				<a href="{{ site.url }}{{ post.url }}"><img src="{{ site.uploads }}/{{ post.image1.src }}"></a>
-				
-			</figure>
-			
-		{% endif %}
-		
-		<p class="more">
-			<a class="social fa-stack fa-lg" href="{{ site.url }}{{ post.url }}">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Read more</span>
-			</a>
-		</p>
+		{% include figure.html %}
 		
 	</article>
 	
@@ -33,22 +18,4 @@ layout: default
 	
 {% endfor %}
 
-{% if paginator.total_pages > 1 %}
-	
-	<hr>
-	
-	<footer>
-		
-		<ul class="pager x6"
-			{% if paginator.previous_page %}
-				><li><a href="{{ site.url }}{{ paginator.name | slugize }}{{ paginator.previous_page_path | replace: 'index.html' '' }}">Newer</a></li
-			{% endif %}
-			><li><span>{{ paginator.page }} / {{ paginator.total_pages }}</span></li
-			{% if paginator.next_page %}
-				><li><a href="{{ site.url }}{{ paginator.name | slugize }}{{ paginator.next_page_path }}">Older</a></li
-			{% endif %}
-		></ul>
-		
-	</footer>
-	
-{% endif %}
+{% include pagination.html %}

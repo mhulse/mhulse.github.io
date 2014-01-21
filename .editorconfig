@@ -25,3 +25,6 @@ indent_size = 2
 
 [*.bat]
 end_of_line = crlf
+
+[_includes/*]
+insert_final_newline = false

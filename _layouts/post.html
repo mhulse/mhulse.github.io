@@ -23,7 +23,11 @@ layout: default
 		<!--{{ site.production.url }}-->
 		{% assign short = 'https://github.com/philnash/bitly' | bitly %}
 		
-		<p class="x4 meta">This entry was posted in {% for category in page.categories %}<a href="{{ site.url }}/category/{{ category | slugize }}/">{{ category }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} and tagged {% for tag in page.tags %}<a href="{{ site.url }}/tag/{{ tag | slugize }}/">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} on <a href="#">November 6, 2013</a>. Bookmark the <a href="{{ site.url }}{{ page.url }}">permalink</a> or copy the short url: <a href="{{ short }}">{{ short }}</a></p>
+		<ul class="x3 meta">
+			<li>This entry was posted in {% for category in page.categories %}<a href="{{ site.url }}/category/{{ category | slugize }}/">{{ category }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} and tagged {% for tag in page.tags %}<a href="{{ site.url }}/tag/{{ tag | slugize }}/">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} on <a href="{{ site.url }}/archive/#{{ page.date | date: '%b-%Y' | downcase }}"><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html item=page %}</time></a>.</li>
+			<li>Bookmark the <a href="{{ site.url }}{{ page.url }}">permalink</a>.</li>
+			<li>Copy the short url: <a href="{{ short }}">{{ short }}</a></li>
+		</ul>
 		
 	</footer>
 	
@@ -70,7 +74,7 @@ layout: default
 				<span class="off">Share on Tumblr</span>
 			</a>
 			
-			<a class="social social-email fa-stack fa-lg" target="_blank" href="mailto:EMAIL_RECIPIENT?subject=EMAIL_SUBJECT&amp;body=EMAIL_BODY">
+			<a class="social social-email fa-stack fa-lg" target="_blank" href="mailto:{{ site.email }}?subject={{ site.title | prepend: '[' | append: ']' | append: ' Feedback' | uri_escape }}&amp;body={{ site.url | append: page.url | cgi_escape }}">
 				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
 				<span class="off">Send via e-mail</span>
 			</a>
@@ -98,7 +102,7 @@ layout: default
 				<b><a href="http://help.disqus.com/customer/portal/topics/215154/articles" target="_blank">Not seeing your comment</a></b>? Disqus users, <b><a href="http://help.disqus.com/customer/portal/articles/960202-verifying-your-disqus-account" target="_blank">have you verified your account</a></b>?
 			</p>
 			
-			<div id="disqus_thread" class="x6" data-disqus='{"shortname" : "mhulse", "url" : "http://git.local/mhulse/picard/dev/"}'></div>
+			<div id="disqus_thread" class="x6" data-disqus='{"shortname" : "mhulse", "url" : "{{ site.url }}{{ page.url }}"}'></div>
 			
 		</div>
 		

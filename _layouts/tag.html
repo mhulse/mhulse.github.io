@@ -12,15 +12,7 @@ layout: default
 		
 		{% include header.html item=post %}
 		
-		{% if post.image1 %}
-			
-			<figure>
-				
-				<a href="{{ site.url }}{{ post.url }}"><img src="{{ site.uploads }}/{{ post.image1.src }}"></a>
-				
-			</figure>
-			
-		{% endif %}
+		{% include figure.html %}
 		
 		{% include more.html %}
 		
