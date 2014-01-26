@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% if page.taxonomy %}
+	
+	{% assign taxa = site.[page.taxonomy] %}
+	
+	<ul class="cloud x6">{% for taxon in taxa %}<li><a href="{{ site.url }}/{{ page.taxonomy }}/{{ taxon | first }}/" title="{{ taxon | last | size }} topics" rel="category" style="font-size:{{ taxon | last | size | times: 100 | divided_by: taxa.size | plus: 200 }}%;">{{ taxon | first }}</a></li><li>{% endfor %}</ul>
+	
+{% endif %}

@@ -5,7 +5,7 @@
 ---
 
 ```bash
-$ bundle exec jekyll serve --watch --trace --config _config.yml,_config_dev.yml
+$ bundle exec jekyll serve --watch --trace --config _config.yml,_config_local.yml
 ```
 
 ---

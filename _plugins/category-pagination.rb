@@ -18,7 +18,7 @@ module Jekyll
 
       (1..num_pages).each do |page|
         pager = CategoryPager.new(site, page, category_posts, category, num_pages)
-        dir = File.join('category', category, page > 1 ? "page#{page}" : '')
+        dir = File.join('category', category, page > 1 ? "#{page}" : '')
         page = CategoryPage.new(site, site.source, dir, category)
         page.pager = pager
         site.pages << page

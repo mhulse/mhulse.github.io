@@ -1,0 +1,92 @@
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width">
+
+{% if page.title %}
+	<title>{{ page.title }} | {{ site.title }}</title>
+	<meta property="og:title" content="{{ page.title }}">
+{% else %}
+	<title>{{ site.title }}</title>
+	<meta property="og:title" content="{{ site.title }}">
+{% endif %}
+
+{% if page.deck %}
+	<meta name="description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
+	<meta property="og:description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
+{% else %}
+	<meta name="description" content="{{ site.description }}">
+	<meta property="og:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.tags %}
+	<meta name="keywords" content="{{ page.tags | join: ',' }}">
+{% else %}
+	<meta name="keywords" content="{{ site.keywords | join: ',' }}">
+{% endif %}
+
+{% if page.id %}
+	<meta property="og:type" content="article">
+{% else %}
+	<meta property="og:type" content="website">
+{% endif %}
+
+{% if page.image1 %}
+	<meta property="og:image" content="{{ site.uploads }}/{{ page.image1.src }}">
+	<link rel="image_src" href="{{ site.uploads }}/{{ page.image1.src }}">
+{% else %}
+	<meta property="og:image" content="{{ site.url }}/apple-touch-icon-precomposed.png">
+	<link rel="image_src" href="{{ site.url }}/apple-touch-icon-precomposed.png">
+{% endif %}
+
+<meta property="og:site_name" content="{{ site.title }}">
+
+{% if page.url %}
+	<meta property="og:url" content="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+	<link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+{% endif %}
+
+{% if page.date %}
+	<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+	<meta http-equiv="date" content="{{ page.date | date: '%A, %d %Y %H:%M:%S GMT' }}">
+{% else %}
+	<meta http-equiv="date" content="{{ site.time | date: '%A, %d %Y %H:%M:%S GMT' }}">
+{% endif %}
+
+{% for category in page.categories %}
+	<meta property="article:section" content="{{ category }}">
+{% endfor %}
+
+{% for tag in page.tags %}
+	<meta property="article:tag" content="{{ tag }}">
+{% endfor %}
+
+<meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW">
+
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="HandheldFriendly" content="true">
+
+<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/rss.xml" title="RSS Feed">
+<link rel="sitemap" type="application/xml" href="{{ site.url }}/sitemap.xml" title="Sitemap">
+
+<meta name="msapplication-TileImage" content="{{ site.url }}/apple-touch-icon-precomposed.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+
+{% if site.gwt %}
+	<meta name="google-site-verification" content="{{ site.gwt }}">
+{% endif %}
+
+{% if site.bwt %}
+	<meta name="msvalidate.01" content="{{ site.bwt }}">
+{% endif %}
+
+<!--[if !IE]><!-->
+<link rel="stylesheet" href="{{ site.theme }}{{ site.build }}/css/picard.min.css">
+<link rel="stylesheet" href="{{ site.fonts }}/hulse/hulse.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<!--<![endif]-->
+
+<script>(function(a){a.className=a.className.replace(/\bno-js\b/,'js')}(document.documentElement))</script>

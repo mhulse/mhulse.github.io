@@ -16,96 +16,10 @@ layout: default
 		
 	</div>
 	
-	<hr>
+	{% include meta.html %}
 	
-	<footer>
-		
-		<!--{{ site.production.url }}-->
-		{% assign short = 'https://github.com/philnash/bitly' | bitly %}
-		
-		<ul class="x3 meta">
-			<li>This entry was posted in {% for category in page.categories %}<a href="{{ site.url }}/category/{{ category | slugize }}/">{{ category }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} and tagged {% for tag in page.tags %}<a href="{{ site.url }}/tag/{{ tag | slugize }}/">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} on <a href="{{ site.url }}/archive/#{{ page.date | date: '%b-%Y' | downcase }}"><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html item=page %}</time></a>.</li>
-			<li>Bookmark the <a href="{{ site.url }}{{ page.url }}">permalink</a>.</li>
-			<li>Copy the short url: <a href="{{ short }}">{{ short }}</a></li>
-		</ul>
-		
-	</footer>
+	{% include social.html %}
 	
-	<hr>
-	
-	<section>
-		
-		<h1></h1>
-		
-		<p>
-			
-			<a class="social social-twitter fa-stack fa-lg" target="_blank" href="https://twitter.com/intent/tweet?text=YOUR-TITLE&amp;url=YOUR-URL&amp;via=TWITTER-HANDLE">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Tweet this</span>
-			</a>
-			
-			<a class="social social-facebook fa-stack fa-lg" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=YOUR-URL">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Share on Facebook</span>
-			</a>
-			
-			<a class="social social-google-plus fa-stack fa-lg" target="_blank" href="https://plus.google.com/share?url=YOUR-URL">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Plus on Google+</span>
-			</a>
-			
-			<a class="social social-linkedin fa-stack fa-lg" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=YOUR-URL&amp;title=YOUR-TITLE&amp;summary=YOUR-SUMMARY&amp;source=YOUR-URL">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Share on LinkedIn</span>
-			</a>
-			
-			<a class="social social-vk fa-stack fa-lg" target="_blank" href="https://vk.com/share.php?url=YOUR-URL&amp;title=YOUR-TITLE&amp;description=YOUR-DESCRIPTION&amp;image=YOUR-IMAGE-SRC&amp;noparse=true">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-vk fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Share on VK</span>
-			</a>
-			
-			<a class="social social-xing fa-stack fa-lg" target="_blank" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=YOUR-URL">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-xing fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Share on Xing</span>
-			</a>
-			
-			<a class="social social-tumblr fa-stack fa-lg" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=YOUR-URL&amp;t=YOUR-TITLE">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-tumblr fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Share on Tumblr</span>
-			</a>
-			
-			<a class="social social-email fa-stack fa-lg" target="_blank" href="mailto:{{ site.email }}?subject={{ site.title | prepend: '[' | append: ']' | append: ' Feedback' | uri_escape }}&amp;body={{ site.url | append: page.url | cgi_escape }}">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Send via e-mail</span>
-			</a>
-			
-			<a class="disqus social social-comment fa-stack fa-lg" href="#comments">
-				<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i><i class="fa fa-comment fa-stack-1x fa-inverse" aria-hidden="true"></i>
-				<span class="off">Leave a comment</span>
-			</a>
-			
-		</p>
-		
-	</section>
-	
-	<hr class="off">
-	
-	<section id="comments">
-		
-		<h1></h1>
-		
-		<div id="disqus">
-			
-			<p class="callout callout-warning">
-				<i class="fa fa-exclamation-circle" aria-hidden="true"></i> The owner of this site doesn't necessarily condone the comments here, nor do they review every post.
-				<br>
-				<b><a href="http://help.disqus.com/customer/portal/topics/215154/articles" target="_blank">Not seeing your comment</a></b>? Disqus users, <b><a href="http://help.disqus.com/customer/portal/articles/960202-verifying-your-disqus-account" target="_blank">have you verified your account</a></b>?
-			</p>
-			
-			<div id="disqus_thread" class="x6" data-disqus='{"shortname" : "mhulse", "url" : "{{ site.url }}{{ page.url }}"}'></div>
-			
-		</div>
-		
-	</section>
+	{% include comments.html %}
 	
 </article>
