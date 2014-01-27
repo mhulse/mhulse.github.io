@@ -2,17 +2,25 @@
 layout: default
 ---
 
-<h1></h1>
+{% include marker.html %}
 
 {% for post in paginator.posts %}
 	
 	<article itemscope itemtype="http://schema.org/Article">
 		
-		{% include header.html item=post %}
-		
-		{% include figure.html %}
-		
-		{% include more.html %}
+		{% if post.external_url %}
+			
+			{% include figure.html %}
+			
+			{% include external.html %}
+			
+		{% else %}
+			
+			{% include header.html %}
+			
+			{% include figure.html %}
+			
+		{% endif %}
 		
 	</article>
 	

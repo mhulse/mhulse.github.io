@@ -3,7 +3,7 @@
 <footer>
 	
 	<p class="x4 meta">
-		This entry was posted in {% for category in page.categories %}<a href="{{ site.url }}/category/{{ category | slugize }}/">{{ category }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} and tagged {% for tag in page.tags %}<a href="{{ site.url }}/tag/{{ tag | slugize }}/">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} on <a href="{{ site.url }}/archive/#{{ page.date | date: '%b-%Y' | downcase }}"><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html item=page %}</time></a>.
+		This entry was posted in {% for category in page.categories %}<a href="{{ site.url }}/category/{{ category | slugize }}/">{{ category }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} and tagged {% for tag in page.tags %}<a href="{{ site.url }}/tag/{{ tag | slugize }}/">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %} on {% include published.html %}.
 		Bookmark the <a href="{{ site.url }}{{ page.url }}">permalink</a>.
 	</p>
 	

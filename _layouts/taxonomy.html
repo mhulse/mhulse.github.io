@@ -4,8 +4,19 @@ layout: default
 
 {% if page.taxonomy %}
 	
-	{% assign taxa = site.[page.taxonomy] %}
+	{% case page.taxonomy %}
+		{% when "tags" %}
+			{% assign target = "tag" %}
+		{% when "categories" %}
+			{% assign target = "category" %}
+	{% endcase %}
 	
-	<ul class="cloud x6">{% for taxon in taxa %}<li><a href="{{ site.url }}/{{ page.taxonomy }}/{{ taxon | first }}/" title="{{ taxon | last | size }} topics" rel="category" style="font-size:{{ taxon | last | size | times: 100 | divided_by: taxa.size | plus: 200 }}%;">{{ taxon | first }}</a></li><li>{% endfor %}</ul>
+	{% if target %}
+		
+		{% assign taxa = site.[page.taxonomy] %}
+		
+		<ul class="cloud x6">{% for taxon in taxa %}<li><a href="{{ site.url }}/{{ target }}/{{ taxon | first }}/" title="{% assign count = taxon | last | size %}{{ count }} post{% if count > 1 %}s{% endif %}" rel="{{ target }}" style="font-size:{{ taxon | last | size | times: 100 | divided_by: taxa.size | plus: 200 }}%;">{{ taxon | first }}</a></li><li>{% endfor %}</ul>
+		
+	{% endif %}
 	
 {% endif %}

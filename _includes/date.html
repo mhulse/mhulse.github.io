@@ -1,13 +1,23 @@
-{% assign d = include.item.date | date: '%-d' %} 
-{% assign m = include.item.date | date: '%B' %} 
+{% if post %}
+	
+	{% assign page = post %}
+	
+{% endif %}
 
-{% case m %}
-	{% when 'April' or 'May' or 'June' or 'July' %}
-		{{ m }}
-	{% when 'September' %}
-		Sept.
-	{% else %}
-		{{ include.item.date | date: '%b' }}.
-{% endcase %}
-{{ d }},
-{{ include.item.date | date: '%Y' }}
+{% if page %}
+	
+	{% assign d = page.date | date: '%-d' %} 
+	{% assign m = page.date | date: '%B' %} 
+	
+	{% case m %}
+		{% when 'April' or 'May' or 'June' or 'July' %}
+			{{ m }}
+		{% when 'September' %}
+			Sept.
+		{% else %}
+			{{ page.date | date: '%b' }}.
+	{% endcase %}
+	{{ d }},
+	{{ page.date | date: '%Y' }}
+	
+{% endif %}

@@ -1,8 +1,8 @@
 {% if paginator.total_pages > 1 %}
 	
-	{% capture previous %}/{{ include.kind }}/{{ paginator.name }}/{{ paginator.previous_page_path }}{% endcapture %}
+	{% capture previous %}/{{ page.kind }}/{{ paginator.name }}/{{ paginator.previous_page_path }}{% endcapture %}
 	
-	{% capture next %}/{{ include.kind }}/{{ paginator.name }}/{{ paginator.next_page_path }}{% endcapture %}
+	{% capture next %}/{{ page.kind }}/{{ paginator.name }}/{{ paginator.next_page_path }}{% endcapture %}
 	
 	<hr>
 	
