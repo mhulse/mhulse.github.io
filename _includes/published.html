@@ -1,7 +1,15 @@
 {% if post %}
 	
-	{% assign page = post %}
+	{% assign obj = post %}
+	
+{% else if page %}
+	
+	{% assign obj = page %}
 	
 {% endif %}
 
-<a href="{{ site.url }}/archive/#{{ page.date | date: '%b-%Y' | downcase }}"><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html %}</time></a>
+{% if obj %}
+	
+	<a href="{{ site.url }}/archive/#{{ obj.date | date: '%b-%Y' | downcase }}"><time datetime="{{ obj.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html %}</time></a>
+	
+{% endif %}

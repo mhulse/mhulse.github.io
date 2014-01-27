@@ -1,17 +1,31 @@
 {% if post %}
 	
-	{% assign page = post %}
+	{% assign obj = post %}
+	
+{% else if page %}
+	
+	{% assign obj = page %}
 	
 {% endif %}
 
-{% if page %}
+{% if obj %}
 	
 	<header>
 		
 		<hgroup>
 			<h3 class="label">{% include published.html %}</h3>
-			{% if page.title %}<h1 class="h2" itemprop="headline"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>{% endif %}
-			{% if page.deck %}<h2 class="sh4">{{ page.deck }}</h2>{% endif %}
+			{% if post %}
+				<h1 class="h2" itemprop="headline"><a href="{{ site.url }}{{ obj.url }}">{{ obj.title }}</a></h1>
+			{% else %}
+				<h1 itemprop="headline">{{ obj.title }}</h1>
+			{% endif %}
+			{% if obj.deck %}
+				{% if post %}
+					<h2 class="sh4">{{ obj.deck }}</h2>
+				{% else %}
+					<h2 class="sh2">{{ obj.deck }}</h2>
+				{% endif %}
+			{% endif %}
 		</hgroup>
 		
 	</header>
