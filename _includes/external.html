@@ -1,9 +1,9 @@
 <h1 class="x6 external">
-	<a{% if post.external_site %} title="Click to visit {{ post.external_site }}"{% endif %} href="{{ post.external_url }}" target="_blank" rel="nofollow">
-		<time datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html %}</time>
-		{{ post.title }}
-		{% if post.deck %}
-			<span>{{ post.deck }}</span>
+	<a{% if page.external_site %} title="Click to visit {{ page.external_site }}"{% endif %} href="{{ page.external_url }}" target="_blank" rel="nofollow">
+		<time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html %}</time>
+		{{ page.title }}
+		{% if page.deck %}
+			<span>{{ page.deck }}</span>
 		{% endif %}
 	</a>
 </h1>

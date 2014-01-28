@@ -1,16 +1,16 @@
-{% if post.external_url or post.image1 %}
+{% if page.external_url or page.image1 %}
 	
 	<figure>
 		
-		{% if post.external_url %}
-			<a{% if post.external_site %} title="Click to visit {{ post.external_site }}"{% endif %} href="{{ post.external_url }}" target="_blank" rel="nofollow">
+		{% if page.external_url %}
+			<a{% if page.external_site %} title="Click to visit {{ page.external_site }}"{% endif %} href="{{ page.external_url }}" target="_blank" rel="nofollow">
 		{% else %}
-			<a href="{{ site.url }}{{ post.url }}">
+			<a href="{{ site.url }}{{ page.url }}">
 		{% endif %}
-			{% if post.external_image %}
-				<img src="{{ post.external_image }}">
+			{% if page.external_image %}
+				<img src="{{ page.external_image }}">
 			{% else %}
-				<img src="{{ site.uploads }}/{{ post.image1.src }}">
+				<img src="{{ site.uploads }}/{{ page.image1.src }}">
 			{% endif %}
 		</a>
 		

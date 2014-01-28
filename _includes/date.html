@@ -1,2 +1,1 @@
-{% if post %}{% assign obj = post %}{% else if page %}{% assign obj = page %}{% endif %}
-{% if obj %}{% assign m = obj.date | date: '%B' %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }} {% when 'September' %}Sept. {% else %}{{ obj.date | date: '%b' }}. {% endcase %}{{ obj.date | date: '%-d' }}, {{ obj.date | date: '%Y' }}{% endif %}
+{% assign m = page.date | date: '%B' %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }} {% when 'September' %}Sept. {% else %}{{ page.date | date: '%b' }}. {% endcase %}{{ page.date | date: '%-d' }}, {{ page.date | date: '%Y' }}

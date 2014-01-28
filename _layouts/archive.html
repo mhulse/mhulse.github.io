@@ -6,50 +6,50 @@ layout: default
 
 <dl class="archive"
 	
-	{% for post in site.posts %}
+	{% for page in site.posts %}
 		
-		{% assign m = post.date | date: '%B' %}
-		{% capture nice %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }}{% when 'September' %}Sept.{% else %}{{ post.date | date: '%b' }}.{% endcase %}{% endcapture %}
+		{% assign m = page.date | date: '%B' %}
+		{% capture nice %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }}{% when 'September' %}Sept.{% else %}{{ page.date | date: '%b' }}.{% endcase %}{% endcapture %}
 		
-		{% unless post.next %}
-			><dt class="archive-month" id="{{ post.date | date: "%b-%Y" | downcase }}">{{ nice }}</dt
+		{% unless page.next %}
+			><dt class="archive-month" id="{{ page.date | date: "%b-%Y" | downcase }}">{{ nice }}</dt
 		{% else %}
-			{% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
-			{% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}
+			{% capture month %}{{ page.date | date: '%B' }}{% endcapture %}
+			{% capture nmonth %}{{ page.next.date | date: '%B' }}{% endcapture %}
 			{% if month != nmonth %}
-				><dt class="archive-month" id="{{ post.date | date: "%b-%Y" | downcase }}">{{ nice }}</dt
+				><dt class="archive-month" id="{{ page.date | date: "%b-%Y" | downcase }}">{{ nice }}</dt
 			{% endif %}
 		{% endunless %}
 		
-		{% unless post.next %}
-			><dt class="archive-day" id="{{ post.date | date: "%b-%e-%Y" | downcase }}">{{ post.date | date: '%e' }}</dt
+		{% unless page.next %}
+			><dt class="archive-day" id="{{ page.date | date: "%b-%e-%Y" | downcase }}">{{ page.date | date: '%e' }}</dt
 		{% else %}
-			{% capture day %}{{ post.date | date: '%e' }}{% endcapture %}
-			{% capture nday %}{{ post.next.date | date: '%e' }}{% endcapture %}
+			{% capture day %}{{ page.date | date: '%e' }}{% endcapture %}
+			{% capture nday %}{{ page.next.date | date: '%e' }}{% endcapture %}
 			{% if day != nday %}
-				><dt class="archive-day" id="{{ post.date | date: "%b-%e-%Y" | downcase }}">{{ post.date | date: '%e' }}</dt
+				><dt class="archive-day" id="{{ page.date | date: "%b-%e-%Y" | downcase }}">{{ page.date | date: '%e' }}</dt
 			{% endif %}
 		{% endunless %}
 		
-		{% unless post.next %}
-			><dt class="archive-year">{{ post.date | date: '%Y' }}</dt
+		{% unless page.next %}
+			><dt class="archive-year">{{ page.date | date: '%Y' }}</dt
 		{% else %}
-			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+			{% capture year %}{{ page.date | date: '%Y' }}{% endcapture %}
+			{% capture nyear %}{{ page.next.date | date: '%Y' }}{% endcapture %}
 			{% if year != nyear %}
-				><dt class="archive-year">{{ post.date | date: '%Y' }}</dt
+				><dt class="archive-year">{{ page.date | date: '%Y' }}</dt
 			{% endif %}
 		{% endunless %}
 		
 		><dd class="archive-item">
 			<article>
-				{% if post.external_url %}
-					<h1 class="h5"><a href="{{ post.external_url }}">{{ post.title }}</a></h1>
+				{% if page.external_url %}
+					<h1 class="h5"><a href="{{ page.external_url }}">{{ page.title }}</a></h1>
 				{% else %}
-					<h1 class="h5"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+					<h1 class="h5"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
 				{% endif %}
-				{% if post.deck %}
-					<h2 class="h6">{{ post.deck }}</h2>
+				{% if page.deck %}
+					<h2 class="h6">{{ page.deck }}</h2>
 				{% endif %}
 			</article>
 		</dd

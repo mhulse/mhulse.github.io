@@ -4,11 +4,11 @@ layout: default
 
 {% include marker.html %}
 
-{% for post in paginator.posts %}
+{% for page in paginator.posts %}
 	
 	<article itemscope itemtype="http://schema.org/Article">
 		
-		{% if post.external_url %}
+		{% if page.external_url %}
 			
 			{% include figure.html %}
 			
