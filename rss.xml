@@ -1,27 +1,70 @@
 ---
-title: RSS Feed.
 layout: nil
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-<channel>
 
-<title>{{ site.title | replace:"&nbsp;",' ' }}</title>
-<description>{{ site.description | replace:"&nbsp;",' ' }}</description>
-<link>http://{{ site.siteurl }}</link>
-<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-<language>en</language>
-
-{% for post in site.posts %}
-<item>
-	<title>{{ post.title }}</title>
-	<link>http://{{ site.siteurl }}{{ post.url }}</link>
-	<guid>{{ post.id }}</guid>
-	<pubDate>{{ post.date | date: date_to_rfc822 }}</pubDate>
-	<description>{{ post.excerpt | markdownify | strip_html }}</description>
-	<category>{{ post.category }}, {{ post.tag }}</category>
-</item>
-{% endfor %}
-
-</channel>
+<rss version="2.0" 
+	xmlns:media="http://search.yahoo.com/mrss/" 
+	xmlns:atom="http://www.w3.org/2005/Atom"
+>
+	
+	<channel>
+		
+		<title>{{ site.title | xml_escape }} - Articles</title>
+		
+		<link>{{ site.url }}</link>
+		
+		<atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml" />
+		
+		{% if site.description %}<description>{{ site.description | xml_escape }}</description>{% endif %}
+		
+		<language>en-us</language>
+		
+		{% for page in site.posts %}
+			
+			{% unless page.external_url %}
+				
+				<item>
+					
+					<title>{{ page.title | xml_escape }}</title>
+					
+					<description>{{ page.content | xml_escape }}</description>
+					
+					<pubDate>{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+					
+					<link>{{ site.url }}{{ page.url }}</link>
+					
+					<guid isPermaLink="true">{{ site.url }}{{ page.url }}</guid>
+					
+					<author>{{ site.name | xml_escape }}</author>
+					
+					{% for category in page.categories %}
+						
+						<category>{{ category | xml_escape }}</category>
+						
+					{% endfor %}
+					
+					{% if page.image1 %}
+						
+						<media:content medium="image" type="" url="{% if page.external_image %}{{ page.external_image }}{% else %}{{ site.uploads }}/{{ page.image1.src }}{% endif %}">
+							
+							{% if page.image1.caption %}
+								
+								<media:description type="plain">{{ page.image1.caption | xml_escape }}</media:description>
+								
+							{% endif %}
+							
+						</media:content>
+						
+					{% endif %}
+					
+				</item>
+				
+			{% endunless %}
+			
+		{% endfor %}
+		
+	</channel>
+	
 </rss>
