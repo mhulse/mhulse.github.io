@@ -1,0 +1,43 @@
+---
+layout: post
+title: "Wallart"
+deck: World's first wallet wall art
+date: 2011-08-20 16:18:37
+categories: [craft]
+image1:
+  src: "wallart.png"
+  caption: "The name plate at the bottom reads: \"WALLART, By Micky Hulse\"."
+  wrap: "scroll"
+---
+
+{% figure image1 %}
+
+---
+
+### Materials:
+
+I purchased the frame at the [Coburg Antique Fair](http://www.coburgoregon.org/home/cob/page_42_85/coburg_antique_fair___first_sunday_after_labor_day.html) for $15.
+
+Wallets:
+
+* [Zebra Print Duct Tape Wallet with Black Lining](http://www.etsy.com/transaction/55984755)
+* [Captain America Duct Tape Wallet](http://www.etsy.com/transaction/55984980)
+* [Monogrammed Leather Wallet - Black Bifold](http://www.etsy.com/transaction/56100468)
+* [MANs Ruin Retro Tattoo Vinyl Wallet](http://www.etsy.com/transaction/56217727)
+* [Pop Tab Men&#39;s Wallet, Upcycled Camouflage](http://www.etsy.com/transaction/56217803)
+* [Billboard Wallets for Men](http://www.etsy.com/transaction/56217885)
+* [Dia De Los Muertos Bifold](http://www.etsy.com/transaction/56219210)
+* [Painted Wallet : Southern Utah number 15](http://www.etsy.com/transaction/56219468)
+* [Home Depot Recycled Plastic Wallet](http://www.etsy.com/transaction/55983784)
+* [Handmade Men&#39;s Wallet](http://www.etsy.com/transaction/55984011)
+* [Red and Blue Playing Cards Wallet](http://www.etsy.com/transaction/55984123)
+* [Spider-Man Helps Sharon Carter to Her Feet](http://www.etsy.com/transaction/55984297)
+* [Skeletons Decorated Day of the Dead Leather Wallet](http://www.etsy.com/transaction/55984597)
+* [Captain America Decorated Leather Wallet](http://www.etsy.com/transaction/55984598)
+* [Black Brass Laser Engraved Plate](http://www.etsy.com/transaction/64393662)
+
+[Etsy](http://www.etsy.com/) **rocks!**
+
+---
+
+**See also:** [Self absorption](#)

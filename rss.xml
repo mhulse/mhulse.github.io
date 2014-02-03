@@ -37,7 +37,7 @@ layout: nil
 					
 					<guid isPermaLink="true">{{ site.url }}{{ page.url }}</guid>
 					
-					<author>{{ site.name | xml_escape }}</author>
+					<author>{{ site.email }} ({{ site.name | xml_escape }})</author>
 					
 					{% for category in page.categories %}
 						

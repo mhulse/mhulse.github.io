@@ -1,4 +1,4 @@
-build               : '/prod/1.0.0/20140127/1'
+build               : '/prod/1.0.0/20140202/1'
 bwt                 : 'B46559147E88568614EBEBCB2BEF258C'
 description         : 'GMO-, gluten- and Bootstrap-free. :)'
 disqus              : 'mhulse'
@@ -11,12 +11,15 @@ gwt                 : 'hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE'
 include             : ['_pages']
 keywords            : ['code', 'web development', 'design', 'art']
 markdown            : 'redcarpet'
+redcarpet           :
+  extensions        : [smart]
 name                : 'Micky Hulse'
-paginate            : 5
+paginate            : 20
 paginate_path       : '/:num/'
 permalink           : '/:title/'
 pygments            : true
 relative_permalinks : false
+timezone            : America/Los_Angeles
 title               : 'MKY.io'
 twitter             : 'mickyhulse'
 uploads             : 'http://uploads.mky.io'

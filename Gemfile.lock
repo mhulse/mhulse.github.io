@@ -26,7 +26,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    maruku (0.7.0)
+    maruku (0.7.1)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)

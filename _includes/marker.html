@@ -1,6 +1,14 @@
 {% if page.kind %}
 	
-	<h1 class="marker"><div><a href="{{ site.url }}/{{ page.kind }}/">{{ page.kind | capitalize }}</a> <a href="{{ site.url }}/{{ page.kind }}/{{ paginator.name | slugize }}">{{ paginator.name | capitalize }}</a></div></h1>
+	<h1 class="marker"><div><a href="{{ site.url }}/{{ page.kind }}/">{{ page.kind | capitalize }}</a> <span>{{ paginator.name | capitalize }}</span></div></h1>
+	
+	<hr>
+	
+{% elsif page.taxonomy or page.marker %}
+	
+	{% comment %} Not the best way to handle this, but it works. {% endcomment %}
+	
+	<h1 class="marker"><div><span>{{ page.marker | capitalize }}{{ page.taxonomy | capitalize }}</span></div></h1>
 	
 	<hr>
 	
