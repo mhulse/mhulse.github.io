@@ -12,7 +12,7 @@
 			<b><a href="http://help.disqus.com/customer/portal/topics/215154/articles" target="_blank">Not seeing your comment</a></b>? Disqus users, <b><a href="http://help.disqus.com/customer/portal/articles/960202-verifying-your-disqus-account" target="_blank">have you verified your account</a></b>?
 		</p>
 		
-		<div id="disqus_thread" class="x6" data-disqus='{"shortname" : "mhulse", "url" : "{{ site.url }}{{ page.url }}"}'></div>
+		<div id="disqus_thread" class="x6" data-disqus='{"shortname" : "mhulse", "url" : "{{ site.url }}{{ page.url | remove_first: "/" }}"}'></div>
 		
 	</div>
 	

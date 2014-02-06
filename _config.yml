@@ -22,8 +22,8 @@ relative_permalinks : false
 timezone            : America/Los_Angeles
 title               : 'MKY.io'
 twitter             : 'mickyhulse'
-uploads             : 'http://uploads.mky.io'
-url                 : 'http://mky.io'
+uploads             : 'http://uploads.mky.io/'
+url                 : 'http://mky.io/'
 email               : 'm@mky.io'
 production          :
-  url               : 'http://mky.io'
+  url               : 'http://mky.io/'

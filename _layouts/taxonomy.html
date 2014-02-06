@@ -17,7 +17,7 @@ layout: default
 		
 		{% assign taxa = site.[page.taxonomy] %}
 		
-		<ul class="cloud x6">{% for taxon in taxa %}<li><a href="{{ site.url }}/{{ target }}/{{ taxon | first }}/" title="{% assign count = taxon | last | size %}{{ count }} post{% if count > 1 %}s{% endif %}" rel="{{ target }}" style="font-size:{{ taxon | last | size | times: 100 | divided_by: taxa.size | plus: 200 }}%;">{{ taxon | first }}</a></li><li>{% endfor %}</ul>
+		<ul class="cloud x6">{% for taxon in taxa %}<li><a href="{{ site.url }}{{ target }}/{{ taxon | first }}/" title="{% assign count = taxon | last | size %}{{ count }} post{% if count > 1 %}s{% endif %}" rel="{{ target }}" style="font-size:{{ taxon | last | size | times: 500 | divided_by: taxa.size | plus: 150 }}%;">{{ taxon | first }}</a></li>{% endfor %}</ul>
 		
 	{% endif %}
 	

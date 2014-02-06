@@ -5,12 +5,12 @@
 		{% if page.external_url %}
 			<a{% if page.external_site %} title="Click to visit {{ page.external_site }}"{% endif %} href="{{ page.external_url }}" target="_blank" rel="nofollow">
 		{% else %}
-			<a href="{{ site.url }}{{ page.url }}">
+			<a href="{{ site.url }}{{ page.url | remove_first: "/" }}">
 		{% endif %}
 			{% if page.external_image %}
 				<img src="{{ page.external_image }}">
 			{% else %}
-				<img src="{{ site.uploads }}/{{ page.image1.src }}">
+				<img src="{{ site.uploads }}{{ page.image1.src }}">
 			{% endif %}
 		</a>
 		

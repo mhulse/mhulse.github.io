@@ -1,6 +1,6 @@
 {% if page.kind %}
 	
-	<h1 class="marker"><div><a href="{{ site.url }}/{{ page.kind }}/">{{ page.kind | capitalize }}</a> <span>{{ paginator.name | capitalize }}</span></div></h1>
+	<h1 class="marker"><div><a href="{{ site.url }}{{ page.kind }}/">{{ page.kind | capitalize }}</a> <span>{{ paginator.name | capitalize }}</span></div></h1>
 	
 	<hr>
 	
@@ -8,7 +8,7 @@
 	
 	{% comment %} Not the best way to handle this, but it works. {% endcomment %}
 	
-	<h1 class="marker"><div><span>{{ page.marker | append: page.taxonomy | capitalize }}</span></div></h1>
+	<h1 class="marker"><div><span>{{ page.taxonomy | append: page.marker | capitalize }}</span></div></h1>
 	
 	<hr>
 	

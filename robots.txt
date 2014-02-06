@@ -1,4 +1,7 @@
-Host: mky.io
-Sitemap: http://mky.io/sitemap.xml
+---
+---
+
+Host: {{ site.url | remove: "http://" | remove: "/" }}
+Sitemap: {{ site.url }}sitemap.xml
 User-agent: *
 Allow: /

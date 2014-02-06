@@ -4,7 +4,7 @@
 #
 # Define in _config.yml:
 #
-# uploads: http://uploads.example.com
+# uploads: http://uploads.example.com/
 #
 # Example post front matter:
 #
@@ -91,7 +91,7 @@ module Jekyll
           end
           _output += "</audio>"
         else
-          _output += "<img src=\"#{_uploads}\/#{_src}\" alt=\"#{_alt}\" width=\"#{_width}\" height=\"#{_height}\">"
+          _output += "<img src=\"#{_uploads}#{_src}\" alt=\"#{_alt}\" width=\"#{_width}\" height=\"#{_height}\">"
         end
         _output += "</div>" if _wrap
         _output += "<figcaption>#{converter.convert(_caption)}</figcaption>" if _caption

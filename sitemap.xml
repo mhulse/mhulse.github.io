@@ -14,7 +14,7 @@
 	{% for page in site.posts %}
 		{% if page.layout %}
 			<url>
-				<loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+				<loc>{{ site.url }}{{ page.url | remove_first: "/" | remove: "index.html" }}</loc>
 				{% if page.last_updated %}
 					<lastmod>{{ page.last_updated | date: "%Y-%m-%d" }}</lastmod>
 				{% elsif page.date %}
@@ -29,7 +29,7 @@
 	{% for page in site.pages %}
 		{% if page.layout %}
 			<url>
-				<loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+				<loc>{{ site.url }}{{ page.url | remove_first: "/" | remove: "index.html" }}</loc>
 				{% if page.lastmod %}
 					<lastmod>{{ page.lastmod | date: "%Y-%m-%d" }}</lastmod>
 				{% elsif page.date %}

@@ -47,7 +47,7 @@ marker: archive
 				{% if page.external_url %}
 					<h1 class="h5"><a href="{{ page.external_url }}">{{ page.title }}</a></h1>
 				{% else %}
-					<h1 class="h5"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
+					<h1 class="h5"><a href="{{ site.url }}{{ page.url | remove_first: "/" }}">{{ page.title }}</a></h1>
 				{% endif %}
 				{% if page.deck %}
 					<h2 class="h6">{{ page.deck }}</h2>

@@ -1,18 +1,39 @@
 <meta charset="utf-8">
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="x-ua-compatible" content="chrome=1">
 
 <meta name="viewport" content="width=device-width">
 
-{% if page.title %}
+{% if page.kind %}
+	<title>{{ page.kind | capitalize }}: {{ paginator.name | capitalize }} | {{ site.title }}</title>
+	<meta property="og:title" content="{{ page.kind | capitalize }} | {{ paginator.name | capitalize }} | {{ site.title }}">
+{% elsif page.taxonomy or page.marker %}
+	<title>{{ page.taxonomy | append: page.marker | capitalize }} | {{ site.title }}</title>
+	<meta property="og:title" content="{{ page.taxonomy | append: page.marker | capitalize }} | {{ site.title }}">
+{% elsif page.title %}
 	<title>{{ page.title }} | {{ site.title }}</title>
-	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
 {% else %}
 	<title>{{ site.title }}</title>
 	<meta property="og:title" content="{{ site.title }}">
 {% endif %}
 
-{% if page.deck %}
+{% if page.kind %}
+	<meta name="description" content="Entries posted in the {{ page.kind }} {{ paginator.name }}.">
+	<meta property="og:description" content="Entries posted in the {{ page.kind }} {{ paginator.name }}.">
+{% elsif page.marker %}
+	<meta name="description" content="Welcome to the {{ page.marker }} page.">
+	<meta property="og:description" content="Welcome to the {{ page.marker }} page.">
+{% elsif page.taxonomy %}
+	{% case page.taxonomy %}
+		{% when "tags" %}
+			{% assign target = "tag" %}
+		{% when "categories" %}
+			{% assign target = "category" %}
+	{% endcase %}
+	<meta name="description" content="Browse entries by {{ target }}.">
+	<meta property="og:description" content="Browse entries by {{ target }}.">
+{% elsif page.deck %}
 	<meta name="description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
 	<meta property="og:description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
 {% else %}
@@ -20,11 +41,8 @@
 	<meta property="og:description" content="{{ site.description }}">
 {% endif %}
 
-{% if page.tags %}
-	<meta name="keywords" content="{{ page.tags | join: ',' }}">
-{% else %}
-	<meta name="keywords" content="{{ site.keywords | join: ',' }}">
-{% endif %}
+{% capture keywords %},{{ page.categories | join: ',' }},{{ page.tags | join: ',' }},{{ site.keywords | join: ',' }}{% endcapture %}
+<meta name="keywords" content="{{ keywords | replace: ",,", "," | remove_first: "," }}">
 
 {% if page.id %}
 	<meta property="og:type" content="article">
@@ -33,18 +51,18 @@
 {% endif %}
 
 {% if page.image1 %}
-	<meta property="og:image" content="{{ site.uploads }}/{{ page.image1.src }}">
-	<link rel="image_src" href="{{ site.uploads }}/{{ page.image1.src }}">
+	<meta property="og:image" content="{{ site.uploads }}{{ page.image1.src }}">
+	<link rel="image_src" href="{{ site.uploads }}{{ page.image1.src }}">
 {% else %}
-	<meta property="og:image" content="{{ site.url }}/apple-touch-icon-precomposed.png">
-	<link rel="image_src" href="{{ site.url }}/apple-touch-icon-precomposed.png">
+	<meta property="og:image" content="{{ site.url }}apple-touch-icon-precomposed.png">
+	<link rel="image_src" href="{{ site.url }}apple-touch-icon-precomposed.png">
 {% endif %}
 
 <meta property="og:site_name" content="{{ site.title }}">
 
 {% if page.url %}
-	<meta property="og:url" content="{{ site.url }}{{ page.url | remove: 'index.html' }}">
-	<link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+	<meta property="og:url" content="{{ site.url }}{{ page.url | remove_first: "/" | remove: 'index.html' }}">
+	<link rel="canonical" href="{{ site.url }}{{ page.url | remove_first: "/" | remove: 'index.html' }}">
 {% endif %}
 
 {% if page.date %}
@@ -62,18 +80,17 @@
 	<meta property="article:tag" content="{{ tag }}">
 {% endfor %}
 
-<meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW">
-
-<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+<meta name="handheldfriendly" content="true">
 
-<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/rss.xml" title="RSS Feed">
-<link rel="sitemap" type="application/xml" href="{{ site.url }}/sitemap.xml" title="Sitemap">
-
-<meta name="msapplication-TileImage" content="{{ site.url }}/apple-touch-icon-precomposed.png">
-<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-tileimage" content="{{ site.url }}apple-touch-icon-precomposed.png">
+<meta name="msapplication-navbutton-color" content="#13aac9">
+<meta name="msapplication-tilecolor" content="#ffffff">
+<meta name="msapplication-tooltip" content="{{ site.title }}">
+<meta name="msapplication-starturl" content="{{ site.url }}?pinned=true">
+<meta name="msapplication-tap-highlight" content="no">
 
 {% if site.gwt %}
 	<meta name="google-site-verification" content="{{ site.gwt }}">
@@ -90,3 +107,9 @@
 <!--<![endif]-->
 
 <script>(function(a){a.className=a.className.replace(/\bno-js\b/,'js')}(document.documentElement))</script>
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}sitemap.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="{{ site.url }}atom.xml">
+
+<meta name="robots" content="{{ page.index }}index, {{ page.follow }}follow">

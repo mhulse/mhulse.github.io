@@ -3,7 +3,7 @@
 	<hgroup>
 		<h3 class="label">{% include published.html %}</h3>
 		{% if paginator %}
-			<h1 class="h2" itemprop="headline"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
+			<h1 class="h2" itemprop="headline"><a href="{{ site.url }}{{ page.url | remove_first: "/" }}">{{ page.title }}</a></h1>
 		{% else %}
 			<h1 itemprop="headline">{{ page.title }}</h1>
 		{% endif %}
