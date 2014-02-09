@@ -1,10 +1,10 @@
 ---
-layout: post
-title: Wigglegram
-deck: My first stereographic drawing
-date: 2012-08-12 1:01:16
-categories: [art, animation]
-tags: [wiggle, gif, doodle]
+layout: "post"
+title: "Wigglegram"
+deck: "My first stereographic drawing"
+date: "2012-08-12 1:01:16"
+categories: ["art", "animation"]
+tags: ["wiggle", "gif", "doodle"]
 image1:
   src: "wookie-face.gif"
   caption: "Yes, that's \"Wookie Face\"."
@@ -17,7 +17,7 @@ image2:
 
 {% figure image1 %}
 
-Yes, that's right ... Wookie made his first appearance [here]({% post_url 2011-07-23-peeps-2011-34ish-concept-cartoon-characters %}).
+Yes, that's right ... Wookie made his first appearance [here]({% post_url 2011-07-23-peeps-2011 %}).
 
 Inspired by the master of stereographic drawings, [Dain Fagerholm](http://dainfagerholm.blogspot.co.uk/).
 

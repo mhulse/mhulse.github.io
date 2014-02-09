@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2009-09-11 08:50:41
+layout: "post"
+date: "2009-09-11 08:50:41"
 title: "The \"European\" Marge Simpson"
 deck: "Google map illustration"
-categories: [art]
-tags: [video, cartoon, map, doodle]
+categories: ["art", "video"]
+tags: ["cartoon", "map", "doodle"]
 image1:
   src: "s22e08.png"
   wrap: "scroll"

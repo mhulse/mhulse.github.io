@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2010-08-02 22:30:50
+layout: "post"
+date: "2010-08-02 22:30:50"
 title: "Día de los Cowboys"
 deck: "Experimental technique & practice Photoshop illustration"
-categories: [art]
-tags: [wacom, photoshop, doodle]
+categories: ["art"]
+tags: ["wacom", "photoshop", "doodle"]
 image1:
   src: "dia-de-los-cowboys.png"
   caption: "Finished piece. 16 bit, 7800px X 9000px (26\" X 30\" @ 300 ppi)."

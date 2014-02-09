@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2009-09-25 08:56:53
+layout: "post"
+date: "2009-09-25 08:56:53"
 title: "Get out of the city"
 deck: "Wacom illustration #4"
-categories: [art]
-tags: [wacom, photoshop, doodle]
+categories: ["art"]
+tags: ["wacom", "photoshop", "doodle"]
 image1:
   src: "get-out-of-the-city.png"
   caption: "Final rendering."

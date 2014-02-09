@@ -1,29 +1,29 @@
-build               : 'prod/1.0.0/20140208/1/'
-bwt                 : 'B46559147E88568614EBEBCB2BEF258C'
-description         : 'GMO-, gluten- and Bootstrap-free. :)'
-disqus              : 'mhulse'
-excerpt_separator   : ''
-exclude             : ['README.md', 'Gemfile', 'Gemfile.lock']
-fonts               : 'http://fonts.mky.io/'
-theme               : 'http://picard.mky.io/'
-ga                  : 'UA-46485001-1'
-gwt                 : 'hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE'
-include             : ['_pages']
-keywords            : ['code', 'web development', 'design', 'art']
-markdown            : 'redcarpet'
+build               : "prod/1.0.0/20140208/1/"
+bwt                 : "B46559147E88568614EBEBCB2BEF258C"
+description         : "GMO-, gluten- and Bootstrap-free. :)"
+disqus              : "mhulse"
+excerpt_separator   : ""
+exclude             : ["README.md", "Gemfile", "Gemfile.lock"]
+fonts               : "http://fonts.mky.io/"
+theme               : "http://picard.mky.io/"
+ga                  : "UA-46485001-1"
+gwt                 : "hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE"
+include             : ["_pages"]
+keywords            : ["code", "web development", "design", "art"]
+markdown            : "redcarpet"
 redcarpet           :
-  extensions        : ['smart']
-name                : 'Micky Hulse'
+  extensions        : ["smart"]
+name                : "Micky Hulse"
 paginate            : 25
-paginate_path       : '/:num/'
-permalink           : '/:title/'
+paginate_path       : "/:num/"
+permalink           : "/:title/"
 pygments            : true
 relative_permalinks : false
 timezone            : America/Los_Angeles
-title               : 'MKY.io'
-twitter             : 'mickyhulse'
-uploads             : 'http://uploads.mky.io/'
-url                 : 'http://mky.io/'
-email               : 'm@mky.io'
+title               : "MKY.io"
+twitter             : "mickyhulse"
+uploads             : "http://uploads.mky.io/"
+url                 : "http://mky.io/"
+email               : "m@mky.io"
 production          :
-  url               : 'http://mky.io/'
+  url               : "http://mky.io/"

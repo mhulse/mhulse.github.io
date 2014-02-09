@@ -1,13 +1,13 @@
 ---
-layout: post
-title: Anthropomorphic Boxy Robot Jesus Head
-deck: Photoshop graffiti
-date: 2011-08-20 16:18:37
-categories: [photography, sound]
-tags: [photoshop]
+layout: "post"
+title: "Anthropomorphic Boxy Robot Jesus Head"
+deck: "Photoshop graffiti"
+date: "2011-08-20 16:18:37"
+categories: ["photography", "sound"]
+tags: ["photoshop"]
 image1:
   src: "anthropomorphic-boxy-robot-jesus-head.jpg"
-  caption: "Inspired by my wife who came up with the idea. :smile:"
+  caption: "Inspired by my wife who came up with the idea. <3 :)"
   wrap: "scroll"
 image2:
   src: "spray-paint.png"
