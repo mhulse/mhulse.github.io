@@ -1,5 +1,5 @@
 {
-  "title"    : "{{ post.title }}",
+  "title"    : "{{ post.title | markdownify | strip_html | trim }}",
   "category" : [{% for category in post.categories %}"{{ category }}"{% if forloop.last %}{% else %}, {% endif %}{% endfor %}],
   "tags"     : [{% for tag in post.tags %}"{{ tag }}"{% if forloop.last %}{% else %}, {% endif %}{% endfor %}],
   "uri"     : "{{ post.url }}",

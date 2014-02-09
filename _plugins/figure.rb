@@ -68,6 +68,7 @@ module Jekyll
         _src = _figure['src']
         _width = _figure['width']
         _wrap = _figure['wrap']
+        _poster = _figure['poster']
         
         _output = "<figure"
         _output += " id=\"#{_id}\"" if _id
@@ -85,11 +86,24 @@ module Jekyll
           _output += "<audio preload=\"none\" controls>"
           _files.each do |_value|
             _ext = _value.match(/([^\.]+)$/)[1]
-            _output += "<source src=\"#{_uploads}\/#{_value}\""
+            _output += "<source src=\"#{_uploads}#{_value}\""
             _output += " type=\"#{_type[_ext]}\"" if _ext
             _output += ">"
           end
           _output += "</audio>"
+        elsif _kind.to_s.downcase == "video"
+          _output += "<video preload=\"none\""
+          _output += " poster=\"#{_uploads}#{_poster}\"" if _poster
+          _output += (_width) ? " width=\#{_width}\"" : " width=\"480\""
+          _output += (_height) ? " height=\#{_height}\"" : " height=\"270\""
+          _output += " controls>"
+          _files.each do |_value|
+            _ext = _value.match(/([^\.]+)$/)[1]
+            _output += "<source src=\"#{_uploads}#{_value}\""
+            _output += " type=\"#{_type[_ext]}\"" if _ext
+            _output += ">"
+          end
+          _output += "</video>"
         else
           _output += "<img src=\"#{_uploads}#{_src}\" alt=\"#{_alt}\" width=\"#{_width}\" height=\"#{_height}\">"
         end

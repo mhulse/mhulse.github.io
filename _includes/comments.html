@@ -1,19 +1,23 @@
-<hr class="off">
-
-<section id="comments">
+{% if page.comments != "off" %}
 	
-	<h1></h1>
+	<hr class="off">
 	
-	<div id="disqus">
+	<section id="comments">
 		
-		<p class="callout callout-warning callout-box">
-			<i class="fa fa-exclamation-circle" aria-hidden="true"></i> The owner of this site doesn't necessarily condone the comments here, nor do they review every post.
-			<br>
-			<b><a href="http://help.disqus.com/customer/portal/topics/215154/articles" target="_blank">Not seeing your comment</a></b>? Disqus users, <b><a href="http://help.disqus.com/customer/portal/articles/960202-verifying-your-disqus-account" target="_blank">have you verified your account</a></b>?
-		</p>
+		<h1></h1>
 		
-		<div id="disqus_thread" class="x6" data-disqus='{"shortname" : "mhulse", "url" : "{{ site.url }}{{ page.url | remove_first: "/" }}"}'></div>
+		<div id="disqus">
+			
+			<p class="callout callout-warning callout-box">
+				<i class="fa fa-exclamation-circle" aria-hidden="true"></i> The owner of this site doesn't necessarily condone the comments here, nor do they review every post.
+				<br>
+				<b><a href="http://help.disqus.com/customer/portal/topics/215154/articles" target="_blank">Not seeing your comment</a></b>? Disqus users, <b><a href="http://help.disqus.com/customer/portal/articles/960202-verifying-your-disqus-account" target="_blank">have you verified your account</a></b>?
+			</p>
+			
+			<div id="disqus_thread" class="x6" data-disqus='{"shortname" : "mhulse", "url" : "{{ site.url }}{{ page.url | remove_first: "/" }}"}'></div>
+			
+		</div>
 		
-	</div>
+	</section>
 	
-</section>
+{% endif %}

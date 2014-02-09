@@ -12,7 +12,7 @@
 	<meta property="og:title" content="{{ page.taxonomy | append: page.marker | capitalize }} | {{ site.title }}">
 {% elsif page.title %}
 	<title>{{ page.title }} | {{ site.title }}</title>
-	<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+	<meta property="og:title" content="{{ page.title | markdownify | strip_html | trim }} | {{ site.title }}">
 {% else %}
 	<title>{{ site.title }}</title>
 	<meta property="og:title" content="{{ site.title }}">
@@ -101,8 +101,8 @@
 {% endif %}
 
 <!--[if !IE]><!-->
-<link rel="stylesheet" href="{{ site.theme }}{{ site.build }}/css/picard.min.css">
-<link rel="stylesheet" href="{{ site.fonts }}/hulse/hulse.css">
+<link rel="stylesheet" href="{{ site.theme }}{{ site.build }}css/picard.min.css">
+<link rel="stylesheet" href="{{ site.fonts }}hulse/hulse.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 <!--<![endif]-->
 

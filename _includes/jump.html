@@ -1,0 +1,37 @@
+{% if page.id %}
+	
+	{% if page.previous.url %}
+		{% if page.previous.layout == "external" %}
+			<a class="jump jump-old" href="{{ page.previous.external_url }}"{% if page.previous.external_site %} title="Visit: {{ page.previous.external_site }}{% endif %}" target="_blank" rel="nofollow">
+		{% else %}
+			<a class="jump jump-old" href="{{ site.url }}{{ page.previous.url | remove_first: '/' }}" title="Previous: {{ page.previous.title | markdownify | strip_html | trim }}">
+		{% endif %}
+			<i>Previous</i>
+			{% if page.previous.layout == "external" %}
+				<span class="fa fa-external-link fa-lg" aria-hidden="true"></span>
+			{% else %}
+				<span class="fa fa-chevron-left fa-lg" aria-hidden="true"></span>
+			{% endif %}
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		</a>
+	{% endif %}
+	
+	{% if page.next.url %}
+		{% if page.next.layout == "external" %}
+			<a class="jump jump-new" href="{{ page.next.external_url }}"{% if page.next.external_site %} title="Visit: {{ page.next.external_site }}{% endif %}" target="_blank" rel="nofollow">
+		{% else %}
+			<a class="jump jump-new" href="{{ site.url }}{{ page.next.url | remove_first: '/' }}" title="Next: {{ page.next.title | markdownify | strip_html | trim }}">
+		{% endif %}
+			<i>Next</i>
+			{% if page.next.layout == "external" %}
+				<span class="fa fa-external-link fa-lg" aria-hidden="true"></span>
+			{% else %}
+				<span class="fa fa-chevron-right fa-lg" aria-hidden="true"></span>
+			{% endif %}
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		</a>
+	{% endif %}
+	
+{% endif %}

@@ -10,11 +10,11 @@
 		
 		<ul class="pager x6"
 			{% if paginator.previous_page %}
-				><li><a href="{{ site.url }}{{ previous | replace: 'index.html', '' | replace: '///', '/' | replace: '//', '/' }}">Newer</a></li
+				><li><a href="{{ site.url }}{{ previous | replace: 'index.html', '' | replace: '///', '/' | replace: '//', '/' | remove_first: '/' }}">Newer</a></li
 			{% endif %}
 			><li><span>{{ paginator.page }} / {{ paginator.total_pages }}</span></li
 			{% if paginator.next_page %}
-				><li><a href="{{ site.url }}{{ next | replace: 'index.html', '' | replace: '///', '/' | replace: '//', '/' }}">Older</a></li
+				><li><a href="{{ site.url }}{{ next | replace: 'index.html', '' | replace: '///', '/' | replace: '//', '/' | remove_first: '/' }}">Older</a></li
 			{% endif %}
 		></ul>
 		
