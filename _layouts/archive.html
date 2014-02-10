@@ -45,7 +45,7 @@ marker: archive
 		><dd class="archive-item">
 			<article>
 				{% if page.external_url %}
-					<h1 class="h5"><a href="{{ page.external_url }}">{{ page.title }}</a></h1>
+					<h1 class="h5"><a href="{{ page.external_url }}"{% if page.external_site %} title="Visit {{ page.title }} on {{ page.external_site }}."{% endif %} target="_blank" rel="nofollow">{{ page.title }}</a> <i class="fa fa-external-link small"></i></h1>
 				{% else %}
 					<h1 class="h5"><a href="{{ site.url }}{{ page.url | remove_first: "/" }}">{{ page.title }}</a></h1>
 				{% endif %}

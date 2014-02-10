@@ -17,8 +17,9 @@ map1:
   kind: "iframe"
   src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1151.9028248824382!2d-123.11587261565222!3d44.09163658732593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1391387389062"
   caption: "Location of Jesus head."
+  width: "100%"
+  height: "500"
   class: "x6"
-  wrap: "mm tv"
 audio1:
   kind: "audio"
   class: "x6"
@@ -30,8 +31,14 @@ audio1:
 
 {% figure image1 %}
 
+---
+
 {% figure map1 %}
 
+---
+
 {% figure audio1 %}
+
+---
 
 {% figure image2 %}

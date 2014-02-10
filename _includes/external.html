@@ -1,5 +1,5 @@
 <h1 class="x6 external">
-	<a{% if page.external_site %} title="Click to visit {{ page.external_site }}"{% endif %} href="{{ page.external_url }}" target="_blank" rel="nofollow">
+	<a href="{{ page.external_url }}"{% if page.external_site %} title="Visit {{ page.title }} on {{ page.external_site }}."{% endif %} target="_blank" rel="nofollow">
 		<time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html %}</time>
 		{{ page.title }}
 		{% if page.deck %}
