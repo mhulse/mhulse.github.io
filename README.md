@@ -13,7 +13,7 @@ $ bundle exec jekyll serve --watch --trace --config _config.yml,_config_local.ym
 Publish to live site:
 
 ```bash
-$ rake publish
+$ bundle exec rake publish
 ```
 
 ---

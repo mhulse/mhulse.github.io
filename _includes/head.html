@@ -12,7 +12,7 @@
 	<meta property="og:title" content="{{ page.taxonomy | append: page.marker | capitalize }} | {{ site.title }}">
 {% elsif page.title %}
 	<title>{{ page.title }} | {{ site.title }}</title>
-	<meta property="og:title" content="{{ page.title | markdownify | strip_html | trim }} | {{ site.title }}">
+	<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
 {% else %}
 	<title>{{ site.title }}</title>
 	<meta property="og:title" content="{{ site.title }}">

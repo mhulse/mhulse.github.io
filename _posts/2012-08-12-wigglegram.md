@@ -7,7 +7,7 @@ categories: ["art", "animation"]
 tags: ["wiggle", "gif", "doodle"]
 image1:
   src: "wookie-face.gif"
-  caption: "Yes, that's \"Wookie Face\"."
+  caption: "Yes, that’s “Wookie Face”."
   wrap: "scroll"
 image2:
   src: "wookie-face-original.png"

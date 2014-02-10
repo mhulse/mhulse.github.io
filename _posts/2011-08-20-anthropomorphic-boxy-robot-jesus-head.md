@@ -25,7 +25,7 @@ audio1:
   files:
     - "anthropomorphic-jesus-boxy-robot-head.ogg"
     - "anthropomorphic-jesus-boxy-robot-head.mp3"
-  caption: "Binaural **audio** recording of the \"Jesus head\" ambiance."
+  caption: "Binaural **audio** recording of the “Jesus head” ambiance."
 ---
 
 {% figure image1 %}

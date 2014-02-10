@@ -7,7 +7,7 @@ categories: ["art"]
 tags: ["wacom", "photoshop", "doodle"]
 image1:
   src: "dia-de-los-cowboys.png"
-  caption: "Finished piece. 16 bit, 7800px X 9000px (26\" X 30\" @ 300 ppi)."
+  caption: "Finished piece. 16 bit, 7800px X 9000px (26” X 30” @ 300 ppi)."
   wrap: "scroll"
 image2:
   src: "dia-de-los-cowboys-detail.png"
