@@ -7,6 +7,7 @@
 ## Local testing:
 
 ```bash
+# Add --drafts flag to preview them.
 $ bundle exec jekyll serve --watch --trace --config _config.yml,_config_local.yml
 ```
 
