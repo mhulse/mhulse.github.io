@@ -20,6 +20,10 @@ fig1:
       id: "johnson"
       width: "1"
       height: "1"
+billy:
+  template: "test.html"
 ---
 
 {% fig fig1 src="/wtf/johnson.png" width="100%" height="100%" class="x6" onclick="return: false;" %}
+
+{% test billy template="test.html" %}
