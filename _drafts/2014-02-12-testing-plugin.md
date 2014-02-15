@@ -1,29 +1,19 @@
 ---
-fig1:
-  audio:
-    - "foo1"
-    - "foo2"
-    - "foo3"
-  video:
-    - "foo1"
-    - "foo2"
-    - "foo3"
-  div:
-    id: "billy"
-    class: "woot"
-  figure:
-    class: "foo"
-  img:
-    attributes:
-      src: "/foo/bar/billy.jpg"
-      class: "billy"
-      id: "johnson"
-      width: "1"
-      height: "1"
-billy:
+image1:
   template: "test.html"
+  src: "PEEPS-2011-sketches.jpg"
+  caption: "Original **character** sketches."
+  wrap: "scroll"
+audio1:
+  template: "test.html"
+  files:
+    - "foo1"
+    - "foo2"
+    - "foo3"
 ---
 
-{% fig fig1 src="/wtf/johnson.png" width="100%" height="100%" class="x6" onclick="return: false;" %}
+{% nada image1 foo="baz" %}
 
-{% test billy template="test.html" %}
+{% nada audio1 foo="baz" %}
+
+{% nada template="test.html" foo="baz" %}
