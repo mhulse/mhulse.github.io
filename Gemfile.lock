@@ -1,3 +1,8 @@
+PATH
+  remote: ../jekyll-nada
+  specs:
+    jekyll-nada (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,4 +55,5 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-nada!
   rake

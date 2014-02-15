@@ -33,6 +33,7 @@ module Jekyll
       # Raise an exception if tag syntax is bad:
       raise "\"%s\" tag syntax error. Try {% %s [front matter key (optional)] [override=\"value\" (optional)] %}." % [NS.capitalize, NS] unless markup
       
+      # Is there an optional `key` specifeid?
       if not markup[:key].nil?
         
         # Get the page front matter settings for `key`:
@@ -69,6 +70,12 @@ module Jekyll
         
       end
       
+      # Global settings?
+      globals = site.config[NS] ||= {}
+      
+      # Merge `globals` with `settings`:
+      settings = globals.merge(settings) # Allow `settings` to override `globals`, "in place".
+      
       # Merge `settings` with `options`:
       settings.merge!(options) # Allow `options` to override `defaults`, "in place".
       
@@ -89,7 +96,7 @@ module Jekyll
       Dir.chdir(file_path) do
         
         # Parse template part:
-        partial = Liquid::Template.parse(file.read)
+        partial = Liquid::Template.parse(file.read.strip)
         
         # ?
         context.stack do
@@ -111,4 +118,4 @@ module Jekyll
 end
 
 # Register liquid tag with Jekyll:
-Liquid::Template.register_tag('nada', Jekyll::Nada)
+#Liquid::Template.register_tag('nada', Jekyll::Nada)

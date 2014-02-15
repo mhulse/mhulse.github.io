@@ -12,8 +12,9 @@ audio1:
     - "foo3"
 ---
 
-{% nada image1 foo="baz" %}
+{% nada image1 %}
 
 {% nada audio1 foo="baz" %}
 
 {% nada template="test.html" foo="baz" %}
+
