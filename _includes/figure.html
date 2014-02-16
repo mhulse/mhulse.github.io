@@ -1,4 +1,4 @@
-{% if page.external_url or page.image1 %}
+{% if page.external_url or page.fig1 %}
 	
 	<figure>
 		
@@ -10,7 +10,7 @@
 			{% if page.external_image %}
 				<img src="{{ page.external_image }}">
 			{% else %}
-				<img src="{{ site.uploads }}{{ page.image1.src }}">
+				<img src="{{ site.uploads }}{{ page.fig1.image }}">
 			{% endif %}
 		</a>
 		

@@ -28,5 +28,4 @@ email               : "m@mky.io"
 production          :
   url               : "http://mky.io/"
 nada:
-  foo: "bar"
-  global: "nobal"
+  wrap: "scroll"

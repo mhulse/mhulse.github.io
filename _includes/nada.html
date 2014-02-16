@@ -1,0 +1,58 @@
+<figure{% if nada.id %} id="{{ nada.id }}"{% endif %}{% if nada.class %} class="{{ nada.class }}"{% endif %}>
+	
+	{% if nada.wrap %}<div class="{{ nada.wrap }}">{% endif %}
+		{% if nada.image %}
+			<img
+				src="{{ site.uploads }}{{ nada.image }}"
+				{% if nada.width %}width="{{ nada.width }}"{% endif %}
+				{% if nada.height %}height="{{ nada.height }}"{% endif %}
+				{% if nada.alt %}alt="{{ nada.alt }}"{% endif %}
+			>
+		{% elsif nada.iframe %}
+			<iframe
+				src="{{ nada.iframe }}"
+				{% if nada.width %}width="{{ nada.width }}"{% endif %}
+				{% if nada.height %}height="{{ nada.height }}"{% endif %}
+				marginheight="0"
+				marginwidth="0"
+				frameborder="0"
+				scrolling="no"
+				webkitallowfullscreen
+				mozallowfullscreen
+				allowfullscreen
+			></iframe>
+		{% elsif nada.video %}
+			<video
+				preload="none"
+				{% if nada.poster %}poster="{{ site.uploads }}{{ nada.poster }}"{% endif %}
+				width="{% if nada.width %}{{ nada.width }}{% else %}480{% endif %}"
+				height="{% if nada.height %}{{ nada.height }}{% else %}270{% endif %}"
+				controls
+			>
+				{% for file in nada.video %}
+					{% assign ext = file | split: "." %}
+					<source
+						src="{{ site.uploads }}{{ file }}"
+						type="{% case ext[1] %}{% when "mp4" %}video/mp4{% when "ogv" %}video/ogg{% when "webm" %}video/webm{% endcase %}"
+					>
+				{% endfor %}
+			</video>
+		{% elsif nada.audio %}
+			<audio
+				preload="none"
+				controls
+			>
+				{% for file in nada.audio %}
+					{% assign ext = file | split: "." %}
+					<source
+						src="{{ site.uploads }}{{ file }}"
+						type="{% case ext[1] %}{% when "ogg" %}audio/ogg{% when "mp3" %}audio/mpeg{% endcase %}"
+					>
+				{% endfor %}
+			</audio>
+		{% endif %}
+	{% if nada.wrap %}</div>{% endif %}
+	
+	{% if nada.caption %}<figcaption>{{ nada.caption | markdownify | trim }}</figcaption>{% endif %}
+	
+</figure>

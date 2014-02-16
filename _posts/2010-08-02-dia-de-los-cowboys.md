@@ -5,31 +5,27 @@ title: "Día de los Cowboys"
 deck: "Experimental technique & practice Photoshop illustration"
 categories: ["art"]
 tags: ["wacom", "photoshop", "doodle"]
-image1:
-  src: "dia-de-los-cowboys.png"
+fig1:
+  image: "dia-de-los-cowboys.png"
   caption: "Finished piece. 16 bit, 7800px X 9000px (26” X 30” @ 300 ppi)."
-  wrap: "scroll"
-image2:
-  src: "dia-de-los-cowboys-detail.png"
+fig2:
+  image: "dia-de-los-cowboys-detail.png"
   caption: "Detail closeup."
-  wrap: "scroll"
-image3:
-  src: "dia-de-los-cowboys-versions.png"
+fig3:
+  image: "dia-de-los-cowboys-versions.png"
   caption: "Chronological saved versions."
-  wrap: "scroll"
-image4:
-  src: "dia-de-los-cowboys-setup.jpg"
+fig4:
+  image: "dia-de-los-cowboys-setup.jpg"
   caption: "The setup."
-  wrap: "scroll"
 ---
 
-{% figure image1 %}
+{% nada fig1 %}
 
-{% figure image2 %}
+{% nada fig2 %}
 
-{% figure image3 %}
+{% nada fig3 %}
 
-{% figure image4 %}
+{% nada fig4 %}
 
 ### Inspiration:
 

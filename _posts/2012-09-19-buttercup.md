@@ -5,10 +5,9 @@ title: "Buttercup"
 deck: "iPad doodle"
 categories: ["art"]
 tags: ["ipad", "flowpaper", "doodle"]
-image1:
-  src: "buttercup.png"
+fig1:
+  image: "buttercup.png"
   caption: "Quick iPad/[Flowpaper](http://diatom.cc/flowpaperapp) doodle before bed."
-  wrap: "scroll"
 ---
 
-{% figure image1 %}
+{% nada fig1 %}

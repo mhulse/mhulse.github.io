@@ -5,28 +5,24 @@ title: "Get out of the city"
 deck: "Wacom illustration #4"
 categories: ["art"]
 tags: ["wacom", "photoshop", "doodle"]
-image1:
-  src: "get-out-of-the-city.png"
+fig1:
+  image: "get-out-of-the-city.png"
   caption: "Final rendering."
-  wrap: "scroll"
-image2:
-  src: "gootc-detail.png"
+fig2:
+  image: "gootc-detail.png"
   caption: "Detail close up."
-  wrap: "scroll"
-image3:
-  src: "gootc-original.jpg"
+fig3:
+  image: "gootc-original.jpg"
   caption: "The original sketch (circa 1999-ish?)."
-  wrap: "scroll"
-image4:
-  src: "gootc-sequence.png"
+fig4:
+  image: "gootc-sequence.png"
   caption: "Illustration sequence."
-  wrap: "scroll"
 ---
 
-{% figure image1 %}
+{% nada fig1 %}
 
-{% figure image2 %}
+{% nada fig2 %}
 
-{% figure image3 %}
+{% nada fig3 %}
 
-{% figure image4 %}
+{% nada fig4 %}

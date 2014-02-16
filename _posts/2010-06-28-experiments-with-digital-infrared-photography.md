@@ -5,16 +5,14 @@ title: "Experiments with digital infrared photography"
 deck: "Palace of Fine Arts & Mount Pisgah Arboretum tool shed"
 categories: ["photography"]
 tags: ["travel", "hdri", "infrared"]
-image1:
-  src: "palace-of-fine-arts.jpg"
+fig1:
+  image: "palace-of-fine-arts.jpg"
   caption: "Palace of Fine Arts in San Francisco, CA. Shot with G11 and infrared filter."
-  wrap: "scroll"
-image2:
-  src: "mount-pisgah-arboretum-tool-shed.jpg"
+fig2:
+  image: "mount-pisgah-arboretum-tool-shed.jpg"
   caption: "Tool shed at Mount Pisgah Arboretum in Eugene, OR. HDRI. Shot with G11 infrared conversion."
-  wrap: "scroll"
 ---
 
-{% figure image1 %}
+{% nada fig1 %}
 
-{% figure image2 %}
+{% nada fig2 %}
