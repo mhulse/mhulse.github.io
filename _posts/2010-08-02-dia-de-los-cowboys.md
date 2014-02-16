@@ -33,6 +33,6 @@ fig4:
 
 ### Factoids:
 
-* About halfway through this drawing I felt compeled to check my proportions with several sheets of "gridded" transparency, combined to create a 20" X 23" grid, taped to original photograph.
+* About halfway through this drawing I felt compeled to check my proportions with several sheets of “gridded” transparency, combined to create a 20" X 23" grid, taped to original photograph.
 * At the time that I added the grid I also converted the bit depth to 16; I was amazed to see the difference in file size: 65.5 MB vs. 629.4 MB. The document size of the final version: 1.12 GB.
-* For the majority of this 7800px X 9000px illustration I used a 3px brush tip.
+* For the majority of this `7800px` x `9000px` illustration I used a `3px` brush tip.

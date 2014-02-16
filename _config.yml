@@ -20,7 +20,7 @@ permalink           : "/:title/"
 pygments            : true
 relative_permalinks : false
 timezone            : America/Los_Angeles
-title               : "MKY.io"
+title               : "mky.io"
 twitter             : "mickyhulse"
 uploads             : "http://uploads.mky.io/"
 url                 : "http://mky.io/"
