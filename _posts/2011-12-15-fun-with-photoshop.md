@@ -12,7 +12,7 @@ fig2:
   caption: "Now you see ’em …"
 fig3:
   image: "ps-body-removal-after.png"
-  caption: "Now you don‘t! :)"
+  caption: "… Now you don’t! :)"
 ---
 
 {% nada fig2 %}
