@@ -4,6 +4,12 @@ layout: base
 
 {% include marker.html %}
 
+{% if paginator.page >= 2 %}
+	
+	{% include pagination.html top=true %}
+	
+{% endif %}
+
 {% for page in paginator.posts %}
 	
 	<article itemscope itemtype="http://schema.org/Article">

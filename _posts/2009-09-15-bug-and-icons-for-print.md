@@ -16,8 +16,8 @@ fig3:
   caption: "What they look like in print."
 ---
 
-{% nada fig1 wrap="" %}
+{% nada fig1 %}
 
-{% nada fig2 wrap="" %}
+{% nada fig2 %}
 
-{% nada fig3 wrap="" %}
+{% nada fig3 %}

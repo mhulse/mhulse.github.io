@@ -25,11 +25,11 @@ fig4:
 
 ---
 
-{% nada fig2 width="100%" height="500" wrap="" %}
+{% nada fig2 width="100%" height="500" %}
 
 ---
 
-{% nada fig3 class="x6" wrap="" %}
+{% nada fig3 class="x6" %}
 
 ---
 

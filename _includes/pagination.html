@@ -4,7 +4,7 @@
 	
 	{% capture next %}/{{ page.kind }}/{{ paginator.name }}/{{ paginator.next_page_path }}{% endcapture %}
 	
-	<hr>
+	{% unless include.top %}<hr>{% endunless %}
 	
 	<footer>
 		
@@ -19,5 +19,7 @@
 		></ul>
 		
 	</footer>
+	
+	{% if include.top %}<hr>{% endif %}
 	
 {% endif %}

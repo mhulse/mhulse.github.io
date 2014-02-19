@@ -21,8 +21,8 @@ fig4:
 
 {% nada fig1 %}
 
-{% nada fig2 %}
+{% nada fig2 wrap="scroll" %}
 
 {% nada fig3 %}
 
-{% nada fig4 %}
+{% nada fig4 wrap="scroll" %}

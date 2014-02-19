@@ -15,6 +15,6 @@ fig2:
 
 {% nada fig1 %}
 
-{% nada fig2 %}
+{% nada fig2 wrap="scroll" %}
 
 Due to limitation in iPad processor/software, I had to save regularly and re-import last version to continue the doodle.

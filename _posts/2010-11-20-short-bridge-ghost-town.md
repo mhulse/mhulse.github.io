@@ -31,27 +31,27 @@ fig10:
   caption: "Here’s the location via Google Maps."
 ---
 
-{% nada fig1 wrap="" %}
+{% nada fig1 %}
 
-{% nada fig2 wrap="" %}
+{% nada fig2 %}
 
-{% nada fig3 wrap="" %}
+{% nada fig3 %}
 
-{% nada fig4 wrap="" %}
+{% nada fig4 %}
 
-{% nada fig5 wrap="" %}
+{% nada fig5 %}
 
-{% nada fig6 wrap="" %}
+{% nada fig6 %}
 
-{% nada fig7 wrap="" %}
+{% nada fig7 %}
 
-{% nada fig8 wrap="" %}
+{% nada fig8 %}
 
 Shot with [Canon G11](http://www.usa.canon.com/cusa/consumer/products/cameras/digital_cameras/powershot_g11) infrared conversion.
 
 ---
 
-{% nada fig9 class="x6" wrap="" %}
+{% nada fig9 class="x6" %}
 
 ---
 
