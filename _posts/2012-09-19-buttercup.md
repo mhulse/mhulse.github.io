@@ -1,13 +1,58 @@
 ---
 layout: "post"
-date: "2012-09-19 12:00:00"
-title: "Buttercup"
-deck: "iPad doodle"
+date: "2013-02-10 12:00:00"
+title: "iPad art"
+deck: "Miscellaneous Flowpaper doodles"
 categories: ["art"]
 tags: ["ipad", "flowpaper", "doodle"]
 fig1:
-  image: "buttercup.png"
-  caption: "Quick iPad/[Flowpaper](http://diatom.cc/flowpaperapp) doodle before bed."
+  image: "misc-flowpaper-1.png"
+fig2:
+  image: "misc-flowpaper-2.png"
+fig3:
+  image: "misc-flowpaper-3.png"
+fig4:
+  image: "misc-flowpaper-4.png"
+fig5:
+  image: "misc-flowpaper-5.png"
+fig6:
+  image: "misc-flowpaper-6.png"
+fig7:
+  image: "misc-flowpaper-7.png"
+fig8:
+  image: "misc-flowpaper-8.png"
+fig9:
+  image: "misc-flowpaper-9.png"
+fig10:
+  image: "misc-flowpaper-10.png"
+fig11:
+  image: "misc-flowpaper-11.png"
+fig12:
+  image: "misc-flowpaper-12.png"
 ---
 
 {% nada fig1 %}
+
+{% nada fig2 %}
+
+{% nada fig3 %}
+
+{% nada fig4 %}
+
+{% nada fig5 %}
+
+{% nada fig6 %}
+
+{% nada fig7 %}
+
+{% nada fig8 %}
+
+{% nada fig9 %}
+
+{% nada fig10 %}
+
+{% nada fig11 %}
+
+{% nada fig12 %}
+
+Made with [Flowpaper](http://diatom.cc/flowpaperApp) on the iPad; check out the official [Flowpaper Flickr group](http://www.flickr.com/groups/flowpaper/).
