@@ -10,7 +10,11 @@
 			{% if page.external_image %}
 				<img src="{{ page.external_image }}">
 			{% else %}
-				<img src="{{ site.uploads }}{{ page.fig1.image }}">
+				{% if page.featured %}
+					<img src="{{ site.uploads }}{{ page[page.featured]["image"] }}">
+				{% else %}
+					<img src="{{ site.uploads }}{{ page.fig1.image }}">
+				{% endif %}
 			{% endif %}
 		</a>
 		

@@ -9,7 +9,7 @@ fig1:
   image: "anthropomorphic-boxy-robot-jesus-head.jpg"
   caption: "Inspired by my wife who came up with the idea. <3 :)"
 fig2:
-  iframe: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1151.9028248824382!2d-123.11587261565222!3d44.09163658732593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1391387389062"
+  iframe: "https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d498.2486549814065!2d-123.11611400000001!3d44.091828!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1394010503322"
   caption: "Location of Jesus head."
 fig3:
   audio:

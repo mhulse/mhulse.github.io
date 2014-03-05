@@ -15,7 +15,7 @@ GEM
       highline (~> 1.6.11)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
-    highline (1.6.20)
+    highline (1.6.21)
     jekyll (1.4.3)
       classifier (~> 1.3)
       colorator (~> 0.1)
