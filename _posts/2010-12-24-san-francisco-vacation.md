@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "San Francisco vacation"
-deck: "GPS logging, HDRI and/or infrared pics with binaural audio"
+deck: "Lot o’ geotagged pics & binaural audio"
 date: "2010-12-24 00:55:45"
 categories: ["photography", "sound"]
 tags: ["travel", "hdri", "infrared", "map", "travel"]
@@ -444,9 +444,3 @@ map1:
 {% nada fig46 %}
 
 {% nada fig47 %}
-
----
-
-## GPS tracks
-
-{% nada map1 width="100%" height="500" %}
