@@ -1,7 +1,7 @@
 ---
 layout: "post"
 date: "2010-11-07 14:25:45"
-title: "Owl & leaves"
+title: "Owl &amp; leaves"
 deck: "Another Wacom still life doodle"
 categories: ["art"]
 tags: ["wacom", "photoshop", "doodle"]

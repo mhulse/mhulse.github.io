@@ -56,6 +56,13 @@
 					>
 				{% endfor %}
 			</audio>
+		{% elsif nada.flash %}
+			<object width="{{ nada.width }}" height="{{ nada.height }}">
+				<embed src="{{ site.uploads }}{{ nada.flash }}" width="{{ nada.width }}" height="{{ nada.height }}"></embed>
+				<param name="movie" value="{{ site.uploads }}{{ nada.flash }}">
+				<param name="flashvars" value="{{ nada.flashvars }}">
+				<param name="allowscriptaccess" value="always">
+			</object>
 		{% endif %}
 	{% if nada.wrap %}</div>{% endif %}
 	

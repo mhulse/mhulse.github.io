@@ -1,7 +1,7 @@
 ---
 layout: "post"
 date: "2009-09-15 18:29:27"
-title: "Bug & icons for print"
+title: "Bug &amp; icons for print"
 deck: "The Register-Guard"
 categories: ["design"]
 tags: ["logo", "vector"]
