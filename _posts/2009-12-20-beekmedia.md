@@ -3,8 +3,8 @@ layout: "post"
 date: "2009-12-20 21:00:31"
 title: "Beekmedia"
 deck: "Logo design comps"
-categories: ["design"]
-tags: ["logo", "vector"]
+categories: ["logo"]
+tags: ["design", "vector"]
 fig1:
   image: "beekmedia-logo.png"
   caption: "Final logo."

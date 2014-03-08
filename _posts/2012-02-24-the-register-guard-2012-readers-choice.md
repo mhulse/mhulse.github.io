@@ -3,8 +3,8 @@ layout: "post"
 date: "2012-02-24 09:43:08"
 title: "The Register-Guard 2012 Readers’ Choice"
 deck: "Logo refresh"
-categories: ["design"]
-tags: ["logo", "vector"]
+categories: ["logo"]
+tags: ["design", "vector"]
 fig1:
   image: "2012-readers-choice.png"
   caption: "2012 Readers’ Choice logo."

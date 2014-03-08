@@ -3,8 +3,8 @@ layout: "post"
 date: "2010-09-03 12:35:16"
 title: "Josh White @ Coldwell Banker"
 deck: "Leaderboard &amp; box ad"
-categories: ["animation"]
-tags: ["flash", "ad", "photoshop"]
+categories: ["ad"]
+tags: ["flash", "animation", "photoshop"]
 featured: "fig3"
 fig1:
   flash: "josh-white/728x90.swf"

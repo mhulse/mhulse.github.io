@@ -3,8 +3,8 @@ layout: "post"
 date: "2010-01-24 16:35:25"
 title: "The Register-Guard website flag"
 deck: "Logo evolution"
-categories: ["design"]
-tags: ["logo", "vector"]
+categories: ["logo"]
+tags: ["design", "vector"]
 fig1:
   image: "rg-logo-final.png"
   caption: "Final logo."

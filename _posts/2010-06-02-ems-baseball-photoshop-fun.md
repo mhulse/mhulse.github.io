@@ -3,8 +3,8 @@ layout: "post"
 date: "2010-07-16 21:31:10"
 title: "Ems baseball Photoshop fun"
 deck: "Expanding billboard &amp; landing page"
-categories: ["design"]
-tags: ["ad", "photoshop", "flash"]
+categories: ["ad"]
+tags: ["design", "photoshop", "flash"]
 fig1:
   image: "sluggo-advert.png"
   caption: "Billboard “expanded” image."

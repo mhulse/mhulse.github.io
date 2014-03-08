@@ -3,8 +3,8 @@ layout: "post"
 date: "2010-03-09 18:34:59"
 title: "Encore Group Travel"
 deck: "Logo upgrade"
-categories: ["design"]
-tags: ["logo", "vector"]
+categories: ["logo"]
+tags: ["design", "vector"]
 fig1:
   image: "encore-logo.png"
   caption: "[Encore’s](http://www.encoregrouptravel.com/) final logo."

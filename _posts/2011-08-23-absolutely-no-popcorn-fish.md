@@ -3,8 +3,8 @@ layout: "post"
 date: "2011-08-23 21:00:31"
 title: "Absolutely no popcorn fish!!!"
 deck: "A little workplace humor"
-categories: ["miscellany"]
-tags: ["fun", "print", "vector"]
+categories: ["print"]
+tags: ["vector"]
 fig1:
   image: "popcorn-fish-4.png"
   caption: "… and [this one’s my contribution](http://uploads.mky.io/popcorn-fish.pdf). :)"
