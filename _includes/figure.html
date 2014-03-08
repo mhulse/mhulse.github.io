@@ -8,7 +8,11 @@
 			<a href="{{ site.url }}{{ page.url | remove_first: "/" }}">
 		{% endif %}
 			{% if page.external_image %}
-				<img src="{{ page.external_image }}">
+				{% if page.external_image contains "http" %}
+					<img src="{{ page.external_image }}">
+				{% else %}
+					<img src="{{ site.uploads }}{{ page.external_image }}">
+				{% endif %}
 			{% else %}
 				{% if page.featured %}
 					<img src="{{ site.uploads }}{{ page[page.featured]["image"] }}">
