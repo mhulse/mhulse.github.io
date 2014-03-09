@@ -3,8 +3,8 @@ layout: "post"
 date: "2005-07-20 18:16:56"
 title: "American Shredding"
 deck: "Logo &amp; animation"
-categories: ["logo"]
-tags: ["animation", "flash", "web"]
+categories: ["logo", "web"]
+tags: ["animation", "flash"]
 fig1:
   image: "american-shredding-logo-final.png"
   caption: "Refurbished logo."

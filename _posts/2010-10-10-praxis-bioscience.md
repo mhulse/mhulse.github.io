@@ -3,8 +3,8 @@ layout: "post"
 date: "2010-10-10 23:34:27"
 title: "Praxis Bioscience"
 deck: "Business cards, website design &amp; template"
-categories: ["print"]
-tags: ["web", "design", "vector"]
+categories: ["print", "web"]
+tags: ["design", "vector"]
 fig1:
   image: "praxis-card.png"
   caption: "Business card, front and back."
