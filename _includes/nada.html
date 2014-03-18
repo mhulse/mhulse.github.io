@@ -61,10 +61,9 @@
 				<param name="movie" value="{{ site.uploads }}{{ nada.flash }}">
 				<param name="allowscriptaccess" value="always">
 				<param name="menu" value="false">
-				<param name="bgcolor" value="#ffffff">
 				<param name="quality" value="high">
-				<!--<param name="wmode" value="opaque">-->
 				<param name="flashvars" value="{{ nada.flashvars }}">
+				{% if nada.base %}<param name="base" value="{% if nada.base contains "http" %}{{ nada.base }}{% else %}{{ site.uploads }}{{ nada.base }}{% endif %}">{% endif %}
 				<p><a href="http://www.adobe.com/go/getflash"><img src="http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/legal/logo/160x41_get_flashplayer.gif" alt="Get Adobe Flash player"/></a></p>
 			</object>
 		{% endif %}
