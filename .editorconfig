@@ -11,7 +11,7 @@ trim_trailing_whitespace = false
 indent_size = 4
 indent_style = tab
 
-[*.py]
+[*.{py,md}]
 indent_style = space
 
 [*.{ini,json,rb,yml}]

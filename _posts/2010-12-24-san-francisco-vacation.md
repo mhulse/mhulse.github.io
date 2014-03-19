@@ -1,8 +1,8 @@
 ---
 layout: "post"
-title: "San Francisco vacation"
-deck: "Lots o’ geotagged pics &amp; binaural audio"
 date: "2010-12-24 00:55:45"
+title: "San Francisco vacation"
+deck: "Lots o’ geotagged pics & binaural audio"
 categories: ["photography", "sound"]
 tags: ["travel", "hdri", "infrared", "map"]
 featured: "fig9"
