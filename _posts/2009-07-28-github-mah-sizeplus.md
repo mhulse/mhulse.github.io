@@ -1,6 +1,6 @@
 ---
 layout: "external"
-date: "2009-03-17 02:42:30"
+date: "2009-07-28 03:00:11"
 title: "MAH Size Plus!"
 deck: "Expression Engine 2.x plugin: Get image size plus more"
 category: "link"

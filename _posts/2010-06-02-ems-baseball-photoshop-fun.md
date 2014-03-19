@@ -1,6 +1,6 @@
 ---
 layout: "post"
-date: "2010-07-16 21:31:10"
+date: "2010-06-02 21:31:10"
 title: "Ems baseball Photoshop fun"
 deck: "Expanding billboard &amp; landing page"
 categories: ["ad"]

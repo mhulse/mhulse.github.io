@@ -1,6 +1,6 @@
 ---
 layout: "post"
-date: "2012-09-19 12:00:00"
+date: "2011-12-15 03:20:53"
 title: "Fun with Photoshop"
 deck: "Body removal service"
 categories: ["photography"]
