@@ -1,6 +1,6 @@
 ---
 layout: "post"
-date: "2009-07-18 01:12:15"
+date: "2000-01-02 12:00:00"
 title: "Digital artifacts"
 deck: "My first computer illustrations"
 categories: ["art"]
