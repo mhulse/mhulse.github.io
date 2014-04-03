@@ -21,7 +21,7 @@ fig3:
 ### Features:
 
 * Communicates with [javascript](http://en.wikipedia.org/wiki/JavaScript)/[jQuery](http://jquery.com/).
-* “[clickTAG](http://www.123-banner.com/flashbanner_clicktag.php)” support (RG uses ~~[OAS](http://www.247realmedia.com/EN-US/us/open-ad-stream.html)~~ [OpenX](http://openx.com/)).
+* “[clickTAG](http://www.123-banner.com/flashbanner_clicktag.php)” support (RG uses <s>[OAS](http://www.247realmedia.com/EN-US/us/open-ad-stream.html)</s> [OpenX](http://openx.com/)).
 * HTTP [cookie support](http://en.wikipedia.org/wiki/HTTP_cookie).
 * Easily specify the tease and main advertisement (defaults are “tease.swf” & “advert.swf”).
 * Control the timing of the the “open” state.
@@ -30,7 +30,5 @@ fig3:
 {% nada fig2 %}
 
 {% nada fig3 %}
-
-[Full page demo](http://media.hulse.me/flash/peel/index.html).
 
 Developed for [The Register-Guard](http://www.registerguard.com/).
