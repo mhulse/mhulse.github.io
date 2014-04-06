@@ -26,7 +26,7 @@ fig4:
     - "leaburg-dam.ogv"
     - "leaburg-dam.mp4"
   poster: "leaburg-dam.png"
-  caption: "Video portraying the sights and sounds of McKenzie River&#8217;s Leaburg Dam."
+  caption: "Video portraying the sights and sounds of McKenzie River’s Leaburg Dam."
 ---
 
 {% nada fig2 class="x6" wrap="mm" %}
