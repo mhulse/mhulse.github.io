@@ -31,10 +31,6 @@ fig8:
 
 {% nada fig4 %}
 
-{% nada fig5 %}
-
 {% nada fig6 %}
-
-{% nada fig7 %}
 
 {% nada fig8 %}
