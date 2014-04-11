@@ -18,6 +18,10 @@ fig3:
 
 {% nada fig1 %}
 
+{% nada fig2 %}
+
+{% nada fig3 %}
+
 ### Features:
 
 * Communicates with [javascript](http://en.wikipedia.org/wiki/JavaScript)/[jQuery](http://jquery.com/).
@@ -26,9 +30,5 @@ fig3:
 * Easily specify the tease and main advertisement (defaults are “tease.swf” & “advert.swf”).
 * Control the timing of the the “open” state.
 * Fluid animation(s).
-
-{% nada fig2 %}
-
-{% nada fig3 %}
 
 Developed for [The Register-Guard](http://www.registerguard.com/).
