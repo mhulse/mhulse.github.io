@@ -3,7 +3,8 @@ layout: "post"
 date: "2014-04-11 12:00:00"
 title: "“GitBan” at The Register-Guard"
 deck: "Kanban + GitHub repository issue tracking"
-categories: ["work"]
+categories: ["miscellany"]
+tags: ["work", "code"]
 fig1:
   image: "gitban-01.png"
 fig2:
@@ -11,13 +12,13 @@ fig2:
   caption: "Start with a GitHub repo …"
 fig3:
   image: "gitban-03.png"
-  caption: "… jot the issue numbers onto sticky notes …"
+  caption: "Jot the issue numbers onto sticky notes …"
 fig4:
   image: "gitban-04.png"
-  caption: "… stick them on a whiteboard …"
+  caption: "Stick them on a whiteboard …"
 fig5:
   image: "gitban-05.png"
-  caption: "… and use the columns to track progress."
+  caption: "Use columns to track progress."
 ---
 
 {% nada fig2 %}
@@ -29,6 +30,8 @@ fig5:
 {% nada fig5 %}
 
 We use the above “GitBan” system at [The Register-Guard](http://registerguard.com) to track development issues.
+
+---
 
 ### Linkages:
 
