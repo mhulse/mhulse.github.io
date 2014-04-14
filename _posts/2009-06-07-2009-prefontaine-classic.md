@@ -2,7 +2,7 @@
 layout: "post"
 date: "2009-06-07 15:51:17"
 title: "2009 Prefontaine Classic"
-deck: "TThe nation’s premier track & field meet"
+deck: "The nation’s premier track & field meet"
 categories: ["video"]
 fig1:
   image: "pre-2009/15-men-800-meter-run.png"

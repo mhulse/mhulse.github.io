@@ -6,4 +6,5 @@ deck: "Compact navigation for mobile devices and responsive layouts!"
 category: "link"
 external_url: "https://github.com/mhulse/jquery-megakrill"
 external_site: "GitHub"
+external_image: "megakrill.gif"
 ---

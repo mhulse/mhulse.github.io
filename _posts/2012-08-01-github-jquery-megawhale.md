@@ -6,4 +6,5 @@ deck: "Navigation like Superfish, but for mega menus!"
 category: "link"
 external_url: "https://github.com/mhulse/jquery-megawhale"
 external_site: "GitHub"
+external_image: "megawhale.gif"
 ---
