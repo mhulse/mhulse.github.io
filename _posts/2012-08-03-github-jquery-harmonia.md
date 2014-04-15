@@ -6,4 +6,5 @@ deck: "A simple jQuery plugin to replace an (un)ordered list with a form select"
 category: "link"
 external_url: "https://github.com/mhulse/jquery-harmonia"
 external_site: "GitHub"
+external_image: "harmonia.gif"
 ---

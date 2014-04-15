@@ -3,7 +3,7 @@ layout: "post"
 date: "2010-07-02 22:45:58"
 title: "Antique Ford fire truck"
 deck: "More HDRI infrared photographic experiments"
-categories: ["photography"]
+categories: ["photo"]
 tags: ["hdri", "infrared"]
 fig1:
   image: "fire-truck-1.png"

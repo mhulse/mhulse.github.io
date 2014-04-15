@@ -3,7 +3,7 @@ layout: "post"
 date: "2014-03-15 12:00:00"
 title: "Ricoh Theta tests"
 deck: "Experimenting with my new spherical image camera"
-categories: ["photography"]
+categories: ["photo"]
 tags: ["hdri", "theta"]
 fig1:
   image: "ricoh-theta-tests-01.png"

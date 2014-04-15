@@ -3,7 +3,7 @@ layout: "post"
 title: "Anthropomorphic Boxy Robot Jesus Head"
 deck: "Photoshop graffiti"
 date: "2011-08-20 16:18:37"
-categories: ["photography", "sound"]
+categories: ["photo", "sound"]
 tags: ["photoshop"]
 fig1:
   image: "anthropomorphic-boxy-robot-jesus-head.jpg"

@@ -3,7 +3,7 @@ layout: "post"
 date: "2011-12-15 03:20:53"
 title: "Fun with Photoshop"
 deck: "Body removal service"
-categories: ["photography"]
+categories: ["photo"]
 tags: ["photoshop", "editing"]
 fig1:
   image: "ps-body-removal-animation.gif"

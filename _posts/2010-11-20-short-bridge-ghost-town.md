@@ -3,7 +3,7 @@ layout: "post"
 date: "2010-11-20 00:16:17"
 title: "Short Bridge Ghost Town"
 deck: "HDRI infrared photographs &amp; binaural recording"
-categories: ["photography"]
+categories: ["photo"]
 tags: ["hdri", "infrared"]
 fig1:
   image: "short-bridge-ghost-town_001.jpg"

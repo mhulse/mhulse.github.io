@@ -5,25 +5,31 @@
 <meta name="viewport" content="width=device-width">
 
 {% if page.kind %}
-	<title>{{ page.kind | capitalize }}: {{ paginator.name | capitalize }} | {{ site.title }}</title>
-	<meta property="og:title" content="{{ page.kind | capitalize }} | {{ paginator.name | capitalize }} | {{ site.title }}">
+	{% capture title %}{{ page.kind | capitalize }}: {{ paginator.name | capitalize }} | {% if paginator.page > 1 %}Page {{ paginator.page }} | {% endif %}{{ site.title }}{% endcapture %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
 {% elsif page.taxonomy or page.marker %}
-	<title>{{ page.taxonomy | append: page.marker | capitalize }} | {{ site.title }}</title>
-	<meta property="og:title" content="{{ page.taxonomy | append: page.marker | capitalize }} | {{ site.title }}">
+	{% capture title %}{{ page.taxonomy | append: page.marker | capitalize }} | {% if paginator.page > 1 %}Page {{ paginator.page }} | {% endif %}{{ site.title }}{% endcapture %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
 {% elsif page.title %}
-	<title>{{ page.title }} | {{ site.title }}</title>
-	<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+	{% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
 {% else %}
-	<title>{{ site.title }}</title>
-	<meta property="og:title" content="{{ site.title }}">
+	{% capture title %}{% if paginator.page > 1 %}Page {{ paginator.page }} | {% endif %}{{ site.title }}{% endcapture %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
 {% endif %}
 
 {% if page.kind %}
-	<meta name="description" content="Entries posted in the {{ page.kind }} {{ paginator.name }}.">
-	<meta property="og:description" content="Entries posted in the {{ page.kind }} {{ paginator.name }}.">
+	{% capture description %}Entries posted in the {{ page.kind }} {{ paginator.name }}.{% endcapture %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}">
 {% elsif page.marker %}
-	<meta name="description" content="Welcome to the {{ page.marker }} page.">
-	<meta property="og:description" content="Welcome to the {{ page.marker }} page.">
+	{% capture description %}Welcome to the {{ page.marker }} page.{% endcapture %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}">
 {% elsif page.taxonomy %}
 	{% case page.taxonomy %}
 		{% when "tags" %}
@@ -31,14 +37,17 @@
 		{% when "categories" %}
 			{% assign target = "category" %}
 	{% endcase %}
-	<meta name="description" content="Browse entries by {{ target }}.">
-	<meta property="og:description" content="Browse entries by {{ target }}.">
+	{% capture description %}Browse entries by {{ target }}.{% endcapture %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}">
 {% elsif page.deck %}
-	<meta name="description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
-	<meta property="og:description" content="{{ page.deck | markdownify | strip_html | strip_newlines }}">
+	{% capture description %}{{ page.deck | markdownify | strip_html | strip_newlines }}{% endcapture %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}">
 {% else %}
-	<meta name="description" content="{{ site.description }}">
-	<meta property="og:description" content="{{ site.description }}">
+	{% capture description %}{{ site.description }}{% endcapture %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:description" content="{{ description }}">
 {% endif %}
 
 {% capture keywords %},{{ page.categories | join: ',' }},{{ page.tags | join: ',' }},{{ site.keywords | join: ',' }}{% endcapture %}

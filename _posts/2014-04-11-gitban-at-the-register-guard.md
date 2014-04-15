@@ -12,11 +12,14 @@ fig2:
   caption: "Start with a GitHub repo …"
 fig3:
   image: "gitban-03.png"
-  caption: "Jot the issue numbers onto sticky notes …"
+  caption: "Create some issues …"
 fig4:
+  image: "gitban-sticky.gif"
+  caption: "Write issue numbers on sticky notes …"
+fig5:
   image: "gitban-04.png"
   caption: "Stick them on a whiteboard …"
-fig5:
+fig6:
   image: "gitban-05.png"
   caption: "Use columns to track progress."
 ---
@@ -28,6 +31,8 @@ fig5:
 {% nada fig4 %}
 
 {% nada fig5 %}
+
+{% nada fig6 %}
 
 We use the above “GitBan” system at [The Register-Guard](http://registerguard.com) to track development issues.
 

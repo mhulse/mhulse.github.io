@@ -3,7 +3,7 @@ layout: "post"
 date: "2011-03-22 21:44:15"
 title: "San Francisco pics"
 deck: "Skyline from Treasure Island, Dutch Windmill and Mission Dolores"
-categories: ["photography"]
+categories: ["photo"]
 tags: ["travel", "hdri", "infrared"]
 fig1:
   image: "001_san-francisco-may-2011_20110320.jpg"

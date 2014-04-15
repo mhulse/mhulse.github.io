@@ -3,7 +3,7 @@ layout: "post"
 date: "2010-08-04 23:35:20"
 title: "Peace + Love = Party"
 deck: "Dead bird infrared p&s photography"
-categories: ["photography"]
+categories: ["photo"]
 tags: ["hdri", "infrared"]
 fig1:
   image: "peace_plus_love_equals_party.jpg"
