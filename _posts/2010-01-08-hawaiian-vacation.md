@@ -5,7 +5,7 @@ title: "Hawaiian vacation"
 deck: "Welcoming the 2010 New Year in Oahu, Hawaii"
 categories: ["photo"]
 tags: ["travel"]
-featured: "fig9"
+featured: "fig39"
 fig1:
   image: "hawaii/hawaii-01.jpg"
   caption: "**Scary Micky:** View from Clarion hotel room window, Portland, Oregon."
