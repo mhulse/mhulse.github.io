@@ -3,7 +3,7 @@
 	{% if nada.wrap %}<div class="{{ nada.wrap }}">{% endif %}
 		{% if nada.image %}
 			{% if nada.lat and nada.lon %}
-				<a href="https://www.google.com/maps/place/{{ nada.lat | uri_escape }}+{{ nada.lon | cgi_escape }}" target="_blank" rel="nofollow">
+				<a class="nix" href="https://www.google.com/maps/place/{{ nada.lat | uri_escape }}+{{ nada.lon | cgi_escape }}" target="_blank" rel="nofollow">
 			{% endif %}
 			<img
 				src="{{ site.uploads }}{{ nada.image }}"
