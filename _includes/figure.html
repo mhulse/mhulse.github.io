@@ -3,7 +3,7 @@
 	<figure>
 		
 		{% if page.external_url %}
-			<a href="{{ page.external_url }}"{% if page.external_site %} title="Visit {{ page.title }} on {{ page.external_site }}."{% endif %} target="_blank" rel="nofollow">
+			<a class="nix" href="{{ page.external_url }}"{% if page.external_site %} title="Visit {{ page.title }} on {{ page.external_site }}."{% endif %} target="_blank" rel="nofollow">
 		{% else %}
 			<a class="nix" href="{{ site.url }}{{ page.url | remove_first: "/" }}">
 		{% endif %}
