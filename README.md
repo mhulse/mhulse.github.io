@@ -89,6 +89,8 @@ To update Jekyll, run:
 $ bundle update jekyll
 ```
 
+**Note:** When updating Jekyll, don't forget to browse the [changelog history](http://jekyllrb.com/docs/history/).
+
 ... or, update everything:
 
 ```bash
