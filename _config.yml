@@ -17,9 +17,9 @@ name                : "Micky Hulse"
 paginate            : 25
 paginate_path       : "/:num/"
 permalink           : "/:title/"
-pygments            : true
+highlighter         : "pygments"
 relative_permalinks : false
-timezone            : America/Los_Angeles
+timezone            : "America/Los_Angeles"
 title               : "mky.io"
 twitter             : "mickyhulse"
 uploads             : "http://uploads.mky.io/"
