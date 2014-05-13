@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-04-10 23:48:35"
 title: "Dexter Reservoir Regatta"
 deck: "Interviews"

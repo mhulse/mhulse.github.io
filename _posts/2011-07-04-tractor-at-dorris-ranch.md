@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2011-07-04 22:39:53"
 title: "Tractor at Dorris Ranch"
 deck: "HDRI infrared photograph"

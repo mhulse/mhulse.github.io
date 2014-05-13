@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-06-08 16:16:27"
 title: "2008 Prefontaine Classic"
 deck: "The nation’s premier track & field meet"

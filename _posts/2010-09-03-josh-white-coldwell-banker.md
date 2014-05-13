@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-09-03 12:35:16"
 title: "Josh White @ Coldwell Banker"
 deck: "Leaderboard &amp; box ad"

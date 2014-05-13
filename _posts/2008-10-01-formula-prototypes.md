@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-10-01 19:40:32"
 title: "Formula Prototypes"
 deck: "Powered by Textpattern"

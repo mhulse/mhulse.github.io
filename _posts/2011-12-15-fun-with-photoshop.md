@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2011-12-15 03:20:53"
 title: "Fun with Photoshop"
 deck: "Body removal service"

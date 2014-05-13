@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-06-13 02:27:11"
 title: "Box Shredz"
 deck: "Experimental Flash thingy"

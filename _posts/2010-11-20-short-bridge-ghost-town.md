@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-11-20 00:16:17"
 title: "Short Bridge Ghost Town"
 deck: "HDRI infrared photographs &amp; binaural recording"

@@ -27,6 +27,13 @@ url                 : "http://mky.io/"
 email               : "m@mky.io"
 production          :
   url               : "http://mky.io/"
+defaults :
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"
 gems:
   - "jemoji"
   - "jekyll-nada"

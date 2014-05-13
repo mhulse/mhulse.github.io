@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-09-11 08:50:41"
 title: "The “European” Marge Simpson"
 deck: "Google map illustration"

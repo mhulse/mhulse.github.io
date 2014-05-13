@@ -1,5 +1,4 @@
 ---
-layout: "post"
 title: "Self absorption"
 deck: "Experimental sponge art"
 date: "2002-12-23 21:43:30"

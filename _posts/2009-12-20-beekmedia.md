@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-12-20 21:00:31"
 title: "Beekmedia"
 deck: "Logo design comps"

@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2012-02-24 09:43:08"
 title: "The Register-Guard 2012 Readers’ Choice"
 deck: "Logo refresh"

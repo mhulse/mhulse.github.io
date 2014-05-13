@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-10-25 12:27:54"
 title: "Light bulb"
 deck: "Wacom illustration #5"

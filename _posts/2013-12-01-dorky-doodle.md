@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2013-12-01 12:00:00"
 title: "Dorky doodle"
 deck: "Dip pen caricature"

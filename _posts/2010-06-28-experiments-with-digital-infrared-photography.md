@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-06-28 10:57:13"
 title: "Experiments with digital infrared photography"
 deck: "Palace of Fine Arts &amp; Mount Pisgah Arboretum tool shed"

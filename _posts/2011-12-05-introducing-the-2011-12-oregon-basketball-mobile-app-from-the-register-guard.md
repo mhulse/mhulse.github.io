@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2011-12-05 21:56:42"
 title: "Introducing the 2011-12 Oregon basketball mobile app from The Register-Guard"
 deck: "Powered by DoApp with a Django back end"

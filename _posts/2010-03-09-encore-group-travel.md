@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-03-09 18:34:59"
 title: "Encore Group Travel"
 deck: "Logo upgrade"

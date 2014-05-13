@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-09-10 17:46:00"
 title: "Don Latarski & Rue D’Acoustic"
 deck: "Luna Jazz-Session"

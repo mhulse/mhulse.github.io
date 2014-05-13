@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-07-27 21:27:31"
 title: "Kid with gun"
 deck: "Colored pencil study gone Wacom #3"

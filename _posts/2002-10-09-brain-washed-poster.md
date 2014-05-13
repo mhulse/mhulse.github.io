@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2002-10-09 23:10:50"
 title: "Brain washed poster"
 deck: "Don’t have a cow, man!"

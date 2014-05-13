@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-07-25 18:34:34"
 title: "No more “practice” swings"
 deck: "Interview with golf pro Brandon Richardson"

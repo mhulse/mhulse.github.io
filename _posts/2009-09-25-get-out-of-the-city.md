@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-09-25 08:56:53"
 title: "Get out of the city"
 deck: "Wacom illustration #4"

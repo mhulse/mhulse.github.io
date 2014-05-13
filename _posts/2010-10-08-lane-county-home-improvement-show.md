@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-10-08 19:49:30"
 title: "Lane County Home Improvement Show"
 deck: "Expanding billboard"

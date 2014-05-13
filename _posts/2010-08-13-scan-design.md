@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-08-13 10:23:13"
 title: "Scan Design"
 deck: "Box ad"

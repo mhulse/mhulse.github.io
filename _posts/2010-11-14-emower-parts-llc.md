@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-11-14 20:58:17"
 title: "eMower Parts LLC"
 deck: "Logo design"

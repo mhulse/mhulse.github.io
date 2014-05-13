@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-08-02 22:30:50"
 title: "Día de los Cowboys"
 deck: "Experimental technique &amp; practice Photoshop illustration"

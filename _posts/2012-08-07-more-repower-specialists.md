@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2012-08-07 21:53:10"
 title: "More Repower Specialists"
 deck: "Brochure, insert &amp; stickers"

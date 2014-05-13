@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-05-03 23:59:29"
 title: "2008 Eugene Marathon"
 deck: "Eugene, Oregon"

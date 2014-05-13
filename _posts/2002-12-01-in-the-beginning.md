@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2002-12-01 21:14:20"
 title: "In the beginning"
 deck: "Workin’ with Maya 3d"

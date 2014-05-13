@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-10-24 03:04:56"
 title: "McKenzie Highway"
 deck: "Video vignettes"

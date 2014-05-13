@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-05-06 01:40:32"
 title: "On location with Brad Leiken"
 deck: "Golf pro shares a tip"

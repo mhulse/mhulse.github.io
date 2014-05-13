@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-11-07 14:25:45"
 title: "Owl &amp; leaves"
 deck: "Another Wacom still life doodle"

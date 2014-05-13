@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-02-04 03:10:00"
 title: "2010 Duck Football Signing Day"
 deck: "Chip Kelly Press Conference"

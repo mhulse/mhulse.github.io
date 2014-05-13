@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2011-01-05 20:18:38"
 title: "Les Schwab Tires"
 deck: "Expanding billboard"

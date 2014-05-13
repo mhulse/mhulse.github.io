@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2011-03-22 21:44:15"
 title: "San Francisco pics"
 deck: "Skyline from Treasure Island, Dutch Windmill and Mission Dolores"

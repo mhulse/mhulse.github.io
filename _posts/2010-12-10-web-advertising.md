@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-12-10 20:30:25"
 title: "Web advertising"
 deck: "Flexible Flash video player with minimalist skin"

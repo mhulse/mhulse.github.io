@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-01-08 16:46:56"
 title: "Hawaiian vacation"
 deck: "Welcoming the 2010 New Year in Oahu, Hawaii"

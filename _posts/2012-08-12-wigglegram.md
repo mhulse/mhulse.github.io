@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2012-08-12 1:01:16"
 title: "Wigglegram"
 deck: "My first stereographic drawing"

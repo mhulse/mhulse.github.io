@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2005-11-05 17:28:11"
 title: "Spring Creek Elementary"
 deck: "Website banner"

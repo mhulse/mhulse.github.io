@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-06-11 02:52:49"
 title: "Go Entertainment"
 deck: "The event source for Lane County"

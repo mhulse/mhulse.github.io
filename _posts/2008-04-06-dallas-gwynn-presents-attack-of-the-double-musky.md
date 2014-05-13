@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-04-06 20:00:48"
 title: "Dallas Gwynn presents “Attack of the Double Musky”"
 deck: "A one-woman comedy show"

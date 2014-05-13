@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-07-04 15:44:19"
 title: "Independence Day 2008"
 deck: "Alton Baker Park Eugene Oregon"

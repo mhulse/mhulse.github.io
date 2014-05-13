@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-08-13 00:36:21"
 title: "This cancer is inoperable"
 deck: "Wacom Photoshop doodle"

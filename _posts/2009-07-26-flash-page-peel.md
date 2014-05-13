@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-07-26 09:33:51"
 title: "Flash page peel"
 deck: "Page ear advertisement"

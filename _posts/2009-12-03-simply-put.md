@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2001-07-01 12:00:00"
 title: "Simply put"
 deck: "UO Experimental Animation 2001"

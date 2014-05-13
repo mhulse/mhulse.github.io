@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2004-08-15 21:14:55"
 title: "Pixel icon navigation"
 deck: "Experimental Flash widget"

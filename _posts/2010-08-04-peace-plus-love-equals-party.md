@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-08-04 23:35:20"
 title: "Peace + Love = Party"
 deck: "Dead bird infrared p&s photography"

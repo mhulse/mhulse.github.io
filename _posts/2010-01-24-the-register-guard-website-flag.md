@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-01-24 16:35:25"
 title: "The Register-Guard website flag"
 deck: "Logo evolution"

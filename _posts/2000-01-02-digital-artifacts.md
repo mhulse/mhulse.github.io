@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2000-01-02 12:00:00"
 title: "Digital artifacts"
 deck: "My first computer illustrations"

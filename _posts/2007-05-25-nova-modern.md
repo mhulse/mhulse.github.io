@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2007-05-25 18:19:44"
 title: "Nova Modern"
 deck: "Powered by Textpattern"

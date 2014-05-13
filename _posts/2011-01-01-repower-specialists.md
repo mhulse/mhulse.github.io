@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2011-01-01 23:56:13"
 title: "Repower Specialists"
 deck: "Business card, letterhead and envelope"

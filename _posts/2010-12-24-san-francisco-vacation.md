@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-12-24 00:55:45"
 title: "San Francisco vacation"
 deck: "Lots o’ geotagged pics & binaural audio"

@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-03-11 11:59:02"
 title: "Duck football players in court"
 deck: "Masoli, James, Embry plead guilty"

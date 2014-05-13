@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-07-11 18:25:41"
 title: "How Turin Became 7.0"
 deck: "Newspaper upgrade documentary"

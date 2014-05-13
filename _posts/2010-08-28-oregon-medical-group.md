@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-08-28 12:24:30"
 title: "Oregon Medical Group"
 deck: "Expanding billboard"

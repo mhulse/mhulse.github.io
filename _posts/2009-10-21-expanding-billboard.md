@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-10-21 20:01:52"
 title: "Expanding billboard"
 deck: "Pencil leave behind advertisement"

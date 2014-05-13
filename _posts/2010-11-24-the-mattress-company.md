@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-11-24 00:38:54"
 title: "The Mattress Company"
 deck: "Expanding billboard"

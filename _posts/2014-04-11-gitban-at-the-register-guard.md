@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2014-04-11 12:00:00"
 title: "“GitBan” at The Register-Guard"
 deck: "Kanban + GitHub repository issue tracking"

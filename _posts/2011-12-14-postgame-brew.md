@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2011-12-14 13:08:31"
 title: "Postgame Brew"
 deck: "With Rob and George"

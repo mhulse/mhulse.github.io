@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-06-06 23:53:59"
 title: "Chefs’ Night Out 2008"
 deck: "Lane County’s premier food and drink event"

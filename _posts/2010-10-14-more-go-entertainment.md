@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2010-10-14 18:40:07"
 title: "More Go Entertainment"
 deck: "The “Mobile” event source for Lane County"

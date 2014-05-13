@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2009-01-04 15:12:01"
 title: "The Christmas count"
 deck: "Counting birds in Eugene"

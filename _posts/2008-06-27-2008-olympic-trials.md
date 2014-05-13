@@ -1,5 +1,4 @@
 ---
-layout: "post"
 date: "2008-06-27 23:55:10"
 title: "2008 Olympic Trials"
 deck: "Olympian interviews, press conferences, & other Fan Festival sights & sounds"
