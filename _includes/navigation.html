@@ -1,5 +1,7 @@
+{% assign categories = site.categories | sort %}
+
 <nav role="navigation">
 	
-	<ul class="x3">{% for category in site.categories %}{% assign cat = category | first | downcase %}<li><a{% if paginator.name == cat %} class="selected"{% endif %} title="{% assign count = category | last | size %}{{ count }} post{% if count > 1 %}s{% endif %}" rel="category" href="{{ site.url }}category/{{ cat }}/">{{ cat | capitalize }}</a></li>{% endfor %}</ul>
+	<ul class="x3">{% for category in categories %}{% assign cat = category | first | downcase %}<li><a{% if paginator.name == cat %} class="selected"{% endif %} title="{% assign count = category | last | size %}{{ count }} post{% if count > 1 %}s{% endif %}" rel="category" href="{{ site.url }}category/{{ cat }}/">{{ cat | capitalize }}</a></li>{% endfor %}</ul>
 	
 </nav>
