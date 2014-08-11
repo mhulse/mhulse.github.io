@@ -14,9 +14,9 @@ markdown            : "redcarpet"
 redcarpet           :
   extensions        : ["smart"]
 name                : "Micky Hulse"
-paginate            : 25
+paginate            : 999
 paginate_path       : "/:num/"
-permalink           : "/:title/"
+permalink           : "/:title.html"
 highlighter         : "pygments"
 relative_permalinks : false
 timezone            : "America/Los_Angeles"

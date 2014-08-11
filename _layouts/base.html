@@ -1,20 +1,30 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html class="no-touch no-js" lang="en" dir="ltr">
+
+<!-- Copyright © 2013-14 Micky Hulse. All rights reserved. -->
 
 <head>
 	
-	{% include head.html %}
+	<script>/*! https://gist.github.com/mhulse/4704893 */;(function(b,a,c){(('ontouchstart'in b)||(b.DocumentTouch&&a instanceof DocumentTouch)||(c.MaxTouchPoints>0)||(c.msMaxTouchPoints>0))&&(a.documentElement.className=a.documentElement.className.replace(/\bno-touch\b/,'touch'));a.documentElement.className=a.documentElement.className.replace(/\bno-js\b/,'js')}(window,document,navigator));</script>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	
+	<meta name="copyright" content="Copyright © 2013-14 Micky Hulse. All rights reserved.">
+	
+	<title>…</title>
+	<meta name="description" content="Take my Worf. Please.">
+	
+	<link rel="stylesheet" href="//fonts.mky.io/hulse/hulse.css">
+	<link rel="stylesheet" href="//mky.io/data/prod/0.1.0/20140810/1/styles/data.min.css">
 	
 	{% if page.head_extra %}{{ page.head_extra }}{% endif %}
 	
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
 	
-	{% include flag.html %}
-	
-	{% include navigation.html %}
-	
-	{% include search.html %}
+	<h1 id="flag"><a href="{{ site.url }}"><span>mky.io</span></a></h1>
 	
 	<main role="main">
 		
@@ -26,15 +36,21 @@
 		
 	</main>
 	
-	{% include footer.html %}
-	
-	{% include scripts.html %}
+	<script src="//mky.io/data/prod/0.1.0/20140810/1/scripts/data.min.js"></script>
 	
 	{% if page.footer_extra %}{{ page.footer_extra }}{% endif %}
 	
-	{% include analytics.html %}
+	<script>
+		(function(p,i,c,a,r,d){p.GoogleAnalyticsObject=a;p[a]||(p[a]=
+		function(){(p[a].q=p[a].q||[]).push(arguments)});p[a].a=+new Date;
+		r=i.createElement(c);d=i.getElementsByTagName(c)[0];
+		r.src='//www.google-analytics.com/analytics.js';
+		d.parentNode.insertBefore(r,d)}(window,document,'script','ga'));
+		ga('create','UA-46485001-1','mky.io');
+		ga('require','displayfeatures');
+		ga('require','linkid','linkid.js');
+		ga('send','pageview');
+	</script>
 	
 </body>
 </html>
-
-<!-- Site last updated: {% assign m = site.time | date: "%B" %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }}{% when 'September' %}Sept.{% else %}{{ site.time | date: "%b" }}.{% endcase %} {{ site.time | date: "%-d" }}, {{ site.time | date: "%Y" }}. -->

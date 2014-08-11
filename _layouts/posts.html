@@ -2,36 +2,54 @@
 layout: base
 ---
 
-{% include marker.html %}
-
-{% if paginator.page >= 2 %}
+<div id="primary">
 	
-	{% include pagination.html top=true %}
-	
-{% endif %}
-
-{% for page in paginator.posts %}
-	
-	<article itemscope itemtype="http://schema.org/Article">
+	<h3 id="geekery" rel="tooltip" title="Geekery" data-kaomoji="꜀(・⊝・)꜆" data-kaomoji-hover="⊂( ● Θ ● )⊃"><span>Geekery</span></h3>
+	<div>
 		
-		{% if page.external_url %}
-			
-			{% include figure.html %}
-			
-			{% include external.html %}
-			
-		{% else %}
-			
-			{% include header.html %}
-			
-			{% include figure.html %}
-			
-		{% endif %}
+		<ul>
+			<li><a href="http://github.com/mhulse" target="_blank" rel="nofollow">@mhulse</a></li>
+			<li><a href="http://github.com/registerguard" target="_blank" rel="nofollow">registerguard</a></li>
+			<li><a href="http://github.com/registerguard" target="_blank" rel="nofollow">rgpages</a></li>
+			<li><a href="https://gist.github.com/mhulse" target="_blank" rel="nofollow">Gists</a></li>
+		</ul>
 		
-	</article>
+	</div>
 	
-	{% if forloop.last %}{% else %}<hr>{% endif %}
+	<h3 id="social" rel="tooltip" title="Social" data-kaomoji="╭(๏ ౪ ๏)╮" data-kaomoji-hover="⁀( ꉺ ਊ ꉺ )⁀"><span>Social</span></h3>
+	<div>
+		
+		<ul>
+			<li><a href="http://stackexchange.com/users/560173/mhulse" target="_blank" rel="nofollow">StackExchange</a></li>
+			<li><a href="https://groups.google.com/forum/#!forum/dti-lightning" target="_blank" rel="nofollow">DTI Lightning-dev</a></li>
+			<!--<li><a href="#">Thequickbrownfox hxy jumpsoverthelazydog hxy</a></li>-->
+		</ul>
+		
+	</div>
 	
-{% endfor %}
-
-{% include pagination.html %}
+	<h3 id="bookmarks" rel="tooltip" title="Bookmarks" data-kaomoji="୧( ಠ෴ಠ )୨" data-kaomoji-hover="ᕦ(＾ꁞ＾)ᕤ"><span>Bookmarks</span></h3>
+	<div>
+		
+		<ul>
+			<li><a href="https://pinboard.in/u:mhulse" target="_blank" rel="nofollow">Pinboard</a></li>
+			<li><a href="https://github.com/stars/mhulse" target="_blank" rel="nofollow">GitHub Stars</a></li>
+		</ul>
+		
+	</div>
+	
+	<h3 id="work" rel="tooltip" title="Work" data-kaomoji="⸝( ᵒ ᴥ ᵒ )⸜" data-kaomoji-hover="＼( ⁰ ꈊ ⁰ )／"><span>Work</span></h3>
+	<div>
+		
+		<div id="secondary">
+			
+			{% for page in paginator.posts %}
+				
+				<h3 id="{{ page.url | remove: "/" | remove: ".html" }}"><a href="{{ page.url | remove_first: "/" }}">{{ page.title }}</a></h3>
+				
+			{% endfor %}
+			
+		</div> <!-- /#secondary -->
+		
+	</div>
+	
+</div> <!-- /#primary -->
