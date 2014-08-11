@@ -4,10 +4,10 @@ layout: base
 
 <div id="primary">
 	
-	<h3 id="geekery" rel="tooltip" title="Geekery" data-kaomoji="꜀(・⊝・)꜆" data-kaomoji-hover="⊂( ● Θ ● )⊃"><span>Geekery</span></h3>
-	<div>
+	<h3 id="geekery" data-kaomoji="꜀(・⊝・)꜆" data-kaomoji-hover="⊂( ● Θ ● )⊃" rel="tooltip" title="Geekery"><span>Geekery</span></h3>
+	<div class="ui-accordion-content">
 		
-		<ul>
+		<ul class="links">
 			<li><a href="http://github.com/mhulse" target="_blank" rel="nofollow">@mhulse</a></li>
 			<li><a href="http://github.com/registerguard" target="_blank" rel="nofollow">registerguard</a></li>
 			<li><a href="http://github.com/registerguard" target="_blank" rel="nofollow">rgpages</a></li>
@@ -16,10 +16,10 @@ layout: base
 		
 	</div>
 	
-	<h3 id="social" rel="tooltip" title="Social" data-kaomoji="╭(๏ ౪ ๏)╮" data-kaomoji-hover="⁀( ꉺ ਊ ꉺ )⁀"><span>Social</span></h3>
-	<div>
+	<h3 id="social" data-kaomoji="╭(๏ ౪ ๏)╮" data-kaomoji-hover="⁀( ꉺ ਊ ꉺ )⁀" rel="tooltip" title="Social"><span>Social</span></h3>
+	<div class="ui-accordion-content">
 		
-		<ul>
+		<ul class="links">
 			<li><a href="http://stackexchange.com/users/560173/mhulse" target="_blank" rel="nofollow">StackExchange</a></li>
 			<li><a href="https://groups.google.com/forum/#!forum/dti-lightning" target="_blank" rel="nofollow">DTI Lightning-dev</a></li>
 			<!--<li><a href="#">Thequickbrownfox hxy jumpsoverthelazydog hxy</a></li>-->
@@ -27,24 +27,24 @@ layout: base
 		
 	</div>
 	
-	<h3 id="bookmarks" rel="tooltip" title="Bookmarks" data-kaomoji="୧( ಠ෴ಠ )୨" data-kaomoji-hover="ᕦ(＾ꁞ＾)ᕤ"><span>Bookmarks</span></h3>
-	<div>
+	<h3 id="bookmarks" data-kaomoji="୧( ಠ෴ಠ )୨" data-kaomoji-hover="ᕦ(＾ꁞ＾)ᕤ" rel="tooltip" title="Bookmarks"><span>Bookmarks</span></h3>
+	<div class="ui-accordion-content">
 		
-		<ul>
+		<ul class="links">
 			<li><a href="https://pinboard.in/u:mhulse" target="_blank" rel="nofollow">Pinboard</a></li>
 			<li><a href="https://github.com/stars/mhulse" target="_blank" rel="nofollow">GitHub Stars</a></li>
 		</ul>
 		
 	</div>
 	
-	<h3 id="work" rel="tooltip" title="Work" data-kaomoji="⸝( ᵒ ᴥ ᵒ )⸜" data-kaomoji-hover="＼( ⁰ ꈊ ⁰ )／"><span>Work</span></h3>
-	<div>
+	<h3 id="work" data-kaomoji="⸝( ᵒ ᴥ ᵒ )⸜" data-kaomoji-hover="＼( ⁰ ꈊ ⁰ )／" rel="tooltip" title="Work"><span>Work</span></h3>
+	<div class="ui-accordion-content">
 		
 		<div id="secondary">
 			
 			{% for page in paginator.posts %}
 				
-				<h3 id="{{ page.url | remove: "/" | remove: ".html" }}"><a href="{{ page.url | remove_first: "/" }}">{{ page.title }}</a></h3>
+				<h3 id="{{ page.url | remove: "/" | remove: ".html" }}" data-href="{{ page.url | remove_first: "/" }}"><span><span>{{ page.title }}</span></span></h3>
 				
 			{% endfor %}
 			
