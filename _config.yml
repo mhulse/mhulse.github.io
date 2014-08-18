@@ -1,32 +1,29 @@
-build               : "prod/1.1.0/20140621/1/"
-bwt                 : "B46559147E88568614EBEBCB2BEF258C"
-description         : "GMO-, gluten- and Bootstrap-free. :)"
-disqus              : "mhulse"
-excerpt_separator   : ""
-exclude             : ["README.md", "Gemfile", "Gemfile.lock"]
-fonts               : "http://fonts.mky.io/"
-theme               : "http://picard.mky.io/"
-ga                  : "UA-46485001-1"
-gwt                 : "hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE"
-include             : ["_pages"]
+build               : "prod/0.1.0/20140817/1/"
+
+title               : "mky.io"
+name                : "Micky Hulse"
+email               : "m@mky.io"
+description         : "Nothing to see here. Move along."
 keywords            : ["code", "web development", "design", "art"]
+
+url                 : "http://mky.io/"
+uploads             : "http://uploads.mky.io/"
+fonts               : "http://fonts.mky.io/"
+theme               : "http://data.mky.io/"
+
+gwt                 : "hFQuXLW_jYcL7blZAbUFoAVZWMnRZdYKH7hnducJvDE"
+bwt                 : "B46559147E88568614EBEBCB2BEF258C"
+ga                  : "UA-46485001-1"
+
+highlighter         : "pygments"
+relative_permalinks : false
 markdown            : "redcarpet"
 redcarpet           :
   extensions        : ["smart"]
-name                : "Micky Hulse"
-paginate            : 999
-paginate_path       : "/:num/"
+paginate            : 9999
 permalink           : "/:title.html"
-highlighter         : "pygments"
-relative_permalinks : false
 timezone            : "America/Los_Angeles"
-title               : "mky.io"
-twitter             : "mickyhulse"
-uploads             : "http://uploads.mky.io/"
-url                 : "http://mky.io/"
-email               : "m@mky.io"
-production          :
-  url               : "http://mky.io/"
+
 defaults :
   -
     scope:
@@ -34,6 +31,9 @@ defaults :
       type: "post"
     values:
       layout: "post"
+
+exclude             : ["README.md", "Gemfile", "Gemfile.lock"]
+include             : ["_pages"]
 gems:
   - "jemoji"
   - "jekyll-nada"

@@ -1,8 +1,6 @@
 <!doctype html>
 <html class="no-touch no-js" lang="en" dir="ltr">
 
-<!-- Copyright © 2013-14 Micky Hulse. All rights reserved. -->
-
 <head>
 	
 	<script>/*! https://gist.github.com/mhulse/4704893 */;(function(b,a,c){(('ontouchstart'in b)||(b.DocumentTouch&&a instanceof DocumentTouch)||(c.MaxTouchPoints>0)||(c.msMaxTouchPoints>0))&&(a.documentElement.className=a.documentElement.className.replace(/\bno-touch\b/,'touch'));a.documentElement.className=a.documentElement.className.replace(/\bno-js\b/,'js')}(window,document,navigator));</script>
@@ -11,20 +9,62 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 	
-	<meta name="copyright" content="Copyright © 2013-14 Micky Hulse. All rights reserved.">
+	<meta name="copyright" content="Copyright © 2013-{{ site.time | date: '%y' }} {{ site.name }}. All rights reserved.">
 	
-	<title>…</title>
-	<meta name="description" content="Take my Worf. Please.">
+	<title>{{ site.title }}</title>
+	<meta name="description" content="{{ site.description }}">
 	
-	<link rel="stylesheet" href="//fonts.mky.io/hulse/hulse.css">
-	<link rel="stylesheet" href="//mky.io/data/prod/0.1.0/20140811/1/styles/data.min.css">
+	{% if site.gwt %}<meta name="google-site-verification" content="{{ site.gwt }}">{% endif %}
+	{% if site.bwt %}<meta name="msvalidate.01" content="{{ site.bwt }}">{% endif %}
+	
+	<link rel="stylesheet" href="{{ site.fonts }}hulse/hulse.css">
+	<link rel="stylesheet" href="{{ site.theme }}{{ site.build }}styles/data.min.css">
 	
 	{% if page.head_extra %}{{ page.head_extra }}{% endif %}
 	
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
 	
-	<h1 id="flag"><a href="{{ site.url }}"><span>mky.io</span></a></h1>
+	<header role="banner">
+		
+		<h6 id="flag"><a href="{{ site.url }}"><span>mky.io</span></a></h6>
+		
+		<nav role="navigation">
+			
+			<ul class="harmonia">
+				
+				<li>
+					<span>Code</span>
+					<ul>
+						<li><a href="http://github.com/mhulse" target="_blank" rel="nofollow">@mhulse</a></li>
+						<li><a href="http://github.com/registerguard" target="_blank" rel="nofollow">@registerguard</a></li>
+						<li><a href="http://github.com/registerguard" target="_blank" rel="nofollow">@rgpages</a></li>
+						<li><a href="https://gist.github.com/mhulse" target="_blank" rel="nofollow">Gists</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<span>Geekery</span>
+					<ul>
+						<li><a href="http://stackexchange.com/users/560173/mhulse" target="_blank" rel="nofollow">Stack</a></li>
+						<li><a href="https://groups.google.com/forum/#!forum/dti-lightning" target="_blank" rel="nofollow">Lightning-dev</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<span>Bookmarks</span>
+					<ul>
+						<li><a href="https://pinboard.in/u:mhulse" target="_blank" rel="nofollow">Pinboard</a></li>
+						<li><a href="https://github.com/stars/mhulse" target="_blank" rel="nofollow">Stars</a></li>
+						<li><a href="http://stackexchange.com/users/560173/mhulse?tab=favorites" target="_blank" rel="nofollow">Favorites</a></li>
+					</ul>
+				</li>
+				
+			</ul> <!-- /.harmonia -->
+			
+		</nav>
+		
+	</header>
 	
 	<main role="main">
 		
@@ -38,21 +78,11 @@
 		
 	</main>
 	
-	<script src="//mky.io/data/prod/0.1.0/20140811/1/scripts/data.min.js"></script>
+	<script src="{{ site.theme }}{{ site.build }}scripts/data.min.js"></script>
 	
 	{% if page.footer_extra %}{{ page.footer_extra }}{% endif %}
 	
-	<script>
-		(function(p,i,c,a,r,d){p.GoogleAnalyticsObject=a;p[a]||(p[a]=
-		function(){(p[a].q=p[a].q||[]).push(arguments)});p[a].a=+new Date;
-		r=i.createElement(c);d=i.getElementsByTagName(c)[0];
-		r.src='//www.google-analytics.com/analytics.js';
-		d.parentNode.insertBefore(r,d)}(window,document,'script','ga'));
-		ga('create','UA-46485001-1','mky.io');
-		ga('require','displayfeatures');
-		ga('require','linkid','linkid.js');
-		ga('send','pageview');
-	</script>
+	<script>!function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r,i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=+new Date,a=s.createElement(o),m=s.getElementsByTagName(o)[0],a.src=g,m.parentNode.insertBefore(a,m)}(this,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","{{ site.ga }}","mky.io");ga("send","pageview");</script>
 	
 </body>
 </html>

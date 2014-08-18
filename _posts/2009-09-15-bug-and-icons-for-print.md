@@ -1,6 +1,6 @@
 ---
 date: "2009-09-15 18:29:27"
-title: "Bug &amp; icons for print"
+title: "Bug & icons for print"
 deck: "The Register-Guard"
 categories: ["print"]
 tags: ["design", "vector"]
