@@ -14,7 +14,7 @@ fig2:
 
 {% nada fig1 %}
 
-Yes, that’s right … Wookie made his first appearance [here]({% post_url 2011-07-23-peeps-2011 %}).
+Yes, that’s right … Wookie made his first appearance [here](#peeps-2004).
 
 Inspired by the master of stereographic drawings, [Dain Fagerholm](http://dainfagerholm.blogspot.co.uk/).
 

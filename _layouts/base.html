@@ -17,11 +17,13 @@
 	{% if site.gwt %}<meta name="google-site-verification" content="{{ site.gwt }}">{% endif %}
 	{% if site.bwt %}<meta name="msvalidate.01" content="{{ site.bwt }}">{% endif %}
 	
-	<link rel="stylesheet" href="{{ site.theme }}{{ site.build }}styles/data.min.css">
-	
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Gloria+Hallelujah">
 	
+	<link rel="stylesheet" href="{{ site.theme }}{{ site.build }}styles/data.min.css">
+	
 	{% if page.head_extra %}{{ page.head_extra }}{% endif %}
+	
+	<script>!function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r,i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=+new Date,a=s.createElement(o),m=s.getElementsByTagName(o)[0],a.src=g,m.parentNode.insertBefore(a,m)}(this,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","{{ site.ga }}","mky.io");ga("send","pageview");</script>
 	
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -80,8 +82,6 @@
 	<script src="{{ site.theme }}{{ site.build }}scripts/data.min.js"></script>
 	
 	{% if page.footer_extra %}{{ page.footer_extra }}{% endif %}
-	
-	<script>!function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r,i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=+new Date,a=s.createElement(o),m=s.getElementsByTagName(o)[0],a.src=g,m.parentNode.insertBefore(a,m)}(this,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","{{ site.ga }}","mky.io");ga("send","pageview");</script>
 	
 </body>
 </html>
