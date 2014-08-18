@@ -2,11 +2,13 @@
 layout: ajax
 ---
 
-<h1>{{ page.title }}</h1>
+<h3>{{ page.title }}</h3>
 
 <article class="ajax-content" itemscope itemtype="http://schema.org/Article">
 	
 	{% if page.deck %}<h4 class="sh4">{{ page.deck }}</h4>{% endif %}
+	
+	<h5 class="published"><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}" pubdate itemprop="datePublished">{% include date.html %}</time></h5>
 	
 	<div itemprop="articleBody">
 		
