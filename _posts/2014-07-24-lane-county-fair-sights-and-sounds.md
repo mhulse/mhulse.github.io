@@ -24,7 +24,7 @@ audio4:
   audio:
     - "lane-county-fair/roller-coaseter.ogg"
     - "lane-county-fair/roller-coaseter.mp3"
-  caption: "Children's roller coaster."
+  caption: "Children’s roller coaster."
 audio5:
   audio:
     - "lane-county-fair/strong-woman.ogg"

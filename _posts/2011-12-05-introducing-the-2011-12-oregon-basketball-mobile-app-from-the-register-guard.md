@@ -17,7 +17,7 @@ fig2:
 
 The FREE 2011 Oregon Ducks Basketball app for iOS is now available in the [Apple App Store](http://itunes.apple.com/us/app/2011-oregon-ducks-basketball/id480844694?ls=1&amp;mt=8).
 
-Get The Register-Guard&#39;s 2011-12 Duck basketball season coverage in the palm of your hand.</p>
+Get The Register-Guard’s 2011-12 Duck basketball season coverage in the palm of your hand.</p>
 
 ---
 

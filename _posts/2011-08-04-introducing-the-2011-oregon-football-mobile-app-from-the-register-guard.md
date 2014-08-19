@@ -15,7 +15,7 @@ fig2:
 
 Today we rolled out a new means of providing what we hope you consider to be our top-flight coverage of the Oregon football team, an iPhone app. [Here’s a link to the app in the Apple store](http://bit.ly/2011DuckFootball).
 
-The R-G Oregon football app will be a one-stop resource for all of our coverage. Stories, blog posts, my Twitter feed, photos, videos &#8212; all of it can be accessed through the app.
+The R-G Oregon football app will be a one-stop resource for all of our coverage. Stories, blog posts, my Twitter feed, photos, videos — all of it can be accessed through the app.
 
 We have pages dedicated to top UO stars like Darron Thomas, LaMichael James and Cliff Harris. We have full roster and statistical information, conference standings and a roundup of national college football news.
 

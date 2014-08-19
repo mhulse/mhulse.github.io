@@ -1,7 +1,7 @@
 ---
 date: "2010-09-03 12:35:16"
 title: "Josh White @ Coldwell Banker"
-deck: "Leaderboard &amp; box ad"
+deck: "Leaderboard & box ad"
 categories: ["ad"]
 tags: ["flash", "animation", "photoshop"]
 featured: "fig3"

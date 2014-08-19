@@ -1,7 +1,7 @@
 ---
 date: "2011-01-01 23:56:13"
 title: "Repower Specialists"
-deck: "Business card, letterhead and envelope"
+deck: "Business card, letterhead & envelope"
 categories: ["print"]
 tags: ["design", "vector"]
 fig1:

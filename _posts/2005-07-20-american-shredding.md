@@ -1,7 +1,7 @@
 ---
 date: "2005-07-20 18:16:56"
 title: "American Shredding"
-deck: "Logo &amp; animation"
+deck: "Logo & animation"
 categories: ["logo", "web"]
 tags: ["animation", "flash"]
 fig1:

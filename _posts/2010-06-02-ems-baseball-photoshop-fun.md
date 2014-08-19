@@ -1,7 +1,7 @@
 ---
 date: "2010-06-02 21:31:10"
 title: "Ems baseball Photoshop fun"
-deck: "Expanding billboard &amp; landing page"
+deck: "Expanding billboard & landing page"
 categories: ["ad"]
 tags: ["design", "photoshop", "flash"]
 fig1:
