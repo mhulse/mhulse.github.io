@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>…</title>
-<meta name="description" content="Lorem ipsum dolor sit amet">
+<title>{{ page.title }}</title>
+{% if page.deck %}<meta name="description" content="{{ page.deck }}">{% endif %}
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0;url=../">
+<meta http-equiv="refresh" content="0;url=../#{{ page.id | replace_first:"/" }}">
 </head>
 <body>
 {{ content }}
