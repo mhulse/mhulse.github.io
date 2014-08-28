@@ -5,9 +5,9 @@ module Jekyll
     def render(context)
       super
         .strip
-        .gsub(/\n/, " ")
-        .gsub(/\s{2,}/, " ")
-        .gsub(/…\s*/, "… ")
+        .gsub(/\n/, "\s")
+        .gsub(/\s{2,}/, "\s")
+        .gsub(/[…\s]{2,}/, "\s…\s")
     end
   end
 end
