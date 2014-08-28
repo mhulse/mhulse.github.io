@@ -10,12 +10,12 @@ layout: base
 		
 		<div id="secondary">
 			
-			{% for post in paginator.posts %}
+			{% for page in paginator.posts %}
 				
-				{% capture content %}{% strip %}{{ post.content | strip_html }}{% endstrip %}{% endcapture %}
-				{% capture off %}{% if post.deck %}{% strip %}{{ post.deck }}{% endstrip %}{% if content != "" %}: {% endif %}{% endif %}{{ content }}{% endcapture %}
+				{% capture content %}{{ page.content | strip_html }}{% endcapture %}
+				{% capture off %}{% strip %}{% include date.html %} | {% if page.deck %}{{ page.deck }}{% if content != "" %}: {% endif %}{% endif %}{{ content }}{% endstrip %}{% endcapture %}
 				
-				<h3 id="{{ post.url | remove: "/" | remove: ".html" }}" data-href="{{ post.url | remove_first: "/" }}"><span><span>{{ post.title }}</span></span></h3>
+				<h3 id="{{ page.url | remove: "/" | remove: ".html" }}" data-href="{{ page.url | remove_first: "/" }}"><span><span>{{ page.title }}</span></span></h3>
 				{% if off != "" %}<div class="off">{{ off }}</div>{% endif %}
 				
 			{% endfor %}
