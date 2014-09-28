@@ -3,11 +3,13 @@
 
 <head>
 	
-	<script>/*! https://gist.github.com/mhulse/4704893 */;(function(b,a,c){(('ontouchstart'in b)||(b.DocumentTouch&&a instanceof DocumentTouch)||(c.MaxTouchPoints>0)||(c.msMaxTouchPoints>0))&&(a.documentElement.className=a.documentElement.className.replace(/\bno-touch\b/,'touch'));a.documentElement.className=a.documentElement.className.replace(/\bno-js\b/,'js')}(window,document,navigator));</script>
-	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>/*! no-touch uglified | https://gist.github.com/mhulse/4704893 */!function(o,n,c){("ontouchstart"in o||o.DocumentTouch&&n instanceof DocumentTouch||c.MaxTouchPoints>0||c.msMaxTouchPoints>0)&&(n.documentElement.className=n.documentElement.className.replace(/\bno-touch\b/,"touch"))}(window,document,navigator);</script>
+	<script>/*! no-js uglified | https://gist.github.com/mhulse/4704893 */!function(e){e.documentElement.className=e.documentElement.className.replace(/\bno-js\b/,"js")}(document);</script>
+	<script>/*! no-blend uglified | https://gist.github.com/mhulse/6ec4db51a61eb958b82d */!function(e,n){e.getComputedStyle(n.head,null).mixBlendMode&&(n.documentElement.className=n.documentElement.className.replace(/\bno-blend\b/,"blend"))}(window,document);</script>
 	
 	<meta name="copyright" content="Copyright © 2013-{{ site.time | date: '%y' }} {{ site.name }}. All rights reserved.">
 	
