@@ -50,6 +50,16 @@
 			-ms-interpolation-mode: bicubic;
 		}
 		
+		.advert ins {
+			background: transparent;
+			border-radius: 0;
+			letter-spacing: normal;
+			mix-blend-mode: normal;
+		}
+		
+		.advert ins::before,
+		.advert ins::after { content: ""; }
+		
 	</style>
 	
 </head>
@@ -119,12 +129,12 @@
 	
 	<div class="advert">
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<span
+		<ins
 			class="adsbygoogle"
 			style="display:inline-block;width:728px;height:90px"
 			data-ad-client="ca-pub-4050402266500166"
 			data-ad-slot="5085622731"
-		></span>
+		></ins>
 		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 	</div>
 	
