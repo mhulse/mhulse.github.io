@@ -1,0 +1,75 @@
+# https://github.com/github/gitignore
+
+# COMPILED SOURCE #
+###################
+
+*.class
+*.com
+*.dll
+*.exe
+*.o
+*.py[cdo]
+*.so
+
+# PACKAGES #
+############
+
+*.7z
+*.dmg
+*.egg*
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# LOGS AND DATABASES #
+######################
+
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS GENERATED FILES #
+######################
+
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+Desktop.ini
+ehthumbs.db
+Icon^M^M
+Thumbs.db
+
+# EDITORS #
+###########
+
+*.sublime-workspace
+*.swo
+*.swp
+*~
+.\#*
+.elc
+.project
+.pydevproject
+.settings
+/.emacs.desktop
+/.emacs.desktop.lock
+\#*\#
+auto-save-list
+tramp
+
+# MISCELLANEOUS #
+#################
+
+*.bak
+.cvs
+.svn
+sitemap.xml.gz*~
+
+# PROJECT-SPECIFIC #
+####################
