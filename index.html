@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nixie+One">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	
 	<style>
@@ -74,14 +74,16 @@
 		}
 		
 		h3 {
-			font-family: 'VT323', monospace;
+			font-family: 'Nixie One', monospace;
 			font-size: 8vmin;
+			font-weight: 400;
 			line-height: 1;
 			color: #fff;
 			position: absolute;
 			margin: 0;
 			padding: 0;
 			z-index: 1;
+			visibility: hidden;
 		}
 		
 	</style>
@@ -148,9 +150,9 @@
 				var x = (.5 + (Math.random() * w) | 0);
 				var y = (.5 + (Math.random() * h) | 0);
 				var char = chars[Math.floor(Math.random() * l)];
-				var font = ((Math.random() * 100) + 'px monospace');
+				var font = ((iterator * 20) + 'px monospace');
 				var fill = '#fff';
-				var alpha = (Math.random() * 1);
+				var alpha = (((iterator + 1) * 1.5) / 10);
 				var rotation = (Math.random() * 1);
 				var coords = { top: y, right: (x + Math.ceil(context.measureText(char).width)), bottom: (y + parseInt(font)), left: x };
 				
@@ -212,20 +214,22 @@
 			'use strict';
 			
 			var $ = Sizzle;
+				
+			var container = $('#container')[0];
 			
 			var maxSearchIterations = 10;
 			var min_x = 0;
-			var max_x = window.innerWidth;
+			var max_x = container.offsetWidth;
 			var min_y = 0;
-			var max_y = window.innerHeight;
+			var max_y = container.offsetHeight;
 			var filled_areas = [];
-
+			
 			function calc_overlap(a1) {
 				var overlap = 0;
 				for (var i = 0; i < filled_areas.length; i++) {
-
+					
 					var a2 = filled_areas[i];
-
+					
 					// no intersection cases
 					if (a1.x + a1.width < a2.x) {
 						continue;
@@ -239,28 +243,27 @@
 					if (a2.y + a2.height < a1.y) {
 						continue;
 					}
-
+					
 					// intersection exists : calculate it !
 					var x1 = Math.max(a1.x, a2.x);
 					var y1 = Math.max(a1.y, a2.y);
 					var x2 = Math.min(a1.x + a1.width, a2.x + a2.width);
 					var y2 = Math.min(a1.y + a1.height, a2.y + a2.height);
-
 					var intersection = ((x1 - x2) * (y1 - y2));
-
+					
 					overlap += intersection;
-
+					
 					// console.log("( "+x1+" - "+x2+" ) * ( "+y1+" - "+y2+" ) = " + intersection);
 				}
-
+				
 				// console.log("overlap = " + overlap + " on " + filled_areas.length + " filled areas ");
 				return overlap;
 			}
-
+			
 			function randomize() {
-
+				
 				filled_areas.splice(0, filled_areas.length);
-
+				
 				var index = 0;
 				_.each($('h3'), function(word) {
 					var rand_x = 0;
@@ -287,7 +290,7 @@
 							break;
 						}
 					}
-
+					
 					filled_areas.push(best_choice);
 					/*
 					$(this).css({
@@ -299,15 +302,51 @@
 					word.style.left = rand_x + 'px';
 					word.style.top = rand_y + 'px';
 					word.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
-
+					
 					// console.log("and the winner is : " + smallest_overlap);
 				});
+				
 				return false;
+				
 			}
-
-			randomize();
+			
+			window.addEventListener('load', function() { randomize(); });
 			
 		})();
+		
+		(function() {
+			
+			'use strict';
+			
+			var $ = Sizzle;
+			var h3 = $('h3');
+			
+			function randRange(data) {
+				var newTime = data[Math.floor(data.length * Math.random())];
+				return newTime;
+			}
+			
+			function toggleSomething() {
+				
+				if (h3.length) {
+					var timeArray = new Array(200, 300, 150, 250, 2000, 3000, 1000, 1500);
+					
+					// do stuff, happens to use jQuery here (nothing else does)
+					h3[0].style.visibility = 'visible';
+					h3.shift();
+					
+					clearInterval(timer);
+					timer = setInterval(toggleSomething, randRange(timeArray));
+				} else {
+					clearInterval(timer);
+				}
+			}
+			
+			var timer = setInterval(toggleSomething, 1000);
+			// 1000 = Initial timer when the page is first loaded
+			
+		})();
+		
 		
 		/*
 		(function(window, document) {
