@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	
 	<style>
@@ -39,25 +39,9 @@
 			bottom: 0;
 			left: 0;
 		}
-		p {
-			font-family: monospace;
-			font-size: 1.2em;
-			line-height: 1.8;
-			text-align: center;
-			color: #000;
-			position: absolute;
-			z-index: 100;
-			top: 50%;
-			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			   -moz-transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				 -o-transform: translate(-50%, -50%);
-					transform: translate(-50%, -50%);
-		}
 		a,
 		a:visited {
-			color: #000;
+			color: #f06;
 			text-decoration: none;
 		}
 		a:visited:hover,
@@ -82,9 +66,10 @@
 		}
 		
 		h3 {
-			font-size: 5vmin;
+			font-family: 'VT323', monospace;
+			font-size: 8vmin;
 			line-height: 1;
-			color: #f06;
+			color: #fff;
 			position: absolute;
 			margin: 0;
 			padding: 0;
@@ -96,27 +81,11 @@
 </head>
 <body>
 	
-	<!--
-	<p>
-		<span>
-			<span>
-				<b><a href="http://linkedin.com/in/mickyhulse">linkedin.com/in/mickyhulse</a></b>
-				/
-				<b><a href="http://behance.net/mhulse">behance.net/mhulse</a></b>
-				/
-				<b><a href="http://youtube.com/mickyhulse">youtube.com/mickyhulse</a></b>
-				<br>
-				<b><a href="http://github.com/mhulse">github.com/mhulse</a></b>
-				/
-				<b><a href="http://bitbucket.org/mhulse/">bitbucket.org/mhulse</a></b>
-			</span>
-		</span>
-	</p>
-	-->
-	
-	<h3>Foo</h3>
-	<h3>Bar</h3>
-	<h3>Baz</h3>
+	<h3><a href="http://linkedin.com/in/mickyhulse">linkedin</a></h3>
+	<h3><a href="http://behance.net/mhulse">behance</a></h3>
+	<h3><a href="http://youtube.com/mickyhulse">youtube</a></h3>
+	<h3><a href="http://github.com/mhulse">github</a></h3>
+	<h3><a href="http://bitbucket.org/mhulse/">bitbucket</a></h3>
 	
 	<canvas></canvas>
 	<canvas></canvas>
@@ -124,6 +93,17 @@
 	<canvas></canvas>
 	<canvas></canvas>
 	
+	<script>
+		/**
+		 * HiDPI Canvas Polyfill (1.0.9)
+		 *
+		 * Author: Jonathan D. Johnson (http://jondavidjohn.com)
+		 * Homepage: https://github.com/jondavidjohn/hidpi-canvas-polyfill
+		 * Issue Tracker: https://github.com/jondavidjohn/hidpi-canvas-polyfill/issues
+		 * License: Apache 2.0
+		*/
+		!function(a){var b=function(a){var b=a.backingStorePixelRatio||a.webkitBackingStorePixelRatio||a.mozBackingStorePixelRatio||a.msBackingStorePixelRatio||a.oBackingStorePixelRatio||a.backingStorePixelRatio||1;return(window.devicePixelRatio||1)/b}(a),c=function(a,b){for(var c in a)a.hasOwnProperty(c)&&b(a[c],c)},d={fillRect:"all",clearRect:"all",strokeRect:"all",moveTo:"all",lineTo:"all",arc:[0,1,2],arcTo:"all",bezierCurveTo:"all",isPointinPath:"all",isPointinStroke:"all",quadraticCurveTo:"all",rect:"all",translate:"all",createRadialGradient:"all",createLinearGradient:"all"};1!==b&&(c(d,function(c,d){a[d]=function(a){return function(){var d,e,f=Array.prototype.slice.call(arguments);if("all"===c)f=f.map(function(a){return a*b});else if(Array.isArray(c))for(d=0,e=c.length;e>d;d++)f[c[d]]*=b;return a.apply(this,f)}}(a[d])}),a.stroke=function(a){return function(){this.lineWidth*=b,a.apply(this,arguments),this.lineWidth/=b}}(a.stroke),a.fillText=function(a){return function(){var c=Array.prototype.slice.call(arguments);c[1]*=b,c[2]*=b,this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,c,d){return c*b+d}),a.apply(this,c),this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,c,d){return c/b+d})}}(a.fillText),a.strokeText=function(a){return function(){var c=Array.prototype.slice.call(arguments);c[1]*=b,c[2]*=b,this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,c,d){return c*b+d}),a.apply(this,c),this.font=this.font.replace(/(\d+)(px|em|rem|pt)/g,function(a,c,d){return c/b+d})}}(a.strokeText))}(CanvasRenderingContext2D.prototype),function(a){a.getContext=function(a){return function(b){var c,d,e=a.call(this,b);return"2d"===b&&(c=e.backingStorePixelRatio||e.webkitBackingStorePixelRatio||e.mozBackingStorePixelRatio||e.msBackingStorePixelRatio||e.oBackingStorePixelRatio||e.backingStorePixelRatio||1,d=(window.devicePixelRatio||1)/c,d>1&&(this.style.height=this.height+"px",this.style.width=this.width+"px",this.width*=d,this.height*=d)),e}}(a.getContext)}(HTMLCanvasElement.prototype);
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.2.1/sizzle.min.js"></script>
 	
@@ -229,56 +209,100 @@
 			'use strict';
 			
 			var $ = Sizzle;
+			
+			var maxSearchIterations = 10;
 			var min_x = 0;
 			var max_x = window.innerWidth;
 			var min_y = 0;
 			var max_y = window.innerHeight;
-			var filled_areas = new Array();
-			
-			window.addEventListener('load', function() {
-				
+			var filled_areas = [];
+
+			function calc_overlap(a1) {
+				var overlap = 0;
+				for (var i = 0; i < filled_areas.length; i++) {
+
+					var a2 = filled_areas[i];
+
+					// no intersection cases
+					if (a1.x + a1.width < a2.x) {
+						continue;
+					}
+					if (a2.x + a2.width < a1.x) {
+						continue;
+					}
+					if (a1.y + a1.height < a2.y) {
+						continue;
+					}
+					if (a2.y + a2.height < a1.y) {
+						continue;
+					}
+
+					// intersection exists : calculate it !
+					var x1 = Math.max(a1.x, a2.x);
+					var y1 = Math.max(a1.y, a2.y);
+					var x2 = Math.min(a1.x + a1.width, a2.x + a2.width);
+					var y2 = Math.min(a1.y + a1.height, a2.y + a2.height);
+
+					var intersection = ((x1 - x2) * (y1 - y2));
+
+					overlap += intersection;
+
+					// console.log("( "+x1+" - "+x2+" ) * ( "+y1+" - "+y2+" ) = " + intersection);
+				}
+
+				// console.log("overlap = " + overlap + " on " + filled_areas.length + " filled areas ");
+				return overlap;
+			}
+
+			function randomize() {
+
+				filled_areas.splice(0, filled_areas.length);
+
+				var index = 0;
 				_.each($('h3'), function(word) {
-					var rand_x=0;
-					var rand_y=0;
+					var rand_x = 0;
+					var rand_y = 0;
+					var i = 0;
+					var smallest_overlap = 9007199254740992;
+					var best_choice;
 					var area;
-					
-					console.log(word.offsetWidth, word.offsetHeight)
-					
-					do {
-						rand_x = Math.round(min_x + ((max_x - min_x)*(Math.random() % 1)));
-						rand_y = Math.round(min_y + ((max_y - min_y)*(Math.random() % 1)));
-						area = {x: rand_x, y: rand_y, width: word.offsetWidth, height: word.offsetHeight};
-					} while(check_overlap(area));
-					
-					filled_areas.push(area);
+					for (i = 0; i < maxSearchIterations; i++) {
+						rand_x = Math.round(min_x + ((max_x - min_x) * (Math.random() % 1)));
+						rand_y = Math.round(min_y + ((max_y - min_y) * (Math.random() % 1)));
+						area = {
+							x: rand_x,
+							y: rand_y,
+							width: word.offsetWidth,
+							height: word.offsetHeight
+						};
+						var overlap = calc_overlap(area);
+						if (overlap < smallest_overlap) {
+							smallest_overlap = overlap;
+							best_choice = area;
+						}
+						if (overlap === 0) {
+							break;
+						}
+					}
+
+					filled_areas.push(best_choice);
+					/*
+					$(this).css({
+						position: "absolute",
+						"z-index": index++
+					});
+					*/
 					
 					word.style.left = rand_x + 'px';
 					word.style.top = rand_y + 'px';
-					
+					word.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
+
+					// console.log("and the winner is : " + smallest_overlap);
 				});
-				
-			});
-			
-			function check_overlap(area) {
-				for (var i = 0; i < filled_areas.length; i++) {
-					
-					var check_area = filled_areas[i];
-					
-					var bottom1 = area.y + area.height;
-					var bottom2 = check_area.y + check_area.height;
-					var top1 = area.y;
-					var top2 = check_area.y;
-					var left1 = area.x;
-					var left2 = check_area.x;
-					var right1 = area.x + area.width;
-					var right2 = check_area.x + check_area.width;
-					if (bottom1 < top2 || top1 > bottom2 || right1 < left2 || left1 > right2) {
-						continue;
-					}
-					return true;
-				}
 				return false;
 			}
+
+			randomize();
 			
 		})();
 		
