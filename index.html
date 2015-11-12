@@ -5,39 +5,80 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	
-	<title>mky.io</title>
-	<meta name="description" content="Nothing to see here.">
+	<title></title>
+	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	
 	<style>
-		
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		
-		
-		html,
-		body {
-			overflow-x: hidden;
-			background: #fff;
+		*,
+		*::before,
+		*::after {
+		    -webkit-box-sizing: border-box;
+		     -khtml-box-sizing: border-box;
+		       -moz-box-sizing: border-box;
+		        -ms-box-sizing: border-box;
+		         -o-box-sizing: border-box;
+		            box-sizing: border-box;
 		}
 		html { height: 100%; }
 		body {
 			min-height: 100%;
-			_height: 100%;
+			background: #000;
 		}
-		
-		p {
-			text-align: center;
+		html,
+		body { overflow-x: hidden; }
+		canvas {
 			width: 100%;
+			height: 100%;
 			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		p {
+			font-family: monospace;
+			font-size: 1.2em;
+			line-height: 1.8;
+			text-align: center;
+			color: #000;
+			position: absolute;
+			z-index: 100;
 			top: 50%;
-			-webkit-transform: translateY(-50%);
-			   -moz-transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			     -o-transform: translateY(-50%);
-			        transform: translateY(-50%);
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			   -moz-transform: translate(-50%, -50%);
+			    -ms-transform: translate(-50%, -50%);
+			     -o-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+		}
+		a,
+		a:visited {
+			color: #000;
+			text-decoration: none;
+		}
+		a:visited:hover,
+		a:focus,
+		a:focus:hover,
+		a:hover,
+		a:active { color: rgba(255, 0, 102, .9); } /* #f06 */
+		
+		span {
+			padding: 10px;
+			display: inline; /* If not already. */
+			background: #fff;
+			-webkit-box-decoration-break: clone;
+			   -moz-box-decoration-break: clone;
+			    -ms-box-decoration-break: clone;
+			     -o-box-decoration-break: clone;
+			        box-decoration-break: clone;
+		}
+		span > span {
+			background: transparent;
+			position: relative;
 		}
 		
 	</style>
@@ -45,17 +86,155 @@
 </head>
 <body>
 	
+	<!--
 	<p>
-		<i><a href="http://behance.net/mhulse">behance.net/mhulse</a></i>
-		/
-		<i><a href="http://youtube.com/mickyhulse">youtube.com/mickyhulse</a></i>
-		/
-		<i><a href="http://github.com/mhulse">github.com/mhulse</a></i>
-		/
-		<i><a href="http://bitbucket.org/mhulse/">bitbucket.org/mhulse</a></i>
-		/
-		<i><a href="http://linkedin.com/in/mickyhulse">linkedin.com/in/mickyhulse</a></i>
+		<span>
+			<span>
+				<b><a href="http://linkedin.com/in/mickyhulse">linkedin.com/in/mickyhulse</a></b>
+				/
+				<b><a href="http://behance.net/mhulse">behance.net/mhulse</a></b>
+				/
+				<b><a href="http://youtube.com/mickyhulse">youtube.com/mickyhulse</a></b>
+				<br>
+				<b><a href="http://github.com/mhulse">github.com/mhulse</a></b>
+				/
+				<b><a href="http://bitbucket.org/mhulse/">bitbucket.org/mhulse</a></b>
+			</span>
+		</span>
 	</p>
+	-->
+	
+	<canvas></canvas>
+	<canvas></canvas>
+	<canvas></canvas>
+	<canvas></canvas>
+	<canvas></canvas>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.2.1/sizzle.min.js"></script>
+	
+	<script>
+		
+		(function(window) {
+			
+			'use strict';
+			
+			var $ = Sizzle;
+			var w = window.innerWidth;
+			var h = window.innerHeight;
+			var canvii;
+			var contexts = [];
+			var fps = 15;
+			var p;
+			var now;
+			var then = Date.now();
+			var interval = (1000 / fps);
+			var delta;
+			var chars = ['▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐', '░', '▒', '▓', '▔', '▕', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟', '─', '━', '│', '┃', '┄', '┅', '┆', '┇', '┈', '┉', '┊', '┋', '┌', '┍', '┎', '┏', '┐', '┑', '┒', '┓', '└', '┕', '┖', '┗', '┘', '┙', '┚', '┛', '├', '┝', '┞', '┟', '┠', '┡', '┢', '┣', '┤', '┥', '┦', '┧', '┨', '┩', '┪', '┫', '┬', '┭', '┮', '┯', '┰', '┱', '┲', '┳', '┴', '┵', '┶', '┷', '┸', '┹', '┺', '┻', '┼', '┽', '┾', '┿', '╀', '╁', '╂', '╃', '╄', '╅', '╆', '╇', '╈', '╉', '╊', '╋', '╌', '╍', '╎', '╏', '═', '║', '╒', '╓', '╔', '╕', '╖', '╗', '╘', '╙', '╚', '╛', '╜', '╝', '╞', '╟', '╠', '╡', '╢', '╣', '╤', '╥', '╦', '╧', '╨', '╩', '╪', '╫', '╬', '╭', '╮', '╯', '╰', '╱', '╲', '╳', '╴', '╵', '╶', '╷', '╸', '╹', '╺', '╻', '╼', '╽', '╾', '╿'];
+			var l = chars.length;
+			
+			var sizer = function(canvas) {
+				
+				canvas.width = w;
+				canvas.height = h;
+				
+			};
+			
+			var draw = function(context, iterator) {
+				
+				var x = (.5 + (Math.random() * w) | 0);
+				var y = (.5 + (Math.random() * h) | 0);
+				var char = chars[Math.floor(Math.random() * l)];
+				var font = ((Math.random() * 100) + 'px monospace');
+				var fill = '#fff';
+				var alpha = (Math.random() * 1);
+				var rotation = (Math.random() * 1);
+				var coords = { top: y, right: (x + Math.ceil(context.measureText(char).width)), bottom: (y + parseInt(font)), left: x };
+				
+				context.fillStyle = fill;
+				context.font = font;
+				context.fillText(
+					char,
+					x,
+					y
+				);
+				context.globalAlpha = alpha;
+				context.rotate(rotation);
+				
+			};
+			
+			var loop = function(contexts) {
+				
+				//console.log(contexts)
+				
+				window.requestAnimationFrame(function() {
+					
+					loop(contexts);
+					
+				});
+				
+				now = Date.now();
+				delta = now - then;
+				
+				if (delta > interval) {
+					
+					then = now - (delta % interval);
+					
+					_.each(contexts, function(context, iterator) {
+						
+						draw(context, iterator);
+						
+					});
+					
+				}
+				
+			};
+			
+			window.addEventListener('load', function() {
+				
+				canvii = $('canvas');
+				
+				_.each(canvii, function(canvas) {
+					
+					sizer(canvas);
+					
+					contexts.push(canvas.getContext('2d'));
+					
+				});
+				
+				loop(contexts);
+				
+			});
+			
+		})(window);
+		
+		/*
+		(function(window, document) {
+			
+			'use strict';
+			
+			var $ = Sizzle;
+			
+			window.addEventListener('load', function() {
+				
+				var canvii = $('canvas');
+				
+				document.onmousemove = _.throttle(function(e) {
+					
+					console.log(canvii[0])
+					
+					//canvii[0].style.left = e.pageX + 'px';
+					//$('img').eq(1).css('left', e.pageX * 2);
+					
+				}, 100);
+				
+			});
+			
+		})(window, document);
+		*/
+		
+	</script>
 	
 </body>
 </html>
+
