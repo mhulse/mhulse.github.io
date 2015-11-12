@@ -28,8 +28,6 @@
 			min-height: 100%;
 			background: #000;
 		}
-		html,
-		body { overflow: hidden; }
 		canvas {
 			width: 100%;
 			height: 100%;
@@ -38,6 +36,16 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
+		}
+		#container {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
 		}
 		a,
 		a:visited {
@@ -81,17 +89,21 @@
 </head>
 <body>
 	
-	<h3><a href="http://linkedin.com/in/mickyhulse">linkedin</a></h3>
-	<h3><a href="http://behance.net/mhulse">behance</a></h3>
-	<h3><a href="http://youtube.com/mickyhulse">youtube</a></h3>
-	<h3><a href="http://github.com/mhulse">github</a></h3>
-	<h3><a href="http://bitbucket.org/mhulse/">bitbucket</a></h3>
-	
-	<canvas></canvas>
-	<canvas></canvas>
-	<canvas></canvas>
-	<canvas></canvas>
-	<canvas></canvas>
+	<div id="container">
+		
+		<h3><a href="http://linkedin.com/in/mickyhulse">linkedin</a></h3>
+		<h3><a href="http://behance.net/mhulse">behance</a></h3>
+		<h3><a href="http://youtube.com/mickyhulse">youtube</a></h3>
+		<h3><a href="http://github.com/mhulse">github</a></h3>
+		<h3><a href="http://bitbucket.org/mhulse/">bitbucket</a></h3>
+		
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+		
+	</div>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.2.1/sizzle.min.js"></script>
@@ -126,6 +138,8 @@
 				
 				canvas.width = w;
 				canvas.height = h;
+				canvas.style.width = w;
+				canvas.style.height = h;
 				
 			};
 			
