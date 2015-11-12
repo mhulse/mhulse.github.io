@@ -16,12 +16,12 @@
 		*,
 		*::before,
 		*::after {
-		    -webkit-box-sizing: border-box;
-		     -khtml-box-sizing: border-box;
-		       -moz-box-sizing: border-box;
-		        -ms-box-sizing: border-box;
-		         -o-box-sizing: border-box;
-		            box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			 -khtml-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				 -o-box-sizing: border-box;
+					box-sizing: border-box;
 		}
 		html { height: 100%; }
 		body {
@@ -29,7 +29,7 @@
 			background: #000;
 		}
 		html,
-		body { overflow-x: hidden; }
+		body { overflow: hidden; }
 		canvas {
 			width: 100%;
 			height: 100%;
@@ -51,9 +51,9 @@
 			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
 			   -moz-transform: translate(-50%, -50%);
-			    -ms-transform: translate(-50%, -50%);
-			     -o-transform: translate(-50%, -50%);
-			        transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				 -o-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
 		}
 		a,
 		a:visited {
@@ -72,13 +72,23 @@
 			background: #fff;
 			-webkit-box-decoration-break: clone;
 			   -moz-box-decoration-break: clone;
-			    -ms-box-decoration-break: clone;
-			     -o-box-decoration-break: clone;
-			        box-decoration-break: clone;
+				-ms-box-decoration-break: clone;
+				 -o-box-decoration-break: clone;
+					box-decoration-break: clone;
 		}
 		span > span {
 			background: transparent;
 			position: relative;
+		}
+		
+		h3 {
+			font-size: 5vmin;
+			line-height: 1;
+			color: #f06;
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			z-index: 1;
 		}
 		
 	</style>
@@ -103,6 +113,10 @@
 		</span>
 	</p>
 	-->
+	
+	<h3>Foo</h3>
+	<h3>Bar</h3>
+	<h3>Baz</h3>
 	
 	<canvas></canvas>
 	<canvas></canvas>
@@ -133,6 +147,12 @@
 			var chars = ['▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐', '░', '▒', '▓', '▔', '▕', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟', '─', '━', '│', '┃', '┄', '┅', '┆', '┇', '┈', '┉', '┊', '┋', '┌', '┍', '┎', '┏', '┐', '┑', '┒', '┓', '└', '┕', '┖', '┗', '┘', '┙', '┚', '┛', '├', '┝', '┞', '┟', '┠', '┡', '┢', '┣', '┤', '┥', '┦', '┧', '┨', '┩', '┪', '┫', '┬', '┭', '┮', '┯', '┰', '┱', '┲', '┳', '┴', '┵', '┶', '┷', '┸', '┹', '┺', '┻', '┼', '┽', '┾', '┿', '╀', '╁', '╂', '╃', '╄', '╅', '╆', '╇', '╈', '╉', '╊', '╋', '╌', '╍', '╎', '╏', '═', '║', '╒', '╓', '╔', '╕', '╖', '╗', '╘', '╙', '╚', '╛', '╜', '╝', '╞', '╟', '╠', '╡', '╢', '╣', '╤', '╥', '╦', '╧', '╨', '╩', '╪', '╫', '╬', '╭', '╮', '╯', '╰', '╱', '╲', '╳', '╴', '╵', '╶', '╷', '╸', '╹', '╺', '╻', '╼', '╽', '╾', '╿'];
 			var l = chars.length;
 			
+			window.requestAnimationFrame = (function () {
+				return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
+					window.setTimeout(callback, 1000 / 60);
+				};
+			})();
+			
 			var sizer = function(canvas) {
 				
 				canvas.width = w;
@@ -153,11 +173,7 @@
 				
 				context.fillStyle = fill;
 				context.font = font;
-				context.fillText(
-					char,
-					x,
-					y
-				);
+				context.fillText(char, x, y);
 				context.globalAlpha = alpha;
 				context.rotate(rotation);
 				
@@ -207,6 +223,64 @@
 			});
 			
 		})(window);
+		
+		(function() {
+			
+			'use strict';
+			
+			var $ = Sizzle;
+			var min_x = 0;
+			var max_x = window.innerWidth;
+			var min_y = 0;
+			var max_y = window.innerHeight;
+			var filled_areas = new Array();
+			
+			window.addEventListener('load', function() {
+				
+				_.each($('h3'), function(word) {
+					var rand_x=0;
+					var rand_y=0;
+					var area;
+					
+					console.log(word.offsetWidth, word.offsetHeight)
+					
+					do {
+						rand_x = Math.round(min_x + ((max_x - min_x)*(Math.random() % 1)));
+						rand_y = Math.round(min_y + ((max_y - min_y)*(Math.random() % 1)));
+						area = {x: rand_x, y: rand_y, width: word.offsetWidth, height: word.offsetHeight};
+					} while(check_overlap(area));
+					
+					filled_areas.push(area);
+					
+					word.style.left = rand_x + 'px';
+					word.style.top = rand_y + 'px';
+					
+				});
+				
+			});
+			
+			function check_overlap(area) {
+				for (var i = 0; i < filled_areas.length; i++) {
+					
+					var check_area = filled_areas[i];
+					
+					var bottom1 = area.y + area.height;
+					var bottom2 = check_area.y + check_area.height;
+					var top1 = area.y;
+					var top2 = check_area.y;
+					var left1 = area.x;
+					var left2 = check_area.x;
+					var right1 = area.x + area.width;
+					var right2 = check_area.x + check_area.width;
+					if (bottom1 < top2 || top1 > bottom2 || right1 < left2 || left1 > right2) {
+						continue;
+					}
+					return true;
+				}
+				return false;
+			}
+			
+		})();
 		
 		/*
 		(function(window, document) {
