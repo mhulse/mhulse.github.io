@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nixie+One">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	
 	<style>
@@ -36,6 +36,10 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
+			margin: -200px 0 0 -200px;
+		}
+		#layer0 {
+			position: absolute;
 		}
 		#container {
 			width: 100%;
@@ -56,7 +60,7 @@
 		a:focus,
 		a:focus:hover,
 		a:hover,
-		a:active { color: rgba(255, 0, 102, .9); } /* #f06 */
+		a:active { color: #07e7f7; } /* #f06 */
 		
 		span {
 			padding: 10px;
@@ -74,16 +78,20 @@
 		}
 		
 		h3 {
-			font-family: 'Nixie One', monospace;
-			font-size: 8vmin;
+			font-family: 'VT323', monospace;
+			font-size: 15vmin;
 			font-weight: 400;
+			text-transform: uppercase;
 			line-height: 1;
+			letter-spacing: .05em;
 			color: #fff;
 			position: absolute;
 			margin: 0;
 			padding: 0;
 			z-index: 1;
 			visibility: hidden;
+			-webkit-font-smoothing : none;
+			font-smooth: never;
 		}
 		
 	</style>
@@ -93,17 +101,19 @@
 	
 	<div id="container">
 		
-		<h3><a href="http://linkedin.com/in/mickyhulse">linkedin</a></h3>
-		<h3><a href="http://behance.net/mhulse">behance</a></h3>
-		<h3><a href="http://youtube.com/mickyhulse">youtube</a></h3>
-		<h3><a href="http://github.com/mhulse">github</a></h3>
-		<h3><a href="http://bitbucket.org/mhulse/">bitbucket</a></h3>
+		<canvas id="layer1"></canvas>
+		<canvas id="layer2"></canvas>
+		<canvas id="layer3"></canvas>
+		<canvas id="layer4"></canvas>
+		<canvas id="layer5"></canvas>
 		
-		<canvas></canvas>
-		<canvas></canvas>
-		<canvas></canvas>
-		<canvas></canvas>
-		<canvas></canvas>
+		<div id="layer0">
+			<h3><a href="http://linkedin.com/in/mickyhulse">linkedin</a></h3>
+			<h3><a href="http://behance.net/mhulse">behance</a></h3>
+			<h3><a href="http://youtube.com/mickyhulse">youtube</a></h3>
+			<h3><a href="http://github.com/mhulse">github</a></h3>
+			<h3><a href="http://bitbucket.org/mhulse/">bitbucket</a></h3>
+		</div>
 		
 	</div>
 	
@@ -111,6 +121,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sizzle/2.2.1/sizzle.min.js"></script>
 	
 	<script>
+		
+		/*
+		
+		YES, I KNOW, THIS CODE NEEDS SOME HOUSE CLEANING!
+		
+		*/
 		
 		(function(window) {
 			
@@ -127,7 +143,9 @@
 			var then = Date.now();
 			var interval = (1000 / fps);
 			var delta;
-			var chars = ['▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐', '░', '▒', '▓', '▔', '▕', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟', '─', '━', '│', '┃', '┄', '┅', '┆', '┇', '┈', '┉', '┊', '┋', '┌', '┍', '┎', '┏', '┐', '┑', '┒', '┓', '└', '┕', '┖', '┗', '┘', '┙', '┚', '┛', '├', '┝', '┞', '┟', '┠', '┡', '┢', '┣', '┤', '┥', '┦', '┧', '┨', '┩', '┪', '┫', '┬', '┭', '┮', '┯', '┰', '┱', '┲', '┳', '┴', '┵', '┶', '┷', '┸', '┹', '┺', '┻', '┼', '┽', '┾', '┿', '╀', '╁', '╂', '╃', '╄', '╅', '╆', '╇', '╈', '╉', '╊', '╋', '╌', '╍', '╎', '╏', '═', '║', '╒', '╓', '╔', '╕', '╖', '╗', '╘', '╙', '╚', '╛', '╜', '╝', '╞', '╟', '╠', '╡', '╢', '╣', '╤', '╥', '╦', '╧', '╨', '╩', '╪', '╫', '╬', '╭', '╮', '╯', '╰', '╱', '╲', '╳', '╴', '╵', '╶', '╷', '╸', '╹', '╺', '╻', '╼', '╽', '╾', '╿'];
+			var delay;
+			// '▀', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█', '▉', '▊', '▋', '▌', '▍', '▎', '▏', '▐',
+			var chars = ['░', '▒', '▓', '▔', '▕', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟', '─', '━', '│', '┃', '┄', '┅', '┆', '┇', '┈', '┉', '┊', '┋', '┌', '┍', '┎', '┏', '┐', '┑', '┒', '┓', '└', '┕', '┖', '┗', '┘', '┙', '┚', '┛', '├', '┝', '┞', '┟', '┠', '┡', '┢', '┣', '┤', '┥', '┦', '┧', '┨', '┩', '┪', '┫', '┬', '┭', '┮', '┯', '┰', '┱', '┲', '┳', '┴', '┵', '┶', '┷', '┸', '┹', '┺', '┻', '┼', '┽', '┾', '┿', '╀', '╁', '╂', '╃', '╄', '╅', '╆', '╇', '╈', '╉', '╊', '╋', '╌', '╍', '╎', '╏', '═', '║', '╒', '╓', '╔', '╕', '╖', '╗', '╘', '╙', '╚', '╛', '╜', '╝', '╞', '╟', '╠', '╡', '╢', '╣', '╤', '╥', '╦', '╧', '╨', '╩', '╪', '╫', '╬', '╭', '╮', '╯', '╰', '╱', '╲', '╳', '╴', '╵', '╶', '╷', '╸', '╹', '╺', '╻', '╼', '╽', '╾', '╿'];
 			var l = chars.length;
 			
 			window.requestAnimationFrame = (function () {
@@ -138,23 +156,25 @@
 			
 			var sizer = function(canvas) {
 				
-				canvas.width = w;
-				canvas.height = h;
-				canvas.style.width = w;
-				canvas.style.height = h;
+				canvas.width = (w + 400);
+				canvas.height = (h + 400);
+				canvas.style.width = (w + 400) + 'px';
+				canvas.style.height = (h + 400) + 'px';
 				
 			};
 			
 			var draw = function(context, iterator) {
 				
-				var x = (.5 + (Math.random() * w) | 0);
-				var y = (.5 + (Math.random() * h) | 0);
+				
+				// Might not want to calculate width/height each time:
+				var x = (.5 + (Math.random() * context.canvas.offsetWidth) | 0);
+				var y = (.5 + (Math.random() * context.canvas.offsetHeight) | 0);
 				var char = chars[Math.floor(Math.random() * l)];
-				var font = ((iterator * 20) + 'px monospace');
+				var font = ((iterator * 4) + 'vmin monospace');
 				var fill = '#fff';
-				var alpha = (((iterator + 1) * 1.5) / 10);
+				var alpha = (((iterator + 1) * 1.25) / 10);
 				var rotation = (Math.random() * 1);
-				var coords = { top: y, right: (x + Math.ceil(context.measureText(char).width)), bottom: (y + parseInt(font)), left: x };
+				//var coords = { top: y, right: (x + Math.ceil(context.measureText(char).width)), bottom: (y + parseInt(font)), left: x };
 				
 				context.fillStyle = fill;
 				context.font = font;
@@ -194,16 +214,22 @@
 			window.addEventListener('load', function() {
 				
 				canvii = $('canvas');
+				var context;
 				
 				_.each(canvii, function(canvas) {
 					
 					sizer(canvas);
+					context = canvas.getContext('2d');
+					context.globalAlpha = 0;
 					
-					contexts.push(canvas.getContext('2d'));
+					contexts.push(context);
 					
 				});
 				
-				loop(contexts);
+				delay = _.delay(function() {
+					clearTimeout(delay);
+					loop(contexts)
+				}, 3000);
 				
 			});
 			
@@ -316,6 +342,8 @@
 		
 		(function() {
 			
+			/* Totally temp. Need to replace with CSS version! */
+			
 			'use strict';
 			
 			var $ = Sizzle;
@@ -347,31 +375,40 @@
 			
 		})();
 		
-		
-		/*
-		(function(window, document) {
+		window.onload = function(){
 			
-			'use strict';
-			
-			var $ = Sizzle;
-			
-			window.addEventListener('load', function() {
-				
-				var canvii = $('canvas');
-				
-				document.onmousemove = _.throttle(function(e) {
-					
-					console.log(canvii[0])
-					
-					//canvii[0].style.left = e.pageX + 'px';
-					//$('img').eq(1).css('left', e.pageX * 2);
-					
-				}, 100);
-				
-			});
-			
-		})(window, document);
-		*/
+var layer0 = document.getElementById('layer0');
+			var layer1 = document.getElementById('layer1');
+
+var layer2 = document.getElementById('layer2');
+
+var layer3 = document.getElementById('layer3');
+
+var layer4 = document.getElementById('layer4');
+
+var layer5 = document.getElementById('layer5');
+
+document.addEventListener('mousemove',parallax);
+
+function parallax(e){
+
+var xPosition = e.clientX; //it stores the mouse X position
+
+var yPosition = e.clientY; //it stores the mouse Y position and both //changes with mouse move event per pixel. 
+
+// Now we will change the X position of each layer on mouse move, to provide the smooth and slow effect we will divide position with some numbers.
+
+layer0.style.left=(xPosition/10)+'px';layer0.style.top=(yPosition/10)+'px';
+layer5.style.left=(xPosition/20)+'px';layer5.style.top=(yPosition/20)+'px';
+layer4.style.left=(xPosition/40)+'px';layer4.style.top=(yPosition/40)+'px';
+layer3.style.left=(xPosition/60)+'px';layer3.style.top=(yPosition/60)+'px';
+layer2.style.left=(xPosition/80)+'px';layer2.style.top=(yPosition/80)+'px';
+layer1.style.left=(xPosition/100)+'px';layer1.style.top=(yPosition/100)+'px';
+}
+
+}
+
+
 		
 	</script>
 	
