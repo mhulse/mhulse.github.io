@@ -1,1 +1,1 @@
-<h1><blink>[¡!¡ WIKI … WIKI … WIKI ¡!¡](https://github.com/mhulse/mhulse.github.io/wiki)</blink></h1>
+<h1><blink><a href="./wiki">¡!¡ WIKI … WIKI … WIKI ¡!¡</a></blink></h1>
