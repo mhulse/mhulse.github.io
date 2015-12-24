@@ -73,3 +73,5 @@ sitemap.xml.gz*~
 
 # PROJECT-SPECIFIC #
 ####################
+
+node_modules
