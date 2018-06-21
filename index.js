@@ -11,7 +11,7 @@ glob.sync('**/*.md', { cwd: `./wiki` }).forEach((file, i) => {
 	
 	file = file.replace('.md', '');
 
-	data.push(`* [${file.replace(/-/g, ' ')}](../../wiki/${file.replace(/\s/g, '-')})`);
+	data.push(`* **[${file.replace(/-/g, ' ')}](../../wiki/${file.replace(/\s/g, '-')})**`);
 
 });
 
