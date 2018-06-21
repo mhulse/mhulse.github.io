@@ -8,8 +8,10 @@ const data = [];
 glob.sync('**/*.md', { cwd: `./wiki` }).forEach((file, i) => {
 
 	console.log(file, i);
+	
+	file = file.replace('.md', '');
 
-	data.push(`### [${file.replace(/-/g, ' ').replace('.md', '')}](../../wiki/${file.replace(/\s/g, '-')})`);
+	data.push(`### [${file.replace(/-/g, ' ')}](../../wiki/${file.replace(/\s/g, '-')})`);
 
 });
 
