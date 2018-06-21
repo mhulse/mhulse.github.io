@@ -1,0 +1,19 @@
+{
+  "//": "Generate a new README.md by running `$ npm install` and then `$ npm start`.",
+  "name": "mhulse.github.io",
+  "description": "@mhulse central GitHub repository … Check out my WIKI!",
+  "repository": "https://github.com/mhulse/mhulse.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./wiki",
+    "clone": "git clone \"https://github.com/mhulse/mhulse.github.io.wiki.git$SOURCE_ZIP\" wiki",
+    "start": "npm run clean && npm run clone && node . && npm run clean"
+  },
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "glob": "^7.1.2",
+    "request": "^2.87.0",
+    "unzip": "^0.1.11"
+  }
+}
