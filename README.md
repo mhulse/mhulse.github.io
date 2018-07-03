@@ -5,6 +5,7 @@
 * **[Anime Studio Pro 10](../../wiki/Anime-Studio-Pro-10)**
 * **[Anime Studio Pro to Adobe Illustrator](../../wiki/Anime-Studio-Pro-to-Adobe-Illustrator)**
 * **[Atom Editor tips](../../wiki/Atom-Editor-tips)**
+* **[Atom Packages and Settings](../../wiki/Atom-Packages-and-Settings)**
 * **[Bash tips](../../wiki/Bash-tips)**
 * **[BitBucket clone using GitHub for Mac](../../wiki/BitBucket-clone-using-GitHub-for-Mac)**
 * **[Blackboxing Scripts in Chrome DevTools](../../wiki/Blackboxing-Scripts-in-Chrome-DevTools)**
@@ -61,7 +62,6 @@
 * **[Miscellaneous Django tips](../../wiki/Miscellaneous-Django-tips)**
 * **[Misculaneous python tips, tricks and commands](../../wiki/Misculaneous-python-tips,-tricks-and-commands)**
 * **[MongoDB on OS X with Homebrew](../../wiki/MongoDB-on-OS-X-with-Homebrew)**
-* **[My Atom Packages (April, 2018)](../../wiki/My-Atom-Packages-(April,-2018))**
 * **[My favorite TV series episodes](../../wiki/My-favorite-TV-series-episodes)**
 * **[MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)**
 * **[NGINX](../../wiki/NGINX)**
