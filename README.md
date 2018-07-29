@@ -42,7 +42,6 @@
 * **[Git(Hub) tips](../../wiki/Git(Hub)-tips)**
 * **[Github workflow tips](../../wiki/Github-workflow-tips)**
 * **[Google spreadsheets import data, feed, xml, html …](../../wiki/Google-spreadsheets-import-data,-feed,-xml,-html-…)**
-* **[Home](../../wiki/Home)**
 * **[How to un register to vote in Lane County, Oregon](../../wiki/How-to-un-register-to-vote-in-Lane-County,-Oregon)**
 * **[IIS Windows WordPress pretty urls](../../wiki/IIS-Windows-WordPress-pretty-urls)**
 * **[Illustrator Tips](../../wiki/Illustrator-Tips)**
