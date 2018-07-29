@@ -6,7 +6,7 @@
 * **[Anime Studio Pro to Adobe Illustrator](../../wiki/Anime-Studio-Pro-to-Adobe-Illustrator)**
 * **[Atom Editor tips](../../wiki/Atom-Editor-tips)**
 * **[Atom Packages and Settings](../../wiki/Atom-Packages-and-Settings)**
-* **[Bash tips](../../wiki/Bash-tips)**
+* **[Bash and shell scripting tips and tricks](../../wiki/Bash-and-shell-scripting-tips-and-tricks)**
 * **[BitBucket clone using GitHub for Mac](../../wiki/BitBucket-clone-using-GitHub-for-Mac)**
 * **[Blackboxing Scripts in Chrome DevTools](../../wiki/Blackboxing-Scripts-in-Chrome-DevTools)**
 * **[Blender and Unity tips and notes](../../wiki/Blender-and-Unity-tips-and-notes)**
@@ -50,14 +50,17 @@
 * **[ImageMagick, Ghostscript, poppler, jhead tips and tricks](../../wiki/ImageMagick,-Ghostscript,-poppler,-jhead-tips-and-tricks)**
 * **[Inspirational sites](../../wiki/Inspirational-sites)**
 * **[Install python, virtualenv, virtualenvwrapper in a brew environment](../../wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment)**
+* **[Install SSH key on a server as an authorized key](../../wiki/Install-SSH-key-on-a-server-as-an-authorized-key)**
 * **[Installing Apache Tomcat on OS X Yosemite](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite)**
 * **[Installing Apache Tomcat using Homebrew on OS X Yosemite](../../wiki/Installing-Apache-Tomcat-using-Homebrew-on-OS-X-Yosemite)**
 * **[Installing Kodi on Fire TV](../../wiki/Installing-Kodi-on-Fire-TV)**
 * **[Java sdkman maven gradle (and spring boot)](../../wiki/Java-sdkman-maven-gradle-(and-spring-boot))**
 * **[Java, JSP, JSTL, EL, Tomcat notes and tips](../../wiki/Java,-JSP,-JSTL,-EL,-Tomcat-notes-and-tips)**
+* **[JSON API Boilerplate Tip](../../wiki/JSON-API-Boilerplate-Tip)**
 * **[Linux Unix add, edit and remove users and groups](../../wiki/Linux-Unix-add,-edit-and-remove-users-and-groups)**
 * **[macOS Java Android dev setup](../../wiki/macOS-Java-Android-dev-setup)**
 * **[macOS OpenCV](../../wiki/macOS-OpenCV)**
+* **[macOS Terminal.app tips and tricks](../../wiki/macOS-Terminal.app-tips-and-tricks)**
 * **[Microsoft Word tips](../../wiki/Microsoft-Word-tips)**
 * **[Miscellaneous Django tips](../../wiki/Miscellaneous-Django-tips)**
 * **[Misculaneous python tips, tricks and commands](../../wiki/Misculaneous-python-tips,-tricks-and-commands)**
@@ -102,10 +105,13 @@
 * **[Trix are for kids you silly Octocat](../../wiki/Trix-are-for-kids-you-silly-Octocat)**
 * **[Unity Tips and Notes](../../wiki/Unity-Tips-and-Notes)**
 * **[Unix](../../wiki/Unix)**
+* **[Upgrade bash on OS X](../../wiki/Upgrade-bash-on-OS-X)**
 * **[Use SquidMan to access vhosts on Mac](../../wiki/Use-SquidMan-to-access-vhosts-on-Mac)**
 * **[Useful psql commands](../../wiki/Useful-psql-commands)**
 * **[Using npm to install Bower locally and install dependencies as a run script](../../wiki/Using-npm-to-install-Bower-locally-and-install-dependencies-as-a-run-script)**
 * **[Using FontDoctor to organize fonts](../../wiki/Using-FontDoctor-to-organize-fonts)**
+* **[Using gnu screen](../../wiki/Using-gnu-screen)**
+* **[Using macOS iTerm](../../wiki/Using-macOS-iTerm)**
 * **[Vagrant and VirtualBox on macOS X](../../wiki/Vagrant-and-VirtualBox-on-macOS-X)**
 * **[Wacom mapping](../../wiki/Wacom-mapping)**
 * **[WebFaction Django Python tips notes](../../wiki/WebFaction-Django-Python-tips-notes)**
