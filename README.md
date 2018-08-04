@@ -42,6 +42,7 @@
 * **[Git(Hub) tips](../../wiki/Git(Hub)-tips)**
 * **[Github workflow tips](../../wiki/Github-workflow-tips)**
 * **[Google spreadsheets import data, feed, xml, html …](../../wiki/Google-spreadsheets-import-data,-feed,-xml,-html-…)**
+* **[Home](../../wiki/Home)**
 * **[How to un register to vote in Lane County, Oregon](../../wiki/How-to-un-register-to-vote-in-Lane-County,-Oregon)**
 * **[IIS Windows WordPress pretty urls](../../wiki/IIS-Windows-WordPress-pretty-urls)**
 * **[Illustrator Tips](../../wiki/Illustrator-Tips)**
@@ -66,6 +67,7 @@
 * **[MongoDB on OS X with Homebrew](../../wiki/MongoDB-on-OS-X-with-Homebrew)**
 * **[My favorite TV series episodes](../../wiki/My-favorite-TV-series-episodes)**
 * **[MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)**
+* **[MySQL tutorial: Record insertion with foreign key constraint](../../wiki/MySQL-tutorial:-Record-insertion-with-foreign-key-constraint)**
 * **[NGINX](../../wiki/NGINX)**
 * **[Notes: Logo Design Theory & Application Bootcamp](../../wiki/Notes:-Logo-Design-Theory-&-Application-Bootcamp)**
 * **[npm install from public or private repos on GitHub or Bitbucket](../../wiki/npm-install-from-public-or-private-repos-on-GitHub-or-Bitbucket)**
@@ -112,6 +114,7 @@
 * **[Using gnu screen](../../wiki/Using-gnu-screen)**
 * **[Using macOS iTerm](../../wiki/Using-macOS-iTerm)**
 * **[Vagrant and VirtualBox on macOS X](../../wiki/Vagrant-and-VirtualBox-on-macOS-X)**
+* **[Vagrant tips and tricks](../../wiki/Vagrant-tips-and-tricks)**
 * **[Wacom mapping](../../wiki/Wacom-mapping)**
 * **[WebFaction Django Python tips notes](../../wiki/WebFaction-Django-Python-tips-notes)**
 * **[WebFaction: Django mod_wsgi 4.2.8 Python 3.4](../../wiki/WebFaction:-Django-mod_wsgi-4.2.8-Python-3.4)**
