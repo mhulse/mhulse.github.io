@@ -58,7 +58,7 @@
 * **[Java, JSP, JSTL, EL, Tomcat notes and tips](../../wiki/Java,-JSP,-JSTL,-EL,-Tomcat-notes-and-tips)**
 * **[JSON API Boilerplate Tip](../../wiki/JSON-API-Boilerplate-Tip)**
 * **[Linux Unix add, edit and remove users and groups](../../wiki/Linux-Unix-add,-edit-and-remove-users-and-groups)**
-* **[macOS Java Android dev setup](../../wiki/macOS-Java-Android-dev-setup)**
+* **[macOS Java Android dev setup (Android Studio, Intellij Community Edition, etc.)](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.))**
 * **[macOS OpenCV](../../wiki/macOS-OpenCV)**
 * **[macOS Terminal.app tips and tricks](../../wiki/macOS-Terminal.app-tips-and-tricks)**
 * **[Microsoft Word tips](../../wiki/Microsoft-Word-tips)**
