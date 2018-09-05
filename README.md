@@ -9,13 +9,6 @@
 * **[Bash and shell scripting tips and tricks](../../wiki/Bash-and-shell-scripting-tips-and-tricks)**
 * **[BitBucket clone using GitHub for Mac](../../wiki/BitBucket-clone-using-GitHub-for-Mac)**
 * **[Blackboxing Scripts in Chrome DevTools](../../wiki/Blackboxing-Scripts-in-Chrome-DevTools)**
-* **[Blender and Unity tips and notes](../../wiki/Blender-and-Unity-tips-and-notes)**
-* **[Blender Dope Sheet Actions Animation](../../wiki/Blender-Dope-Sheet-Actions-Animation)**
-* **[Blender Fundamentals](../../wiki/Blender-Fundamentals)**
-* **[Blender rigging](../../wiki/Blender-rigging)**
-* **[Blender tips and notes](../../wiki/Blender-tips-and-notes)**
-* **[Blender UV Unwrapping Tips](../../wiki/Blender-UV-Unwrapping-Tips)**
-* **[Blender: My 2016 addons, key binding mods and other user prefs](../../wiki/Blender:-My-2016-addons,-key-binding-mods-and-other-user-prefs)**
 * **[Brew Node NPM Grunt tips](../../wiki/Brew-Node-NPM-Grunt-tips)**
 * **[CentOS  Apache, and notes](../../wiki/CentOS--Apache,-and-notes)**
 * **[Connecting to Mac virtual hosts from Parallels Windows](../../wiki/Connecting-to-Mac-virtual-hosts-from-Parallels-Windows)**
@@ -91,7 +84,6 @@
 * **[Ricoh Theta notes](../../wiki/Ricoh-Theta-notes)**
 * **[Ruby tips](../../wiki/Ruby-tips)**
 * **[Setting up a new dev Mac](../../wiki/Setting-up-a-new-dev-Mac)**
-* **[Setting up a Unity project for Git](../../wiki/Setting-up-a-Unity-project-for-Git)**
 * **[Setting up Linux server with SSH keygen for BitBucket](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket)**
 * **[Setup SSH key for local dev box and use agent forwarding for servers](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers)**
 * **[Shopify, ShipStation, Printful to connect Etsy, Amazon and Ebay](../../wiki/Shopify,-ShipStation,-Printful-to-connect-Etsy,-Amazon-and-Ebay)**
@@ -105,7 +97,6 @@
 * **[Swift 2 notes](../../wiki/Swift-2-notes)**
 * **[TOC test](../../wiki/TOC-test)**
 * **[Trix are for kids you silly Octocat](../../wiki/Trix-are-for-kids-you-silly-Octocat)**
-* **[Unity Tips and Notes](../../wiki/Unity-Tips-and-Notes)**
 * **[Unix](../../wiki/Unix)**
 * **[Upgrade bash on OS X](../../wiki/Upgrade-bash-on-OS-X)**
 * **[Use SquidMan to access vhosts on Mac](../../wiki/Use-SquidMan-to-access-vhosts-on-Mac)**
