@@ -54,6 +54,7 @@
 * **[Installing Apache Tomcat on OS X Yosemite](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite)**
 * **[Installing Apache Tomcat using Homebrew on OS X Yosemite](../../wiki/Installing-Apache-Tomcat-using-Homebrew-on-OS-X-Yosemite)**
 * **[Installing Kodi on Fire TV](../../wiki/Installing-Kodi-on-Fire-TV)**
+* **[IntelliJ IDEA tips](../../wiki/IntelliJ-IDEA-tips)**
 * **[Java sdkman maven gradle (and spring boot)](../../wiki/Java-sdkman-maven-gradle-(and-spring-boot))**
 * **[Java, JSP, JSTL, EL, Tomcat notes and tips](../../wiki/Java,-JSP,-JSTL,-EL,-Tomcat-notes-and-tips)**
 * **[JSON API Boilerplate Tip](../../wiki/JSON-API-Boilerplate-Tip)**
