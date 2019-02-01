@@ -7,11 +7,11 @@ const data = [];
 
 glob.sync('**/*.md', { cwd: `./wiki` }).forEach((file, i) => {
 
-	console.log(file, i);
-	
-	file = file.replace('.md', '');
+  console.log(file, i);
 
-	data.push(`* **[${file.replace(/-/g, ' ')}](../../wiki/${file.replace(/\s/g, '-')})**`);
+  file = file.replace('.md', '');
+
+  data.push(`* **[${file.replace(/-/g, ' ')}](../../wiki/${file.replace(/\s/g, '-')})**`);
 
 });
 
