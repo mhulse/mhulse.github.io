@@ -63,6 +63,7 @@
 * **[MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)**
 * **[MySQL tutorial: Record insertion with foreign key constraint](../../wiki/MySQL-tutorial:-Record-insertion-with-foreign-key-constraint)**
 * **[NGINX](../../wiki/NGINX)**
+* **[node npm fix vulnerabilities tl;dr](../../wiki/node-npm-fix-vulnerabilities-tl;dr)**
 * **[Notes: Logo Design Theory & Application Bootcamp](../../wiki/Notes:-Logo-Design-Theory-&-Application-Bootcamp)**
 * **[npm install from public or private repos on GitHub or Bitbucket](../../wiki/npm-install-from-public-or-private-repos-on-GitHub-or-Bitbucket)**
 * **[OS X boot disk and fresh install](../../wiki/OS-X-boot-disk-and-fresh-install)**
@@ -95,6 +96,7 @@
 * **[Sublime Text Tips](../../wiki/Sublime-Text-Tips)**
 * **[Sun G size for my headz](../../wiki/Sun-G-size-for-my-headz)**
 * **[Swift 2 notes](../../wiki/Swift-2-notes)**
+* **[Tips for writing kids books](../../wiki/Tips-for-writing-kids-books)**
 * **[TOC test](../../wiki/TOC-test)**
 * **[Trix are for kids you silly Octocat](../../wiki/Trix-are-for-kids-you-silly-Octocat)**
 * **[Unix](../../wiki/Unix)**
@@ -104,7 +106,6 @@
 * **[Using npm to install Bower locally and install dependencies as a run script](../../wiki/Using-npm-to-install-Bower-locally-and-install-dependencies-as-a-run-script)**
 * **[Using FontDoctor to organize fonts](../../wiki/Using-FontDoctor-to-organize-fonts)**
 * **[Using gnu screen](../../wiki/Using-gnu-screen)**
-* **[Using macOS iTerm](../../wiki/Using-macOS-iTerm)**
 * **[Vagrant and VirtualBox on macOS X](../../wiki/Vagrant-and-VirtualBox-on-macOS-X)**
 * **[Vagrant tips and tricks](../../wiki/Vagrant-tips-and-tricks)**
 * **[Wacom mapping](../../wiki/Wacom-mapping)**
