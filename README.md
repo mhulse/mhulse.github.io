@@ -7,6 +7,7 @@
 * **[Atom Editor tips](../../wiki/Atom-Editor-tips)**
 * **[Atom Packages and Settings](../../wiki/Atom-Packages-and-Settings)**
 * **[Bash and shell scripting tips and tricks](../../wiki/Bash-and-shell-scripting-tips-and-tricks)**
+* **[Basic ESLint setup](../../wiki/Basic-ESLint-setup)**
 * **[BitBucket clone using GitHub for Mac](../../wiki/BitBucket-clone-using-GitHub-for-Mac)**
 * **[Blackboxing Scripts in Chrome DevTools](../../wiki/Blackboxing-Scripts-in-Chrome-DevTools)**
 * **[Brew Node NPM Grunt tips](../../wiki/Brew-Node-NPM-Grunt-tips)**
@@ -59,6 +60,7 @@
 * **[Miscellaneous Django tips](../../wiki/Miscellaneous-Django-tips)**
 * **[Misculaneous python tips, tricks and commands](../../wiki/Misculaneous-python-tips,-tricks-and-commands)**
 * **[MongoDB on OS X with Homebrew](../../wiki/MongoDB-on-OS-X-with-Homebrew)**
+* **[My coat size measurements](../../wiki/My-coat-size-measurements)**
 * **[My favorite TV series episodes](../../wiki/My-favorite-TV-series-episodes)**
 * **[MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)**
 * **[MySQL tutorial: Record insertion with foreign key constraint](../../wiki/MySQL-tutorial:-Record-insertion-with-foreign-key-constraint)**
@@ -106,11 +108,13 @@
 * **[Using npm to install Bower locally and install dependencies as a run script](../../wiki/Using-npm-to-install-Bower-locally-and-install-dependencies-as-a-run-script)**
 * **[Using FontDoctor to organize fonts](../../wiki/Using-FontDoctor-to-organize-fonts)**
 * **[Using gnu screen](../../wiki/Using-gnu-screen)**
+* **[Using MySQL on macOS Mojave via Homebrew](../../wiki/Using-MySQL-on-macOS-Mojave-via-Homebrew)**
 * **[Vagrant and VirtualBox on macOS X](../../wiki/Vagrant-and-VirtualBox-on-macOS-X)**
 * **[Vagrant tips and tricks](../../wiki/Vagrant-tips-and-tricks)**
 * **[Wacom mapping](../../wiki/Wacom-mapping)**
 * **[WebFaction Django Python tips notes](../../wiki/WebFaction-Django-Python-tips-notes)**
 * **[WebFaction: Django mod_wsgi 4.2.8 Python 3.4](../../wiki/WebFaction:-Django-mod_wsgi-4.2.8-Python-3.4)**
+* **[WebStorm macOS centric notes, tips and tricks](../../wiki/WebStorm-macOS-centric-notes,-tips-and-tricks)**
 * **[Wigglegrams or "stereographic drawings"...](../../wiki/Wigglegrams-or-"stereographic-drawings"...)**
 * **[Wings 3D preferences](../../wiki/Wings-3D-preferences)**
 * **[Wings 3d tips](../../wiki/Wings-3d-tips)**
