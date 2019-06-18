@@ -1,4 +1,5 @@
 ## [“GitBan”: Kanban GitHub repository issue tracking](../../wiki/“GitBan”:-Kanban-GitHub-repository-issue-tracking)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Multi-person example](../../wiki/“GitBan”:-Kanban-GitHub-repository-issue-tracking#multi-person-example)
   * [1) Start with a GitHub repo:](../../wiki/“GitBan”:-Kanban-GitHub-repository-issue-tracking#1-start-with-a-github-repo)
   * [2) Create some issues:](../../wiki/“GitBan”:-Kanban-GitHub-repository-issue-tracking#2-create-some-issues)
   * [3) Write issue numbers on sticky notes:](../../wiki/“GitBan”:-Kanban-GitHub-repository-issue-tracking#3-write-issue-numbers-on-sticky-notes)
