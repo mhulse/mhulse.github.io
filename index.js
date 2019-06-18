@@ -1,6 +1,6 @@
 const fs = require('fs-extra');
 const glob = require('glob');
-const unzip = require('unzip');
+const unzip = require('unzipper');
 const request = require('request');
 
 const data = [];

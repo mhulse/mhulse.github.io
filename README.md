@@ -3,7 +3,6 @@
 * **[Adobe Lightroom: Defaults](../../wiki/Adobe-Lightroom:-Defaults)**
 * **[Adobe Lightroom: Tips](../../wiki/Adobe-Lightroom:-Tips)**
 * **[Anime Studio Pro 10](../../wiki/Anime-Studio-Pro-10)**
-* **[Anime Studio Pro to Adobe Illustrator](../../wiki/Anime-Studio-Pro-to-Adobe-Illustrator)**
 * **[Atom Editor tips](../../wiki/Atom-Editor-tips)**
 * **[Atom Packages and Settings](../../wiki/Atom-Packages-and-Settings)**
 * **[Bash and shell scripting tips and tricks](../../wiki/Bash-and-shell-scripting-tips-and-tricks)**
@@ -39,8 +38,6 @@
 * **[Home](../../wiki/Home)**
 * **[How to un register to vote in Lane County, Oregon](../../wiki/How-to-un-register-to-vote-in-Lane-County,-Oregon)**
 * **[IIS Windows WordPress pretty urls](../../wiki/IIS-Windows-WordPress-pretty-urls)**
-* **[Illustrator Tips](../../wiki/Illustrator-Tips)**
-* **[Illustrator typographic logo workflow](../../wiki/Illustrator-typographic-logo-workflow)**
 * **[ImageMagick, Ghostscript, poppler, jhead tips and tricks](../../wiki/ImageMagick,-Ghostscript,-poppler,-jhead-tips-and-tricks)**
 * **[Inspirational sites](../../wiki/Inspirational-sites)**
 * **[Install python, virtualenv, virtualenvwrapper in a brew environment](../../wiki/Install-python,-virtualenv,-virtualenvwrapper-in-a-brew-environment)**
@@ -73,7 +70,6 @@
 * **[Periodic Table of SEO](../../wiki/Periodic-Table-of-SEO)**
 * **[Photoshop create frame animation from multiple files](../../wiki/Photoshop-create-frame-animation-from-multiple-files)**
 * **[Photoshop Tips](../../wiki/Photoshop-Tips)**
-* **[Pixel art in Illy](../../wiki/Pixel-art-in-Illy)**
 * **[Placing credit freeze on child dependent](../../wiki/Placing-credit-freeze-on-child-dependent)**
 * **[Placing credit freezes](../../wiki/Placing-credit-freezes)**
 * **[PM2 Node.js Process Management](../../wiki/PM2-Node.js-Process-Management)**
@@ -87,6 +83,7 @@
 * **[Ricoh Theta notes](../../wiki/Ricoh-Theta-notes)**
 * **[Ruby tips](../../wiki/Ruby-tips)**
 * **[Setting up a new dev Mac](../../wiki/Setting-up-a-new-dev-Mac)**
+* **[Setting up a secure SSL HTTPS website using Apache on CentOS](../../wiki/Setting-up-a-secure-SSL-HTTPS-website-using-Apache-on-CentOS)**
 * **[Setting up Linux server with SSH keygen for BitBucket](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket)**
 * **[Setup SSH key for local dev box and use agent forwarding for servers](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers)**
 * **[Shopify, ShipStation, Printful to connect Etsy, Amazon and Ebay](../../wiki/Shopify,-ShipStation,-Printful-to-connect-Etsy,-Amazon-and-Ebay)**
@@ -101,7 +98,6 @@
 * **[Tips for writing kids books](../../wiki/Tips-for-writing-kids-books)**
 * **[TOC test](../../wiki/TOC-test)**
 * **[Trix are for kids you silly Octocat](../../wiki/Trix-are-for-kids-you-silly-Octocat)**
-* **[Unix](../../wiki/Unix)**
 * **[Upgrade bash on OS X](../../wiki/Upgrade-bash-on-OS-X)**
 * **[Use SquidMan to access vhosts on Mac](../../wiki/Use-SquidMan-to-access-vhosts-on-Mac)**
 * **[Useful psql commands](../../wiki/Useful-psql-commands)**
