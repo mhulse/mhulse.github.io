@@ -11,7 +11,7 @@
     "start": "npm run clean && npm run clone && node . && npm run clean"
   },
   "dependencies": {
-    "fs-extra": "^8.0.1",
+    "fs-extra": "^8.1.0",
     "glob": "^7.1.4",
     "markdown-toc": "^1.2.0",
     "natives": "^1.1.6",
