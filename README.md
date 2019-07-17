@@ -184,11 +184,6 @@
 
 
 
-## [Git & GitHub](../../wiki/Git-&-GitHub)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [[[Github workflow tips]]](../../wiki/Git-&-GitHub#github-workflow-tips)
-- [[[Example GitHub workflow and how to update Git sub modules]]](../../wiki/Git-&-GitHub#example-github-workflow-and-how-to-update-git-sub-modules)
-
-
 ## [Git flow for pros](../../wiki/Git-flow-for-pros)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Checkout specific file from another branch](../../wiki/Git-flow-for-pros#checkout-specific-file-from-another-branch)
 - [Searching through git revisions](../../wiki/Git-flow-for-pros#searching-through-git-revisions)
@@ -213,7 +208,8 @@
 
 
 ## [Git permissions shared server environment](../../wiki/Git-permissions-shared-server-environment)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Git stuff:](../../wiki/Git-permissions-shared-server-environment#git-stuff)
+- [Workflow example](../../wiki/Git-permissions-shared-server-environment#workflow-example)
+- [Code example](../../wiki/Git-permissions-shared-server-environment#code-example)
 
 
 ## [Git(Hub) tips](../../wiki/Git(Hub)-tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -285,7 +281,7 @@
 
 ## [Installing Apache Tomcat on OS X Yosemite](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Do this first!](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite#do-this-first)
-- [Option #1: [Bitnami](https://bitnami.com/)’s Tomcat](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite#option-%231-bitnamihttpsbitnamicoms-tomcat)
+- [Option #1: Bitnami’s Tomcat](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite#option-%231-bitnamis-tomcat)
   * [Installation instructions:](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite#installation-instructions)
 - [Option #2: Homebrew](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite#option-%232-homebrew)
   * [Complete installation instructions:](../../wiki/Installing-Apache-Tomcat-on-OS-X-Yosemite#complete-installation-instructions)
@@ -397,26 +393,26 @@
 
 
 ## [MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-  * [Enter into mysql prompt](../../wiki/MySQL-basic,-tricks-and-techniques#enter-into-mysql-prompt)
-  * [Show which database is currently in use](../../wiki/MySQL-basic,-tricks-and-techniques#show-which-database-is-currently-in-use)
-  * [Clone and backup a database](../../wiki/MySQL-basic,-tricks-and-techniques#clone-and-backup-a-database)
-  * [Temp backup table](../../wiki/MySQL-basic,-tricks-and-techniques#temp-backup-table)
-  * [Track all the connections to a DB](../../wiki/MySQL-basic,-tricks-and-techniques#track-all-the-connections-to-a-db)
-  * [Dumping and importing from/to MySQL in an UTF-8 safe way](../../wiki/MySQL-basic,-tricks-and-techniques#dumping-and-importing-fromto-mysql-in-an-utf-8-safe-way)
-  * [Explain](../../wiki/MySQL-basic,-tricks-and-techniques#explain)
-  * [Data display](../../wiki/MySQL-basic,-tricks-and-techniques#data-display)
-  * [Copy SQL from one server to other](../../wiki/MySQL-basic,-tricks-and-techniques#copy-sql-from-one-server-to-other)
-  * [Table to CSV](../../wiki/MySQL-basic,-tricks-and-techniques#table-to-csv)
-  * [Dump and load sql](../../wiki/MySQL-basic,-tricks-and-techniques#dump-and-load-sql)
-  * [Import SQL](../../wiki/MySQL-basic,-tricks-and-techniques#import-sql)
-  * [List all databases](../../wiki/MySQL-basic,-tricks-and-techniques#list-all-databases)
-  * [Create a database](../../wiki/MySQL-basic,-tricks-and-techniques#create-a-database)
-  * [List mysql users](../../wiki/MySQL-basic,-tricks-and-techniques#list-mysql-users)
-  * [Drop user(s)](../../wiki/MySQL-basic,-tricks-and-techniques#drop-users)
-  * [Create a user](../../wiki/MySQL-basic,-tricks-and-techniques#create-a-user)
-  * [User permissions](../../wiki/MySQL-basic,-tricks-and-techniques#user-permissions)
+- [Enter into mysql prompt](../../wiki/MySQL-basic,-tricks-and-techniques#enter-into-mysql-prompt)
+- [Show which database is currently in use](../../wiki/MySQL-basic,-tricks-and-techniques#show-which-database-is-currently-in-use)
+- [Clone and backup a database](../../wiki/MySQL-basic,-tricks-and-techniques#clone-and-backup-a-database)
+- [Temp backup table](../../wiki/MySQL-basic,-tricks-and-techniques#temp-backup-table)
+- [Track all the connections to a DB](../../wiki/MySQL-basic,-tricks-and-techniques#track-all-the-connections-to-a-db)
+- [Dumping and importing from/to MySQL in an UTF-8 safe way](../../wiki/MySQL-basic,-tricks-and-techniques#dumping-and-importing-fromto-mysql-in-an-utf-8-safe-way)
+- [Explain](../../wiki/MySQL-basic,-tricks-and-techniques#explain)
+- [Data display](../../wiki/MySQL-basic,-tricks-and-techniques#data-display)
+- [Copy SQL from one server to other](../../wiki/MySQL-basic,-tricks-and-techniques#copy-sql-from-one-server-to-other)
+- [Table to CSV](../../wiki/MySQL-basic,-tricks-and-techniques#table-to-csv)
+- [Dump and load sql](../../wiki/MySQL-basic,-tricks-and-techniques#dump-and-load-sql)
+- [Import SQL](../../wiki/MySQL-basic,-tricks-and-techniques#import-sql)
+- [List all databases](../../wiki/MySQL-basic,-tricks-and-techniques#list-all-databases)
+- [Create a database](../../wiki/MySQL-basic,-tricks-and-techniques#create-a-database)
+- [List mysql users](../../wiki/MySQL-basic,-tricks-and-techniques#list-mysql-users)
+- [Drop user(s)](../../wiki/MySQL-basic,-tricks-and-techniques#drop-users)
+- [Create a user](../../wiki/MySQL-basic,-tricks-and-techniques#create-a-user)
+- [User permissions](../../wiki/MySQL-basic,-tricks-and-techniques#user-permissions)
 - [List tables in database](../../wiki/MySQL-basic,-tricks-and-techniques#list-tables-in-database)
-  * [Drop/delete a database](../../wiki/MySQL-basic,-tricks-and-techniques#dropdelete-a-database)
+- [Drop/delete a database](../../wiki/MySQL-basic,-tricks-and-techniques#dropdelete-a-database)
 
 
 ## [MySQL tutorial: Record insertion with foreign key constraint](../../wiki/MySQL-tutorial:-Record-insertion-with-foreign-key-constraint)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
