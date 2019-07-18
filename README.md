@@ -742,10 +742,6 @@
 
 
 
-## [Using npm to install Bower locally and install dependencies as a run script](../../wiki/Using-npm-to-install-Bower-locally-and-install-dependencies-as-a-run-script)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Belated TL;DR:](../../wiki/Using npm to install Bower locally and install dependencies as a run script#belated-tldr)
-
-
 ## [Using FontDoctor to organize fonts](../../wiki/Using-FontDoctor-to-organize-fonts)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 
 
@@ -758,10 +754,14 @@
 
 
 ## [Using MySQL on macOS Mojave via Homebrew](../../wiki/Using-MySQL-on-macOS-Mojave-via-Homebrew)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Install [Homebrew](https://brew.sh/)](../../wiki/Using-MySQL-on-macOS-Mojave-via-Homebrew#install-homebrewhttpsbrewsh)
+- [Install Homebrew](../../wiki/Using-MySQL-on-macOS-Mojave-via-Homebrew#install-homebrew)
 - [Install MySQL](../../wiki/Using-MySQL-on-macOS-Mojave-via-Homebrew#install-mysql)
 - [Reinstall or remove MySQL](../../wiki/Using-MySQL-on-macOS-Mojave-via-Homebrew#reinstall-or-remove-mysql)
 - [Links](../../wiki/Using-MySQL-on-macOS-Mojave-via-Homebrew#links)
+
+
+## [Using npm to install Bower locally and install dependencies as a run script](../../wiki/Using-npm-to-install-Bower-locally-and-install-dependencies-as-a-run-script)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+
 
 
 ## [Vagrant and VirtualBox on macOS X](../../wiki/Vagrant-and-VirtualBox-on-macOS-X)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -776,7 +776,7 @@
 - [Mounting VM as disk](../../wiki/Vagrant-tips-and-tricks#mounting-vm-as-disk)
   * [Windows OS](../../wiki/Vagrant-tips-and-tricks#windows-os)
   * [Mac OS](../../wiki/Vagrant-tips-and-tricks#mac-os)
-- [Connect to VM MySQL using SSH tunnel and [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)](../../wiki/Vagrant-tips-and-tricks#connect-to-vm-mysql-using-ssh-tunnel-and-mysql-workbenchhttpsdevmysqlcomdownloadsworkbench)
+- [Connect to VM MySQL using SSH tunnel and MySQL Workbench](../../wiki/Vagrant-tips-and-tricks#connect-to-vm-mysql-using-ssh-tunnel-and-mysql-workbench)
   * [Links](../../wiki/Vagrant-tips-and-tricks#links)
 
 
