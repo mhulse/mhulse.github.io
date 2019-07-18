@@ -346,10 +346,10 @@
 
 
 ## [macOS Java Android dev setup (Android Studio, Intellij Community Edition, etc.)](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Note: I have noticed that the brew cask installation does not install the most recent versions of the apps; I have since uninstalled the cask versions and just downloaded the `dmg` installers from their respective download pages.](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#note-i-have-noticed-that-the-brew-cask-installation-does-not-install-the-most-recent-versions-of-the-apps-i-have-since-uninstalled-the-cask-versions-and-just-downloaded-the-dmg-installers-from-their-respective-download-pages)
-  * [Java bits:](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#java-bits)
-  * [Use Homebrew to install Android dev tools:](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#use-homebrew-to-install-android-dev-tools)
-  * [Links](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#links)
+- [Notice!](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#notice)
+- [Java bits](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#java-bits)
+- [Use Homebrew to install Android dev tools](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#use-homebrew-to-install-android-dev-tools)
+- [Links](../../wiki/macOS-Java-Android-dev-setup-(Android-Studio,-Intellij-Community-Edition,-etc.)#links)
 
 
 ## [macOS OpenCV](../../wiki/macOS-OpenCV)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -393,6 +393,7 @@
 
 
 ## [MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Difference between a MySQL procedure and a function](../../wiki/MySQL-basic,-tricks-and-techniques#difference-between-a-mysql-procedure-and-a-function)
 - [Enter into mysql prompt](../../wiki/MySQL-basic,-tricks-and-techniques#enter-into-mysql-prompt)
 - [Show which database is currently in use](../../wiki/MySQL-basic,-tricks-and-techniques#show-which-database-is-currently-in-use)
 - [Clone and backup a database](../../wiki/MySQL-basic,-tricks-and-techniques#clone-and-backup-a-database)
@@ -464,7 +465,9 @@
 
 
 ## [Photoshop create frame animation from multiple files](../../wiki/Photoshop-create-frame-animation-from-multiple-files)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [FIRST READ THIS: [Frame Delay Times for Animated GIFs ](http://humpy77.deviantart.com/journal/Frame-Delay-Times-for-Animated-GIFs-214150546)](../../wiki/Photoshop-create-frame-animation-from-multiple-files#first-read-this-frame-delay-times-for-animated-gifs-httphumpy77deviantartcomjournalframe-delay-times-for-animated-gifs-214150546)
+- [Read this first](../../wiki/Photoshop-create-frame-animation-from-multiple-files#read-this-first)
+- [Screen recording gif](../../wiki/Photoshop-create-frame-animation-from-multiple-files#screen-recording-gif)
+- [Links](../../wiki/Photoshop-create-frame-animation-from-multiple-files#links)
 
 
 ## [Photoshop Tips](../../wiki/Photoshop-Tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -472,16 +475,19 @@
 
 
 ## [Placing credit freeze on child dependent](../../wiki/Placing-credit-freeze-on-child-dependent)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Good info here: [TransUnion Child Credit Freeze Summary](http://newsmom.com/transunion-child-credit-freeze/)](../../wiki/Placing-credit-freeze-on-child-dependent#good-info-here-transunion-child-credit-freeze-summaryhttpnewsmomcomtransunion-child-credit-freeze)
+- [About](../../wiki/Placing-credit-freeze-on-child-dependent#about)
+- [Guide](../../wiki/Placing-credit-freeze-on-child-dependent#guide)
   * [Equifax](../../wiki/Placing-credit-freeze-on-child-dependent#equifax)
   * [TransUnion](../../wiki/Placing-credit-freeze-on-child-dependent#transunion)
   * [Experian](../../wiki/Placing-credit-freeze-on-child-dependent#experian)
 
 
 ## [Placing credit freezes](../../wiki/Placing-credit-freezes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [1.](../../wiki/Placing-credit-freezes#1-)
-- [2.](../../wiki/Placing-credit-freezes#2-)
-- [3.](../../wiki/Placing-credit-freezes#3-)
+- [How-to guide](../../wiki/Placing-credit-freezes#how-to-guide)
+  * [1. [freeze.transunion.com](https://freeze.transunion.com)](../../wiki/Placing-credit-freezes#1-freezetransunioncomhttpsfreezetransunioncom)
+  * [2. [freeze.equifax.com](https://www.freeze.equifax.com)](../../wiki/Placing-credit-freezes#2-freezeequifaxcomhttpswwwfreezeequifaxcom)
+  * [3. [experian.com/freeze](http://www.experian.com/freeze)](../../wiki/Placing-credit-freezes#3-experiancomfreezehttpwwwexperiancomfreeze)
+- [Tips!](../../wiki/Placing-credit-freezes#tips)
 
 
 ## [PM2 Node.js Process Management](../../wiki/PM2-Node.js-Process-Management)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -536,12 +542,6 @@
   * [Women's Racerback Tank](../../wiki/Printful-guideline-cheat-sheet#womens-racerback-tank)
     + [XL & above](../../wiki/Printful-guideline-cheat-sheet#xl--above)
     + [XS-L](../../wiki/Printful-guideline-cheat-sheet#xs-l)
-
-
-## [Python](../../wiki/Python)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [[[Get an lxml tree of an xml document]]](../../wiki/Python#get-an-lxml-tree-of-an-xml-document)
-- [[[Install python, virtualenv, virtualenvwrapper in a brew environment]]](../../wiki/Python#install-python-virtualenv-virtualenvwrapper-in-a-brew-environment)
-- [[[Misculaneous Python tips, tricks and commands]]](../../wiki/Python#misculaneous-python-tips-tricks-and-commands)
 
 
 ## [Quickly access local development files servers on OS X from your Android or iPhone (or other mobile device)](../../wiki/Quickly-access-local-development-files-servers-on-OS-X-from-your-Android-or-iPhone-(or-other-mobile-device))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
