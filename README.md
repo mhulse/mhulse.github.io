@@ -484,9 +484,9 @@
 
 ## [Placing credit freezes](../../wiki/Placing-credit-freezes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [How-to guide](../../wiki/Placing-credit-freezes#how-to-guide)
-  * [1. [freeze.transunion.com](https://freeze.transunion.com)](../../wiki/Placing-credit-freezes#1-freezetransunioncomhttpsfreezetransunioncom)
-  * [2. [freeze.equifax.com](https://www.freeze.equifax.com)](../../wiki/Placing-credit-freezes#2-freezeequifaxcomhttpswwwfreezeequifaxcom)
-  * [3. [experian.com/freeze](http://www.experian.com/freeze)](../../wiki/Placing-credit-freezes#3-experiancomfreezehttpwwwexperiancomfreeze)
+  * [1. TransUnion](../../wiki/Placing-credit-freezes#1-transunion)
+  * [2. Equifax](../../wiki/Placing-credit-freezes#2-equifax)
+  * [3. Experian](../../wiki/Placing-credit-freezes#3-experian)
 - [Tips!](../../wiki/Placing-credit-freezes#tips)
 
 
