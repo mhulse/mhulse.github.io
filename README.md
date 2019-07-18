@@ -476,7 +476,7 @@
 
 ## [Placing credit freeze on child dependent](../../wiki/Placing-credit-freeze-on-child-dependent)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [About](../../wiki/Placing-credit-freeze-on-child-dependent#about)
-- [Guide](../../wiki/Placing-credit-freeze-on-child-dependent#guide)
+- [How-to guide](../../wiki/Placing-credit-freeze-on-child-dependent#how-to-guide)
   * [Equifax](../../wiki/Placing-credit-freeze-on-child-dependent#equifax)
   * [TransUnion](../../wiki/Placing-credit-freeze-on-child-dependent#transunion)
   * [Experian](../../wiki/Placing-credit-freeze-on-child-dependent#experian)
@@ -564,7 +564,7 @@
 - [Q: How to connect to Theta via command line?](../../wiki/Ricoh-Theta-notes#q-how-to-connect-to-theta-via-command-line)
 - [Q: How to load the Theta as a mounted hard drive?](../../wiki/Ricoh-Theta-notes#q-how-to-load-the-theta-as-a-mounted-hard-drive)
 - [Q: Can one upload pano to Theta's site without using Facebook?](../../wiki/Ricoh-Theta-notes#q-can-one-upload-pano-to-thetas-site-without-using-facebook)
-- [Q: How to upload to Microsoft [Photosynth](http://photosynth.net)?](../../wiki/Ricoh-Theta-notes#q-how-to-upload-to-microsoft-photosynthhttpphotosynthnet)
+- [Q: How to upload to Microsoft Photosynth?](../../wiki/Ricoh-Theta-notes#q-how-to-upload-to-microsoft-photosynth)
 - [Q: Can I embed Ricoh's panoramas?](../../wiki/Ricoh-Theta-notes#q-can-i-embed-ricohs-panoramas)
 
 
@@ -616,17 +616,17 @@
 
 
 ## [Setup SSH key for local dev box and use agent forwarding for servers](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [macOS users: [Technical Note TN2449: OpenSSH updates in macOS 10.12.2](https://developer.apple.com/library/content/technotes/tn2449/_index.html)](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#macos-users-technical-note-tn2449-openssh-updates-in-macos-10122httpsdeveloperapplecomlibrarycontenttechnotestn2449_indexhtml)
-  * [Checking for existing SSH keys](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#checking-for-existing-ssh-keys)
-  * [Generate a new SSH key and adding it to the `ssh-agent`](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#generate-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-  * [Adding your SSH key to the ssh-agent](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#adding-your-ssh-key-to-the-ssh-agent)
-  * [Copy SSH key](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#copy-ssh-key)
-  * [Setting up SSH agent forwarding](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#setting-up-ssh-agent-forwarding)
-  * [Add key to BitBucket](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#add-key-to-bitbucket)
-  * [Example config](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#example-config)
-  * [Copying existing](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#copying-existing)
-  * [Troubleshooting](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#troubleshooting)
-  * [Links](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#links)
+- [Attention macOS users](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#attention-macos-users)
+- [Checking for existing SSH keys](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#checking-for-existing-ssh-keys)
+- [Generate a new SSH key and adding it to the `ssh-agent`](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#generate-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Adding your SSH key to the ssh-agent](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#adding-your-ssh-key-to-the-ssh-agent)
+- [Copy SSH key](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#copy-ssh-key)
+- [Setting up SSH agent forwarding](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#setting-up-ssh-agent-forwarding)
+- [Add key to BitBucket](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#add-key-to-bitbucket)
+- [Example config](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#example-config)
+- [Copying existing](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#copying-existing)
+- [Troubleshooting](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#troubleshooting)
+- [Links](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#links)
 
 
 ## [Shopify, ShipStation, Printful to connect Etsy, Amazon and Ebay](../../wiki/Shopify,-ShipStation,-Printful-to-connect-Etsy,-Amazon-and-Ebay)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -662,15 +662,15 @@
 
 
 ## [ST3: Setup](../../wiki/ST3:-Setup)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Official ST3 Docs](../../wiki/ST3:-Setup#official-st3-docs)
-  * [1. Install!](../../wiki/ST3:-Setup#1-install)
-  * [2. Get package control!](../../wiki/ST3:-Setup#2-get-package-control)
-  * [3. [Enhance](https://github.com/titoBouzout/SideBarEnhancements/tree/st3) the sidebar!](../../wiki/ST3:-Setup#3-enhancehttpsgithubcomtitobouzoutsidebarenhancementstreest3-the-sidebar)
-  * [4. Get [Soda](https://github.com/buymeasoda/soda-theme)!](../../wiki/ST3:-Setup#4-get-sodahttpsgithubcombuymeasodasoda-theme)
-  * [Settings' goodness!](../../wiki/ST3:-Setup#settings-goodness)
-  * [5. Modify theme!](../../wiki/ST3:-Setup#5-modify-theme)
-  * [Key bindings!](../../wiki/ST3:-Setup#key-bindings)
-- [Links:](../../wiki/ST3:-Setup#links)
+- [1. Install!](../../wiki/ST3:-Setup#1-install)
+- [2. Get package control!](../../wiki/ST3:-Setup#2-get-package-control)
+- [3. Enhance the sidebar!](../../wiki/ST3:-Setup#3-enhance-the-sidebar)
+- [4. Get Soda](../../wiki/ST3:-Setup#4-get-soda)
+- [Settings’ goodness!](../../wiki/ST3:-Setup#settings-goodness)
+- [5. Modify theme!](../../wiki/ST3:-Setup#5-modify-theme)
+- [Key bindings!](../../wiki/ST3:-Setup#key-bindings)
+- [See also](../../wiki/ST3:-Setup#see-also)
+  * [Links](../../wiki/ST3:-Setup#links)
 
 
 ## [Stop junk (snail) mail!](../../wiki/Stop-junk-(snail)-mail!)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
