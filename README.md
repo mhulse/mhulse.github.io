@@ -670,18 +670,13 @@
 - [5. Modify theme!](../../wiki/ST3:-Setup#5-modify-theme)
 - [Key bindings!](../../wiki/ST3:-Setup#key-bindings)
 - [See also](../../wiki/ST3:-Setup#see-also)
-  * [Links](../../wiki/ST3:-Setup#links)
+- [Links](../../wiki/ST3:-Setup#links)
 
 
 ## [Stop junk (snail) mail!](../../wiki/Stop-junk-(snail)-mail!)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [DMAchoice](../../wiki/Stop-junk-(snail)-mail!#dmachoice)
 - [OptOutPrescreen.com](../../wiki/Stop-junk-(snail)-mail!#optoutprescreencom)
 - [Catalog Choice](../../wiki/Stop-junk-(snail)-mail!#catalog-choice)
-
-
-## [Sublime Text Tips](../../wiki/Sublime-Text-Tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [[[ST2: Setup]]](../../wiki/Sublime-Text-Tips#st2-setup)
-- [[[ST3: Setup]]](../../wiki/Sublime-Text-Tips#st3-setup)
 
 
 ## [Sun G size for my headz](../../wiki/Sun-G-size-for-my-headz)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
