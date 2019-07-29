@@ -545,7 +545,7 @@
 
 
 ## [Quickly access local development files servers on OS X from your Android or iPhone (or other mobile device)](../../wiki/Quickly-access-local-development-files-servers-on-OS-X-from-your-Android-or-iPhone-(or-other-mobile-device))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [SEE ALSO: [[Use SquidMan to access vhosts on Mac]]](../../wiki/Quickly-access-local-development-files-servers-on-OS-X-from-your-Android-or-iPhone-(or-other-mobile-device)#see-also-use-squidman-to-access-vhosts-on-mac)
+
 
 
 ## [Repo name ideas](../../wiki/Repo-name-ideas)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -607,12 +607,11 @@
 
 
 ## [Setting up Linux server with SSH keygen for BitBucket](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [June, 2017 update: [[Setup SSH key for local dev box and use agent forwarding for servers]]](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#june-2017-update-setup-ssh-key-for-local-dev-box-and-use-agent-forwarding-for-servers)
-  * [Create/setup the key on your server:](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#createsetup-the-key-on-your-server)
-  * [Add key to BitBucket](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#add-key-to-bitbucket)
-  * [Clone BitBucket repo](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#clone-bitbucket-repo)
-  * [Pulling updates](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#pulling-updates)
-    + [Links](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#links)
+- [Create/setup the key on your server:](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#createsetup-the-key-on-your-server)
+- [Add key to BitBucket](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#add-key-to-bitbucket)
+- [Clone BitBucket repo](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#clone-bitbucket-repo)
+- [Pulling updates](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#pulling-updates)
+  * [Links](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#links)
 
 
 ## [Setup SSH key for local dev box and use agent forwarding for servers](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
