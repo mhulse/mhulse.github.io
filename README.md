@@ -85,7 +85,7 @@
 
 
 ## [Connecting to Mac virtual hosts from Parallels Windows](../../wiki/Connecting-to-Mac-virtual-hosts-from-Parallels-Windows)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Useful:](../../wiki/Connecting-to-Mac-virtual-hosts-from-Parallels-Windows#useful)
+
 
 
 ## [Convert video to animated gif sequence in Photoshop](../../wiki/Convert-video-to-animated-gif-sequence-in-Photoshop)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -392,6 +392,26 @@
 - [xFiles](../../wiki/My-favorite-TV-series-episodes#xfiles)
 
 
+## [My Gym Exercise Workout Weight Lifting Routine](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Everyday warmups](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#everyday-warmups)
+  * [Optional](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#optional)
+- [Everyday routine (optional as supersets)](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#everyday-routine-optional-as-supersets)
+- [2-day routine](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#2-day-routine)
+  * [Day 1](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-1)
+  * [Day 2](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-2)
+- [3-day routine](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#3-day-routine)
+  * [Day 1](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-1-1)
+  * [Day 2](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-2-1)
+  * [Day 3](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-3)
+- [Videos](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#videos)
+- [Links](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#links)
+- [Notes](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#notes)
+  * [Squats](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#squats)
+  * [Dead Bug](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#dead-bug)
+  * [Deadlifts](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#deadlifts)
+  * [Guidelines for stretching](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#guidelines-for-stretching)
+
+
 ## [MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Difference between a MySQL procedure and a function](../../wiki/MySQL-basic,-tricks-and-techniques#difference-between-a-mysql-procedure-and-a-function)
 - [Enter into mysql prompt](../../wiki/MySQL-basic,-tricks-and-techniques#enter-into-mysql-prompt)
@@ -569,7 +589,7 @@
 
 
 ## [Ruby tips](../../wiki/Ruby-tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [TL;DR:](../../wiki/Ruby-tips#tldr)
+- [TL;DR](../../wiki/Ruby-tips#tldr)
 - [Links](../../wiki/Ruby-tips#links)
 
 
