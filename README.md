@@ -407,7 +407,7 @@
 - [Links](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#links)
 - [Notes](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#notes)
   * [Squats](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#squats)
-  * [Dead Bug](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#dead-bug)
+  * [Neck Lift](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#neck-lift)
   * [Deadlifts](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#deadlifts)
   * [Guidelines for stretching](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#guidelines-for-stretching)
 
