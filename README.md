@@ -21,6 +21,11 @@
 - [Recommended plugin install location](../../wiki/Adobe-Lightroom:-Tips#recommended-plugin-install-location)
 
 
+## [Angular notes](../../wiki/Angular-notes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Assigning classes](../../wiki/Angular-notes#assigning-classes)
+- [Components vs. Directives](../../wiki/Angular-notes#components-vs-directives)
+
+
 ## [Anime Studio Pro 10](../../wiki/Anime-Studio-Pro-10)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [General stuff](../../wiki/Anime-Studio-Pro-10#general-stuff)
 - [Background image](../../wiki/Anime-Studio-Pro-10#background-image)
@@ -302,7 +307,26 @@
 
 
 ## [IntelliJ IDEA tips](../../wiki/IntelliJ-IDEA-tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [JetBrains Toolbox App](../../wiki/IntelliJ-IDEA-tips#jetbrains-toolbox-app)
+- [Tips](../../wiki/IntelliJ-IDEA-tips#tips)
+  * [Move forwards or backwards through caret history](../../wiki/IntelliJ-IDEA-tips#move-forwards-or-backwards-through-caret-history)
+  * [Move caret to top or bottom of open file](../../wiki/IntelliJ-IDEA-tips#move-caret-to-top-or-bottom-of-open-file)
+  * [Wrap selection in tag](../../wiki/IntelliJ-IDEA-tips#wrap-selection-in-tag)
+  * [Searching for things](../../wiki/IntelliJ-IDEA-tips#searching-for-things)
+  * [Find and replace](../../wiki/IntelliJ-IDEA-tips#find-and-replace)
+  * [Navigating to Action menu](../../wiki/IntelliJ-IDEA-tips#navigating-to-action-menu)
+  * [Killing test server process](../../wiki/IntelliJ-IDEA-tips#killing-test-server-process)
+  * [Contextual options](../../wiki/IntelliJ-IDEA-tips#contextual-options)
+  * [Multi-select (like Atom/Sublime)](../../wiki/IntelliJ-IDEA-tips#multi-select-like-atomsublime)
+  * [Jump to definition](../../wiki/IntelliJ-IDEA-tips#jump-to-definition)
+  * [Copy smart](../../wiki/IntelliJ-IDEA-tips#copy-smart)
+  * [Quickly navigate forwards and backwards](../../wiki/IntelliJ-IDEA-tips#quickly-navigate-forwards-and-backwards)
 - [General UI setup](../../wiki/IntelliJ-IDEA-tips#general-ui-setup)
+  * [zsh shell](../../wiki/IntelliJ-IDEA-tips#zsh-shell)
+  * [Whitespace](../../wiki/IntelliJ-IDEA-tips#whitespace)
+  * [Autoscroll from source](../../wiki/IntelliJ-IDEA-tips#autoscroll-from-source)
+  * [Sync settings to your JetBrains account](../../wiki/IntelliJ-IDEA-tips#sync-settings-to-your-jetbrains-account)
+  * [Better/larger editor font](../../wiki/IntelliJ-IDEA-tips#betterlarger-editor-font)
   * [Wrap selection in parens/curly braces/etc.](../../wiki/IntelliJ-IDEA-tips#wrap-selection-in-parenscurly-bracesetc)
   * [Gradle tool window](../../wiki/IntelliJ-IDEA-tips#gradle-tool-window)
   * [EditorConfig](../../wiki/IntelliJ-IDEA-tips#editorconfig)
@@ -315,13 +339,6 @@
   * [Setting up a configuration](../../wiki/IntelliJ-IDEA-tips#setting-up-a-configuration)
     + [“Application” configuration (preferred … It’s faster!)](../../wiki/IntelliJ-IDEA-tips#application-configuration-preferred--its-faster)
     + [“Gradle” configuration](../../wiki/IntelliJ-IDEA-tips#gradle-configuration)
-- [Tips](../../wiki/IntelliJ-IDEA-tips#tips)
-  * [Killing test server process](../../wiki/IntelliJ-IDEA-tips#killing-test-server-process)
-  * [Contextual options](../../wiki/IntelliJ-IDEA-tips#contextual-options)
-  * [Open file](../../wiki/IntelliJ-IDEA-tips#open-file)
-  * [Multi-select (like Atom/Sublime)](../../wiki/IntelliJ-IDEA-tips#multi-select-like-atomsublime)
-  * [Jump to definition](../../wiki/IntelliJ-IDEA-tips#jump-to-definition)
-  * [Copy smart](../../wiki/IntelliJ-IDEA-tips#copy-smart)
 
 
 ## [Java sdkman maven gradle (and spring boot)](../../wiki/Java-sdkman-maven-gradle-(and-spring-boot))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -390,26 +407,6 @@
 - [Macgyver](../../wiki/My-favorite-TV-series-episodes#macgyver)
 - [Miami Vice](../../wiki/My-favorite-TV-series-episodes#miami-vice)
 - [xFiles](../../wiki/My-favorite-TV-series-episodes#xfiles)
-
-
-## [My Gym Exercise Workout Weight Lifting Routine](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Everyday warmups](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#everyday-warmups)
-  * [Optional](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#optional)
-- [Everyday routine (optional as supersets)](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#everyday-routine-optional-as-supersets)
-- [2-day routine](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#2-day-routine)
-  * [Day 1](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-1)
-  * [Day 2](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-2)
-- [3-day routine](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#3-day-routine)
-  * [Day 1](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-1-1)
-  * [Day 2](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-2-1)
-  * [Day 3](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#day-3)
-- [Videos](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#videos)
-- [Links](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#links)
-- [Notes](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#notes)
-  * [Squats](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#squats)
-  * [Neck Lift](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#neck-lift)
-  * [Deadlifts](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#deadlifts)
-  * [Guidelines for stretching](../../wiki/My-Gym-Exercise-Workout-Weight-Lifting-Routine#guidelines-for-stretching)
 
 
 ## [MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -634,6 +631,11 @@
   * [Links](../../wiki/Setting-up-Linux-server-with-SSH-keygen-for-BitBucket#links)
 
 
+## [Setup and use Python’s (v3.x) virtual environments using pyvenv](../../wiki/Setup-and-use-Python’s-(v3.x)-virtual-environments-using-pyvenv)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Development notes](../../wiki/Setup-and-use-Python’s-(v3.x)-virtual-environments-using-pyvenv#development-notes)
+  * [Python3 boilerplate](../../wiki/Setup-and-use-Python’s-(v3.x)-virtual-environments-using-pyvenv#python3-boilerplate)
+
+
 ## [Setup SSH key for local dev box and use agent forwarding for servers](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Attention macOS users](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#attention-macos-users)
 - [Checking for existing SSH keys](../../wiki/Setup-SSH-key-for-local-dev-box-and-use-agent-forwarding-for-servers#checking-for-existing-ssh-keys)
@@ -803,12 +805,16 @@
 
 
 
-## [Web development website accessibility testing tools](../../wiki/Web-development-website-accessibility-testing-tools)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [Website accessibility testing tools](../../wiki/Web-development-website-accessibility-testing-tools#website-accessibility-testing-tools)
-  * [axe](../../wiki/Web-development-website-accessibility-testing-tools#axe)
-  * [Accessibility Insights for Web](../../wiki/Web-development-website-accessibility-testing-tools#accessibility-insights-for-web)
-  * [Chrome Audits](../../wiki/Web-development-website-accessibility-testing-tools#chrome-audits)
-  * [macOS VoiceOver](../../wiki/Web-development-website-accessibility-testing-tools#macos-voiceover)
+## [Web development website accessibility testing tools and websites (a11y)](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Text spacing bookmarklet](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#text-spacing-bookmarklet)
+- [Colour Contrast Analyser](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#colour-contrast-analyser)
+- [Web Developer browser extension](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#web-developer-browser-extension)
+- [Nu Html Checker](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#nu-html-checker)
+- [axe](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#axe)
+- [Accessibility Insights for Web](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#accessibility-insights-for-web)
+- [Chrome Audits](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#chrome-audits)
+- [macOS VoiceOver](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#macos-voiceover)
+- [Links](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#links)
 
 
 ## [WebFaction Django Python tips notes](../../wiki/WebFaction-Django-Python-tips-notes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
