@@ -95,7 +95,8 @@
 
 
 ## [Clipy Clipboard extension app for macOS preferences](../../wiki/Clipy-Clipboard-extension-app-for-macOS-preferences)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [These screenshots via [@nqthqn](https://github.com/nqthqn)](../../wiki/Clipy-Clipboard-extension-app-for-macOS-preferences#these-screenshots-via-nqthqnhttpsgithubcomnqthqn)
+- [Screenshot of preferences](../../wiki/Clipy-Clipboard-extension-app-for-macOS-preferences#screenshot-of-preferences)
+- [Notes](../../wiki/Clipy-Clipboard-extension-app-for-macOS-preferences#notes)
 
 
 ## [Connecting to Mac virtual hosts from Parallels Windows](../../wiki/Connecting-to-Mac-virtual-hosts-from-Parallels-Windows)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
