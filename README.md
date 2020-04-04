@@ -9,6 +9,10 @@
 - [Links](../../wiki/“GitBan”:-Kanban-GitHub-repository-issue-tracking#links)
 
 
+## [a11y web development tips and tricks](../../wiki/a11y-web-development-tips-and-tricks)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Marking image as decorative](../../wiki/a11y-web-development-tips-and-tricks#marking-image-as-decorative)
+
+
 ## [Adobe CEP extension making](../../wiki/Adobe-CEP-extension-making)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Debugging Unsigned Extensions](../../wiki/Adobe-CEP-extension-making#debugging-unsigned-extensions)
 
@@ -24,6 +28,7 @@
 ## [Angular notes](../../wiki/Angular-notes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Assigning classes](../../wiki/Angular-notes#assigning-classes)
 - [Components vs. Directives](../../wiki/Angular-notes#components-vs-directives)
+- [Template syntax](../../wiki/Angular-notes#template-syntax)
 
 
 ## [Anime Studio Pro 10](../../wiki/Anime-Studio-Pro-10)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -87,6 +92,10 @@
 
 ## [CentOS  Apache, and notes](../../wiki/CentOS--Apache,-and-notes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Install php](../../wiki/CentOS--Apache,-and-notes#install-php)
+
+
+## [Clipy Clipboard extension app for macOS preferences](../../wiki/Clipy-Clipboard-extension-app-for-macOS-preferences)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [These screenshots via [@nqthqn](https://github.com/nqthqn)](../../wiki/Clipy-Clipboard-extension-app-for-macOS-preferences#these-screenshots-via-nqthqnhttpsgithubcomnqthqn)
 
 
 ## [Connecting to Mac virtual hosts from Parallels Windows](../../wiki/Connecting-to-Mac-virtual-hosts-from-Parallels-Windows)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -341,6 +350,12 @@
     + [“Gradle” configuration](../../wiki/IntelliJ-IDEA-tips#gradle-configuration)
 
 
+## [IntelliJ, Java and Gradle troubleshooting tips](../../wiki/IntelliJ,-Java-and-Gradle-troubleshooting-tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [General wonkiness](../../wiki/IntelliJ,-Java-and-Gradle-troubleshooting-tips#general-wonkiness)
+- [Unsupported class file major version XX](../../wiki/IntelliJ,-Java-and-Gradle-troubleshooting-tips#unsupported-class-file-major-version-xx)
+- [Downgrading Java](../../wiki/IntelliJ,-Java-and-Gradle-troubleshooting-tips#downgrading-java)
+
+
 ## [Java sdkman maven gradle (and spring boot)](../../wiki/Java-sdkman-maven-gradle-(and-spring-boot))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 
 
@@ -590,6 +605,12 @@
 - [Links](../../wiki/Ruby-tips#links)
 
 
+## [Running different versions of Hugo from command line (sans Homebrew)  using zsh](../../wiki/Running-different-versions-of-Hugo-from-command-line-(sans-Homebrew)--using-zsh)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [1. Download Hugo release versions](../../wiki/Running-different-versions-of-Hugo-from-command-line-(sans-Homebrew)--using-zsh#1-download-hugo-release-versions)
+- [2. Add to your path](../../wiki/Running-different-versions-of-Hugo-from-command-line-(sans-Homebrew)--using-zsh#2-add-to-your-path)
+- [3. Run Hugo!](../../wiki/Running-different-versions-of-Hugo-from-command-line-(sans-Homebrew)--using-zsh#3-run-hugo)
+
+
 ## [Setting up a new dev Mac](../../wiki/Setting-up-a-new-dev-Mac)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [xCode](../../wiki/Setting-up-a-new-dev-Mac#xcode)
 - [Java](../../wiki/Setting-up-a-new-dev-Mac#java)
@@ -730,6 +751,10 @@
 - [Now that your story is figured out …](../../wiki/Tips-for-writing-kids-books#now-that-your-story-is-figured-out-)
 - [Time](../../wiki/Tips-for-writing-kids-books#time)
 - [Artwork](../../wiki/Tips-for-writing-kids-books#artwork)
+
+
+## [tmux tips and shortcuts](../../wiki/tmux-tips-and-shortcuts)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+
 
 
 ## [TOC test](../../wiki/TOC-test)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
