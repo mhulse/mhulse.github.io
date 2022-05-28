@@ -11,6 +11,7 @@
 
 ## [a11y web development tips and tricks](../../wiki/a11y-web-development-tips-and-tricks)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Marking image as decorative](../../wiki/a11y-web-development-tips-and-tricks#marking-image-as-decorative)
+- [Links](../../wiki/a11y-web-development-tips-and-tricks#links)
 
 
 ## [Adobe CEP extension making](../../wiki/Adobe-CEP-extension-making)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -83,6 +84,21 @@
 
 ## [Blackboxing Scripts in Chrome DevTools](../../wiki/Blackboxing-Scripts-in-Chrome-DevTools)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 
+
+
+## [Bob Ross setup using water soluble paints](../../wiki/Bob-Ross-setup-using-water-soluble-paints)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Read this first: [WATER-MIXABLE OILS: VIBRANT COLOURS, EASY-CLEANUP AND THEY NEEDN’T BE STICKY](https://www.jacksonsart.com/blog/2020/04/21/water-mixable-oils-vibrant-colours-easy-cleanup-and-they-neednt-be-sticky/)](../../wiki/Bob-Ross-setup-using-water-soluble-paints#read-this-first-water-mixable-oils-vibrant-colours-easy-cleanup-and-they-neednt-be-stickyhttpswwwjacksonsartcomblog20200421water-mixable-oils-vibrant-colours-easy-cleanup-and-they-neednt-be-sticky)
+  * [Tips](../../wiki/Bob-Ross-setup-using-water-soluble-paints#tips)
+  * [Paints](../../wiki/Bob-Ross-setup-using-water-soluble-paints#paints)
+    + [Brands](../../wiki/Bob-Ross-setup-using-water-soluble-paints#brands)
+    + [Winsor & Newton Artisan](../../wiki/Bob-Ross-setup-using-water-soluble-paints#winsor--newton-artisan)
+    + [Holbien Duo](../../wiki/Bob-Ross-setup-using-water-soluble-paints#holbien-duo)
+  * [Brushes & Palette Knives](../../wiki/Bob-Ross-setup-using-water-soluble-paints#brushes--palette-knives)
+  * [Canvases](../../wiki/Bob-Ross-setup-using-water-soluble-paints#canvases)
+      - [Panel/canvas options](../../wiki/Bob-Ross-setup-using-water-soluble-paints#panelcanvas-options)
+  * [Easels](../../wiki/Bob-Ross-setup-using-water-soluble-paints#easels)
+  * [Artist tutorial links](../../wiki/Bob-Ross-setup-using-water-soluble-paints#artist-tutorial-links)
+  * [Resource links](../../wiki/Bob-Ross-setup-using-water-soluble-paints#resource-links)
 
 
 ## [Brew Node NPM Grunt tips](../../wiki/Brew-Node-NPM-Grunt-tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -200,6 +216,7 @@
 
 
 ## [Git flow for pros](../../wiki/Git-flow-for-pros)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Cherry pick](../../wiki/Git-flow-for-pros#cherry-pick)
 - [Checkout specific file from another branch](../../wiki/Git-flow-for-pros#checkout-specific-file-from-another-branch)
 - [Searching through git revisions](../../wiki/Git-flow-for-pros#searching-through-git-revisions)
 - [Update a local branch that has been force pushed](../../wiki/Git-flow-for-pros#update-a-local-branch-that-has-been-force-pushed)
@@ -266,8 +283,21 @@
 - [Quickly import HTML into a Google spreadsheet](../../wiki/Google-spreadsheets-import-data,-feed,-xml,-html-…#quickly-import-html-into-a-google-spreadsheet)
 
 
+## [Guitar “notes” (pun intended)](../../wiki/Guitar-“notes”-(pun-intended))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Interval method](../../wiki/Guitar-“notes”-(pun-intended)#interval-method)
+- [Musical alphabet](../../wiki/Guitar-“notes”-(pun-intended)#musical-alphabet)
+  * [Naturals](../../wiki/Guitar-“notes”-(pun-intended)#naturals)
+- [Links](../../wiki/Guitar-“notes”-(pun-intended)#links)
+
+
 ## [How to un register to vote in Lane County, Oregon](../../wiki/How-to-un-register-to-vote-in-Lane-County,-Oregon)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 
+
+
+## [Ideas for programming naming systems](../../wiki/Ideas-for-programming-naming-systems)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Police/Fire radio codes](../../wiki/Ideas-for-programming-naming-systems#policefire-radio-codes)
+- [Greek mythology names: Lots of stuff here:](../../wiki/Ideas-for-programming-naming-systems#greek-mythology-names-lots-of-stuff-here)
+- [Geologic time scale](../../wiki/Ideas-for-programming-naming-systems#geologic-time-scale)
 
 
 ## [IIS Windows WordPress pretty urls](../../wiki/IIS-Windows-WordPress-pretty-urls)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -317,8 +347,12 @@
 
 
 ## [IntelliJ IDEA tips](../../wiki/IntelliJ-IDEA-tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Method Separators](../../wiki/IntelliJ-IDEA-tips#method-separators)
+- [File Colors](../../wiki/IntelliJ-IDEA-tips#file-colors)
 - [JetBrains Toolbox App](../../wiki/IntelliJ-IDEA-tips#jetbrains-toolbox-app)
 - [Tips](../../wiki/IntelliJ-IDEA-tips#tips)
+  * [Visual guides](../../wiki/IntelliJ-IDEA-tips#visual-guides)
+  * [Recent Files](../../wiki/IntelliJ-IDEA-tips#recent-files)
   * [Move forwards or backwards through caret history](../../wiki/IntelliJ-IDEA-tips#move-forwards-or-backwards-through-caret-history)
   * [Move caret to top or bottom of open file](../../wiki/IntelliJ-IDEA-tips#move-caret-to-top-or-bottom-of-open-file)
   * [Wrap selection in tag](../../wiki/IntelliJ-IDEA-tips#wrap-selection-in-tag)
@@ -349,6 +383,10 @@
   * [Setting up a configuration](../../wiki/IntelliJ-IDEA-tips#setting-up-a-configuration)
     + [“Application” configuration (preferred … It’s faster!)](../../wiki/IntelliJ-IDEA-tips#application-configuration-preferred--its-faster)
     + [“Gradle” configuration](../../wiki/IntelliJ-IDEA-tips#gradle-configuration)
+
+
+## [IntelliJ shell scripting](../../wiki/IntelliJ-shell-scripting)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+
 
 
 ## [IntelliJ, Java and Gradle troubleshooting tips](../../wiki/IntelliJ,-Java-and-Gradle-troubleshooting-tips)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -415,14 +453,19 @@
 
 
 
-## [My favorite TV series episodes](../../wiki/My-favorite-TV-series-episodes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [The Office (USA)](../../wiki/My-favorite-TV-series-episodes#the-office-usa)
-- [Midsomer Murders](../../wiki/My-favorite-TV-series-episodes#midsomer-murders)
-- [CHiPs](../../wiki/My-favorite-TV-series-episodes#chips)
-- [Rockford Files](../../wiki/My-favorite-TV-series-episodes#rockford-files)
-- [Macgyver](../../wiki/My-favorite-TV-series-episodes#macgyver)
-- [Miami Vice](../../wiki/My-favorite-TV-series-episodes#miami-vice)
-- [xFiles](../../wiki/My-favorite-TV-series-episodes#xfiles)
+## [My favorite TV series episodes and movies](../../wiki/My-favorite-TV-series-episodes-and-movies)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [Movies](../../wiki/My-favorite-TV-series-episodes-and-movies#movies)
+- [TV Series](../../wiki/My-favorite-TV-series-episodes-and-movies#tv-series)
+  * [How I Met Your Mother](../../wiki/My-favorite-TV-series-episodes-and-movies#how-i-met-your-mother)
+  * [Star Trek (original series)](../../wiki/My-favorite-TV-series-episodes-and-movies#star-trek-original-series)
+  * [Star Trek TNG](../../wiki/My-favorite-TV-series-episodes-and-movies#star-trek-tng)
+  * [The Office (USA)](../../wiki/My-favorite-TV-series-episodes-and-movies#the-office-usa)
+  * [Midsomer Murders](../../wiki/My-favorite-TV-series-episodes-and-movies#midsomer-murders)
+  * [CHiPs](../../wiki/My-favorite-TV-series-episodes-and-movies#chips)
+  * [Rockford Files](../../wiki/My-favorite-TV-series-episodes-and-movies#rockford-files)
+  * [Macgyver](../../wiki/My-favorite-TV-series-episodes-and-movies#macgyver)
+  * [Miami Vice](../../wiki/My-favorite-TV-series-episodes-and-movies#miami-vice)
+  * [xFiles](../../wiki/My-favorite-TV-series-episodes-and-movies#xfiles)
 
 
 ## [MySQL basic, tricks and techniques](../../wiki/MySQL-basic,-tricks-and-techniques)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -516,11 +559,13 @@
 
 
 ## [Placing credit freezes](../../wiki/Placing-credit-freezes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-- [How-to guide](../../wiki/Placing-credit-freezes#how-to-guide)
+- [How-to freeze my credit guide](../../wiki/Placing-credit-freezes#how-to-freeze-my-credit-guide)
   * [1. TransUnion](../../wiki/Placing-credit-freezes#1-transunion)
   * [2. Equifax](../../wiki/Placing-credit-freezes#2-equifax)
+    + [Change of address](../../wiki/Placing-credit-freezes#change-of-address)
   * [3. Experian](../../wiki/Placing-credit-freezes#3-experian)
 - [Tips!](../../wiki/Placing-credit-freezes#tips)
+- [Placing fraud alert](../../wiki/Placing-credit-freezes#placing-fraud-alert)
 
 
 ## [PM2 Node.js Process Management](../../wiki/PM2-Node.js-Process-Management)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -581,6 +626,10 @@
 
 
 
+## [Rectangle.app window pane manager preferences](../../wiki/Rectangle.app-window-pane-manager-preferences)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+
+
+
 ## [Repo name ideas](../../wiki/Repo-name-ideas)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
 - [Random thoughts:](../../wiki/Repo-name-ideas#random-thoughts)
 - [Star Wars:](../../wiki/Repo-name-ideas#star-wars)
@@ -610,6 +659,10 @@
 - [1. Download Hugo release versions](../../wiki/Running-different-versions-of-Hugo-from-command-line-(sans-Homebrew)--using-zsh#1-download-hugo-release-versions)
 - [2. Add to your path](../../wiki/Running-different-versions-of-Hugo-from-command-line-(sans-Homebrew)--using-zsh#2-add-to-your-path)
 - [3. Run Hugo!](../../wiki/Running-different-versions-of-Hugo-from-command-line-(sans-Homebrew)--using-zsh#3-run-hugo)
+
+
+## [SDKMAN! Install and manage Java versions not listed](../../wiki/SDKMAN!-Install-and-manage-Java-versions-not-listed)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+
 
 
 ## [Setting up a new dev Mac](../../wiki/Setting-up-a-new-dev-Mac)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -755,7 +808,12 @@
 
 
 ## [tmux tips and shortcuts](../../wiki/tmux-tips-and-shortcuts)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
-
+- [Conf](../../wiki/tmux-tips-and-shortcuts#conf)
+- [Commands](../../wiki/tmux-tips-and-shortcuts#commands)
+- [Split window into 3 stacked panes left, and one large on right](../../wiki/tmux-tips-and-shortcuts#split-window-into-3-stacked-panes-left-and-one-large-on-right)
+- [Resurrect](../../wiki/tmux-tips-and-shortcuts#resurrect)
+- [iTerm + tmux tips](../../wiki/tmux-tips-and-shortcuts#iterm--tmux-tips)
+- [Links](../../wiki/tmux-tips-and-shortcuts#links)
 
 
 ## [TOC test](../../wiki/TOC-test)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
@@ -831,7 +889,12 @@
 
 
 
+## [Web Component notes](../../wiki/Web-Component-notes)&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+
+
+
 ## [Web development website accessibility testing tools and websites (a11y)](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y))&nbsp;[<img width="32" height="32" align="right" src="https://github.githubassets.com/images/icons/emoji/unicode/261d.png" class="emoji" title="TOC">](#readme)
+- [a11yresources](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#a11yresources)
 - [Text spacing bookmarklet](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#text-spacing-bookmarklet)
 - [Colour Contrast Analyser](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#colour-contrast-analyser)
 - [Web Developer browser extension](../../wiki/Web-development-website-accessibility-testing-tools-and-websites-(a11y)#web-developer-browser-extension)
